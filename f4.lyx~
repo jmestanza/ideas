@@ -1,0 +1,985 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection*
+Notas de F4 (libro):
+\end_layout
+
+\begin_layout Standard
+Idea de que la luz era una onda electromagnètica irradiada por cargas eléctricas
+ microscópicas que oscilan (ahora se sabe que son electreones atomicos)
+\end_layout
+
+\begin_layout Standard
+1896 Pieter Zeeman descubre que un campo magnético ntenso puede cambiar
+ la frecuencia de luz emitida por un crital resplandeciente
+\end_layout
+
+\begin_layout Standard
+Maxwell había logrado unir electricidad, magnetismo y luz!
+\end_layout
+
+\begin_layout Standard
+Queremos predecir la intensidad de radiación a una longitud de onda dada
+ emitida por un sólido resplandeciente calentado a una temperatura específica.
+\end_layout
+
+\begin_layout Standard
+Gustav Kirchhoff teorema probo con termodinamica que para cualquier cuerpo
+ en equilibrio termico con la radiacion, la potencia emitida es proporcional
+ 
+\end_layout
+
+\begin_layout Standard
+a la emitida
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{f} = J(f,T).
+ A_{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{f}=$
+\end_layout
+
+\end_inset
+
+ pot emitida por unidad de area y por unidad de frecuencia por un obj particular
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A_{f}=$
+\end_layout
+
+\end_inset
+
+fraccion de la potencia incidente absorbida por unidad de area y por unidad
+ de frecuencia del obj caliente
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$J(f,T)=$
+\end_layout
+
+\end_inset
+
+funcion universal (para todos los cuerpos) que solo depende de f y de T
+ la temperatura absoluta del cuerpo
+\end_layout
+
+\begin_layout Subsection*
+Cuerpo Negro:
+\end_layout
+
+\begin_layout Standard
+Se define como un objeto que absorbe toda la radiacion electromagnetica
+ que incide sobre el (por eso parece negro)
+\end_layout
+
+\begin_layout Standard
+Af = 1 para todo f por tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{f}=J(f,T)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Debido a que la absorcion y la emision estan relacionadas con el teorema
+ de Kirchoff, se observa que si un cuerpo negro es un absorbente perfecto
+ pero
+\end_layout
+
+\begin_layout Standard
+tambien un radiador ideal.
+\end_layout
+
+\begin_layout Subsection*
+Josef Stefan
+\end_layout
+
+\begin_layout Standard
+En 1879 Josef Stefan encontro experimentalmente que la potencia total emitida
+ por unidad de area a todas las frecuencias por un cuerpo solido 
+\end_layout
+
+\begin_layout Standard
+a.k.a.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{total}$
+\end_layout
+
+\end_inset
+
+ era proporcional a la cuarta potencia de su temperatura absoluta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{total}=
+\backslash
+int_{0}^{
+\backslash
+infty}efdf =
+\backslash
+sigma.T^4$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{total} =$
+\end_layout
+
+\end_inset
+
+ potencia por unidad de area emitida en la superficie del cuerpo negro a
+ todas las frecuencias 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$ef$
+\end_layout
+
+\end_inset
+
+ es la potencia por unidad de area por unidad de frecuencia emitida por
+ el cuerpo negro
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T$
+\end_layout
+
+\end_inset
+
+ temperatura absoluta del cuerpo
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+ constante de Stefan-Boltzman 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma = 5.67 W
+\backslash
+e{-8}  W.
+ m^{-2}.
+ K^{-4}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un cuerpo que no es un radiador ideal satisface la misma ley general pero
+ con un coeficiente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$a$
+\end_layout
+
+\end_inset
+
+ < 1 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{total} = a.
+\backslash
+sigma.T^4$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Observacion:
+\end_layout
+
+\begin_layout Standard
+La longitud de onda a la que se tiene la potencia de mision maxima de un
+ cuerpo negro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda_{max}$
+\end_layout
+
+\end_inset
+
+ se desplaza hacia longitudes de onda
+\end_layout
+
+\begin_layout Standard
+mas cortas a medida que el cuerpo negro se calienta mas
+\end_layout
+
+\begin_layout Subsection*
+Formula general para la ley de distribucion de un cuerpo negro
+\end_layout
+
+\begin_layout Standard
+Esta formula explica el comportamiento experimental correcto de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda_{max}$
+\end_layout
+
+\end_inset
+
+ con la temperatura (Ley también llamada 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Ley del desplazamiento de Wein$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda_{max}.T = 2.898
+\backslash
+e{-3} m.K$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+T es la temperatura absoluta de la superficie del obj que emite la radiacion
+\end_layout
+
+\begin_layout Subsection*
+Densidad de energia espectral o energia por unidad de frecuencia de la radiacion
+ dentro de la cavidad del cuerpo negro
+\end_layout
+
+\begin_layout Standard
+Como la radiacion en al cavidad es isotropica y no polarizada vale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$J(f,T) = u(f,T).
+ c/4$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En 1893 Wein se aventura a proponer la forma de la funcion u(f,T) pero si
+ bien hubo un intervalo de longitudes de onda en donde era valido se probo
+ que no funcionaba para todas
+\end_layout
+
+\begin_layout Standard
+las longitudes de onda.
+\end_layout
+
+\begin_layout Subsection*
+Enter Planckman
+\end_layout
+
+\begin_layout Standard
+En 1900 Max Planck desarrollo la formula de cuerpo negro que anuncio el
+ surgimiento de la teoria cuantica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) = 
+\backslash
+frac{8
+\backslash
+pi hf^{3}}{c^3} .
+ (
+\backslash
+frac{1}{e^{hf/k_{b}T}-1})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$h = 6.626
+\backslash
+e{-34} J.s$
+\end_layout
+
+\end_inset
+
+ cte de Planck
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k_{b} = 1.380 
+\backslash
+e{-23} J/K$
+\end_layout
+
+\end_inset
+
+ cte de Boltzman
+\end_layout
+
+\begin_layout Standard
+A altas frecuencias cuando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$hf/k_{b}T >> 1$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(
+\backslash
+frac{1}{e^{hf/k_{b}T}-1})
+\backslash
+approx e^{-hf/k_{b}T} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) 
+\backslash
+approx 
+\backslash
+frac{8
+\backslash
+pi hf^{3}}{c^3} .
+ (e^{-hf/k_{b}T})$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+y se recupera la ley exponencial de Wein
+\end_layout
+
+\begin_layout Standard
+A bajas frecuencias cuando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$hf/k_{b}T << 1$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(
+\backslash
+frac{1}{e^{hf/k_{b}T}-1})
+\backslash
+approx 
+\backslash
+frac{k_{b}T}{hf} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sucede que
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) 
+\backslash
+approx 
+\backslash
+frac{8
+\backslash
+pi hf^{3}}{c^3} .
+ (
+\backslash
+frac{k_{b}T}{hf}) = 
+\backslash
+frac{8
+\backslash
+pi f^{2}}{c^3} $
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Cuanto de Energia
+\end_layout
+
+\begin_layout Standard
+Segun la teoria clasica de Maxwell un oscilador de frecuencia f podria tener
+ cualquier valor de energia y cambiar su amplitud de manera continua a medida
+ que radiase cualquier fraccion de su energia.
+\end_layout
+
+\begin_layout Standard
+Planck revoluciono este concepto: supuso que la energia total de un resonador
+ con frecuencia mecanica f solo puede ser un multiplo entero de hf
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$E_{resonador}= nhf$
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+con  n = 1,2,3...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ademas concluyo que se emitia radiacion de frecuencia f cuando un resonador
+ caia al siguiente estado energetico mas bajo.
+ Por tanto el resonador puede cambiar su energia solo por 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+triangle E = hf$
+\end_layout
+
+\end_inset
+
+.
+ Es decir que no puede perder cualquier cantidad de su energia total sino
+ una cantidad finita, hf, denominada cuanto de energia.
+\end_layout
+
+\begin_layout Standard
+Planck tambien demostro que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T)$
+\end_layout
+
+\end_inset
+
+ puede expresarse como
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) df = <E>.
+ N(f)df $
+\end_layout
+
+\end_inset
+
+ 
+\color red
+Esto se conoce como ley de Raighley-Jeans
+\end_layout
+
+\begin_layout Standard
+
+\color red
+( Continuo de energias)
+\end_layout
+
+\begin_layout Standard
+N es el numero de osciladores cuya frecuencia estaba entre f y f+df 
+\end_layout
+
+\begin_layout Standard
+<E> es la energia media emitida por cada oscilador
+\end_layout
+
+\begin_layout Standard
+Tambien mostro que el numero de osciladores con frecuencia f y f +df era
+ proporcional a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f^{2}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$N(f)df = 
+\backslash
+frac{8 
+\backslash
+pi f^{2}}{c^{3}} df$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+reemplazando esta ultima ecuacion en la anteultima se obtiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T)df = <E> .
+ 
+\backslash
+frac{8 
+\backslash
+pi f^{2}}{c^{3}} df$ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como u tiende a 0 a frecuencias altas <E> tiene que tender mas rapidamente
+ a 0 que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1/f^{2}$
+\end_layout
+
+\end_inset
+
+.
+ El que la energia promedio del oscilador deba volverse extremadamente pequeña
+\end_layout
+
+\begin_layout Standard
+gui o a plank en su investigacion.
+ Ahora se esta por ver que dado que <E> no se volviera pequeña a frecuencias
+ altas en la teoria clasica de Raileigh-Jeans condujo a la 
+\end_layout
+
+\begin_layout Standard
+catastrofe del ultravioleta: la prediccion de una densidad de energia espectral
+ infinita a freuencias altas en la region del ultravioleta.
+\end_layout
+
+\begin_layout Subsection*
+Ley de Planck
+\end_layout
+
+\begin_layout Standard
+Planck encontro una forma distinta para <E> al permitir solo valores discretos
+ para sus resonadores.
+ Usando la ley de distribucion de Maxwell Boltzman dedujo
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$<E>= 
+\backslash
+frac{hf}{e^{hf/k_{b}T}-1} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+al multiplicar <E> por N(f) se obtiene la formula de distribucion de Planck
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) df= 
+\backslash
+frac{8 
+\backslash
+pi f^{2}}{c^{3}} (
+\backslash
+frac{hf}{e^{hf/k_{b}T}-1}) df$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+aqui se puede ver que se evito la catastrofe del utra violeta ya que <E>
+ domina a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f^{2}$
+\end_layout
+
+\end_inset
+
+ a frecuencias altas.
+\end_layout
+
+\begin_layout Standard
+o en terminos de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(
+\backslash
+lambda,T) d
+\backslash
+lambda= 
+\backslash
+frac{    8 
+\backslash
+pi hc.d
+\backslash
+lambda   }{    
+\backslash
+lambda^{5}(e^{hc/
+\backslash
+lambda k_{b}T} -1)   } df$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En resumen Planck formulo 2 hipotesis sorprendentes:
+\end_layout
+
+\begin_layout Standard
+1) La energia de un oscilador cargado de frecuencia f esta limitada a valores
+ discretos (nhf) 
+\end_layout
+
+\begin_layout Standard
+2) durante la emision o absorcion de luz el cambio en energia de un oscilador
+ es hf
+\end_layout
+
+\end_body
+\end_document
