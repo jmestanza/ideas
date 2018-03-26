@@ -544,9 +544,7 @@ status open
 
 \begin_layout Plain Layout
 
-$X 
-\backslash
-sim N(0,1)$
+$X ~ N(0,1)$
 \end_layout
 
 \end_inset
@@ -580,9 +578,7 @@ status open
 
 \begin_layout Plain Layout
 
-$X 
-\backslash
-sim Bin(n,p)$
+$X ~ Bin(n,p)$
 \end_layout
 
 \end_inset
@@ -754,20 +750,7 @@ sigma})$
 \end_layout
 
 \begin_layout Standard
-Si X
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-sim$
-\end_layout
-
-\end_inset
-
-N(0,1)
+Si X~N(0,1)
 \end_layout
 
 \begin_layout Standard
@@ -823,20 +806,7 @@ frac{-t^{2}}{2}} dt $
 \end_layout
 
 \begin_layout Standard
-X
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-sim$
-\end_layout
-
-\end_inset
-
-N(
+X~N(
 \begin_inset ERT
 status open
 
@@ -916,10 +886,6 @@ Phi(-r)$
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

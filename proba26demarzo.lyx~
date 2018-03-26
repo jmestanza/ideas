@@ -119,7 +119,7 @@ status open
 
 $
 \backslash
-sim$
+approx$
 \end_layout
 
 \end_inset
@@ -130,9 +130,9 @@ status open
 
 \begin_layout Plain Layout
 
-($
+$
 \backslash
-lambda$)
+lambda$
 \end_layout
 
 \end_inset
@@ -546,7 +546,7 @@ status open
 
 $X 
 \backslash
-sim N(0,1)$
+approx N(0,1)$
 \end_layout
 
 \end_inset
@@ -582,7 +582,7 @@ status open
 
 $X 
 \backslash
-sim Bin(n,p)$
+approx Bin(n,p)$
 \end_layout
 
 \end_inset
@@ -598,7 +598,7 @@ status open
 
 $X = 
 \backslash
-sum_{i=1}^{
+sum{i=1}^{
 \backslash
 infty}Xi$
 \end_layout
@@ -754,20 +754,7 @@ sigma})$
 \end_layout
 
 \begin_layout Standard
-Si X
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-sim$
-\end_layout
-
-\end_inset
-
-N(0,1)
+Si X~N(0,1)
 \end_layout
 
 \begin_layout Standard
@@ -819,107 +806,6 @@ frac{-t^{2}}{2}} dt $
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-X
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-sim$
-\end_layout
-
-\end_inset
-
-N(
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-mu,
-\backslash
-sigma$
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-p(
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-mu - r 
-\backslash
-sigma < X < 
-\backslash
-mu + r 
-\backslash
-sigma$
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-pr=
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$F_{x}(
-\backslash
-mu + r 
-\backslash
-sigma)-F_{x}(
-\backslash
-mu-r
-\backslash
-sigma)$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-=
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-Phi(r) -
-\backslash
-Phi(-r)$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
