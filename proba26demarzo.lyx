@@ -1,0 +1,813 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+26/03 Probabilidad y Estadistica:
+\end_layout
+
+\begin_layout Subsection*
+Ejercicio 11 - Guia 4:
+\end_layout
+
+\begin_layout Standard
+X: # de elementos que fallan en [0,T]
+\end_layout
+
+\begin_layout Standard
+n 
+\begin_inset Quotes eld
+\end_inset
+
+es grande
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A: un elemento falla
+\end_layout
+
+\begin_layout Standard
+p = P(A) no se conoce pero 
+\begin_inset Quotes eld
+\end_inset
+
+es pequeño
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+approx$
+\end_layout
+
+\end_inset
+
+Poiss
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ (1)
+\end_layout
+
+\begin_layout Standard
+1-P(X=0) = 0.999
+\end_layout
+
+\begin_layout Standard
+Por las premisas previamente hechas(n grande, p(A) pequeño), se puede asumir
+ que tiene distribucion de Poisson
+\end_layout
+
+\begin_layout Standard
+P(X=0) = 0.001
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e^{-
+\backslash
+lambda}$
+\end_layout
+
+\end_inset
+
+=0.001
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda=ln(1000)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(1-p)^{n}=0.001$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El promedio de elementos que fallan es el valor esperado! entonces podemos
+ averiguar lambda sabiendo el valor esperado por la ecuación (1).
+\end_layout
+
+\begin_layout Subsection*
+Variable aleatoria continua con distribución normal:
+\end_layout
+
+\begin_layout Standard
+funcion de densidad de probabilidad normal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f(x) = (
+\backslash
+frac{1}{
+\backslash
+sqrt{2 
+\backslash
+pi} 
+\backslash
+sigma)})e^{-
+\backslash
+frac{ (
+\backslash
+frac{x-
+\backslash
+mu}{
+\backslash
+sigma})^2 }{2}}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x, 
+\backslash
+mu$
+\end_layout
+
+\end_inset
+
+pertenece a R
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+pertenece a R>0
+\end_layout
+
+\begin_layout Standard
+f(x)>0 para todo x
+\end_layout
+
+\begin_layout Standard
+integral -inf a inf fx dx= 1;
+\end_layout
+
+\begin_layout Standard
+f(x)<= f(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu$
+\end_layout
+
+\end_inset
+
+) = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$frac{1}{ sqrt{2 
+\backslash
+pi} 
+\backslash
+sigma}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+f(x) -> 0 cuando |x|->inf
+\end_layout
+
+\begin_layout Standard
+f'(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu$
+\end_layout
+
+\end_inset
+
+)=0 ; f'' (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu - 
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+) = f''(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu + 
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+) = 0 ; f(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu + d$
+\end_layout
+
+\end_inset
+
+) = f(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu-d$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/joa-m/Desktop/descarga.jpg
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+int_{
+\backslash
+mu-3
+\backslash
+sigma}^{
+\backslash
+mu + 3
+\backslash
+sigma}f(x)dx 
+\backslash
+approx 0.99  $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu = E(X) = med(X) = modo(X)$
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma^{2}=V(X); 
+\backslash
+sigma(X) = 
+\backslash
+sigma$
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu_{4}=3 
+\backslash
+sigma^{4} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+el valor esperado de la cuarta potencia de los desvios
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu_{3}=0$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u=0$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma =1$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X 
+\backslash
+approx N(0,1)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X tiene distribucion normal estandar
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu_{4} = E ((X-E(X))^{4})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X 
+\backslash
+approx Bin(n,p)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X = 
+\backslash
+sum{i=1}^{
+\backslash
+infty}Xi$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Xi = 
+\backslash
+left
+\backslash
+{ 	
+\backslash
+begin{array}{ll} 		1  & 
+\backslash
+mbox{if } p 
+\backslash
+
+\backslash
+ 		0 & 
+\backslash
+mbox{if } 1 -p 	
+\backslash
+end{array} 
+\backslash
+right.$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+p(a<X<b) = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$int_{a}^{b}f_{x}dx = F_{x}(b) - F_{x}(a)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{x}(x)= 
+\backslash
+frac{1}{
+\backslash
+sqrt{2 
+\backslash
+pi} 
+\backslash
+sigma} 
+\backslash
+int_{-
+\backslash
+infty}^{x}e^{-
+\backslash
+frac{(
+\backslash
+frac{t-
+\backslash
+mu}{
+\backslash
+sigma})^2}{2}} dt$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$s= 
+\backslash
+frac{t-
+\backslash
+mu}{
+\backslash
+sigma}; ds = 
+\backslash
+frac{dt}{
+\backslash
+sigma}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{x}= 
+\backslash
+frac{1}{
+\backslash
+sqrt{2 
+\backslash
+pi}} 
+\backslash
+int_{ -
+\backslash
+infty }^{ 
+\backslash
+frac{ x-
+\backslash
+mu }{ 
+\backslash
+sigma}  }e^{-
+\backslash
+frac{s^{2}}{2}} ds = 
+\backslash
+Phi(
+\backslash
+frac{x-
+\backslash
+mu}{
+\backslash
+sigma})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si X~N(0,1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+varphi=
+\backslash
+frac{1}{
+\backslash
+sqrt{2 
+\backslash
+pi}}e^{-
+\backslash
+frac{x^2}{2}}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Phi =
+\backslash
+frac{1}{
+\backslash
+sqrt{2 
+\backslash
+pi}}  
+\backslash
+int_{-
+\backslash
+infty}^{x}  e^{
+\backslash
+frac{-t^{2}}{2}} dt $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

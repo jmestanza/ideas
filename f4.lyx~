@@ -100,11 +100,7 @@ Queremos predecir la intensidad de radiación a una longitud de onda dada
 \begin_layout Standard
 Gustav Kirchhoff teorema probo con termodinamica que para cualquier cuerpo
  en equilibrio termico con la radiacion, la potencia emitida es proporcional
- 
-\end_layout
-
-\begin_layout Standard
-a la emitida
+ a la emitida
 \end_layout
 
 \begin_layout Standard
@@ -196,11 +192,7 @@ $e_{f}=J(f,T)$
 \begin_layout Standard
 Debido a que la absorcion y la emision estan relacionadas con el teorema
  de Kirchoff, se observa que si un cuerpo negro es un absorbente perfecto
- pero
-\end_layout
-
-\begin_layout Standard
-tambien un radiador ideal.
+ pero tambien un radiador ideal.
 \end_layout
 
 \begin_layout Subsection*
@@ -209,11 +201,7 @@ Josef Stefan
 
 \begin_layout Standard
 En 1879 Josef Stefan encontro experimentalmente que la potencia total emitida
- por unidad de area a todas las frecuencias por un cuerpo solido 
-\end_layout
-
-\begin_layout Standard
-a.k.a.
+ por unidad de area a todas las frecuencias por un cuerpo solido a.k.a.
  
 \begin_inset ERT
 status open
@@ -376,11 +364,8 @@ lambda_{max}$
 
 \end_inset
 
- se desplaza hacia longitudes de onda
-\end_layout
-
-\begin_layout Standard
-mas cortas a medida que el cuerpo negro se calienta mas
+ se desplaza hacia longitudes de onda mas cortas a medida que el cuerpo
+ negro se calienta mas
 \end_layout
 
 \begin_layout Subsection*
@@ -463,12 +448,21 @@ $J(f,T) = u(f,T).
 
 \begin_layout Standard
 En 1893 Wein se aventura a proponer la forma de la funcion u(f,T) pero si
- bien hubo un intervalo de longitudes de onda en donde era valido se probo
- que no funcionaba para todas
+ bien hubo un intervalo de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
 \end_layout
 
-\begin_layout Standard
-las longitudes de onda.
+\end_inset
+
+ donde era valido se probo que no funcionaba para todas las longitudes de
+ onda.
 \end_layout
 
 \begin_layout Subsection*
@@ -843,17 +837,55 @@ $1/f^{2}$
 
 .
  El que la energia promedio del oscilador deba volverse extremadamente pequeña
-\end_layout
-
-\begin_layout Standard
-gui o a plank en su investigacion.
+ guio a plank en su investigacion.
  Ahora se esta por ver que dado que <E> no se volviera pequeña a frecuencias
- altas en la teoria clasica de Raileigh-Jeans condujo a la 
+ altas en la teoria clasica de Raileigh-Jeans condujo a la catastrofe del
+ ultravioleta: la prediccion de una densidad de energia espectral infinita
+ a freuencias altas en la region del ultravioleta.
 \end_layout
 
 \begin_layout Standard
-catastrofe del ultravioleta: la prediccion de una densidad de energia espectral
- infinita a freuencias altas en la region del ultravioleta.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(
+\backslash
+lambda,T) = 
+\backslash
+frac{8 
+\backslash
+pi k_{b} T}{
+\backslash
+lambda^{4}} $
+\end_layout
+
+\end_inset
+
+ Catastrofe del UV!
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$J(
+\backslash
+lambda,T) = 
+\backslash
+frac{ c 8 
+\backslash
+pi k_{b} T}{ 4 
+\backslash
+lambda^{4}} $
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -953,13 +985,13 @@ lambda=
 \backslash
 frac{    8 
 \backslash
-pi hc.d
-\backslash
-lambda   }{    
+pi hc  }{    
 \backslash
 lambda^{5}(e^{hc/
 \backslash
-lambda k_{b}T} -1)   } df$
+lambda k_{b}T} -1)   }d
+\backslash
+lambda $
 \end_layout
 
 \end_inset
