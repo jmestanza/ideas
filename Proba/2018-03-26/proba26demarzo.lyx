@@ -420,7 +420,7 @@ mu-d$
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/joa-m/Desktop/descarga.jpg
+	filename resources/descarga.jpg
 	scale 120
 
 \end_inset
@@ -1011,7 +1011,8 @@ Una demostración:
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/joa-m/Desktop/grafico de clase.png
+	filename resources/grafico de clase.png
+	scale 50
 
 \end_inset
 
@@ -1046,7 +1047,211 @@ $
 \backslash
 alpha 
 \backslash
-epsilon$
+epsilon(0,1)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{
+\backslash
+alpha} 
+\backslash
+epsilon R / 
+\backslash
+Phi (Z_{
+\backslash
+alpha})= 
+\backslash
+alpha -> Z_{
+\backslash
+alpha} = 
+\backslash
+Phi^{-1}(
+\backslash
+alpha)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{alpha} :$
+\end_layout
+
+\end_inset
+
+fractil 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ de la v.a.n.
+ estándar
+\end_layout
+
+\begin_layout Subsection*
+Problema 19 guia 4:
+\end_layout
+
+\begin_layout Standard
+C: # capacidad en uf
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C 
+\backslash
+sim N(10,0.1)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename resources/problema19.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(C<9,8) = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{c}(9.8) =
+\backslash
+Phi(
+\backslash
+frac{9.8-10}{0.1})= 
+\backslash
+Phi(-2)= 1-
+\backslash
+Phi(2) 
+\backslash
+approx 1-0.9772 = 0.00228$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+para el b es dado el alpha tenemos que hallar el z
+\end_layout
+
+\begin_layout Standard
+p(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C<C_{0})= F_{c}(C_{0})= 
+\backslash
+Phi(
+\backslash
+frac{C_{0}-10}{0.1})=0.99$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{C_{0}-10}{0.1}=Z_{0.99} = 2.3263$
+\end_layout
+
+\end_inset
+
+ esto lo busco en la tabla_normal de campus(Importante: TENER COPIA DE LA
+ TABLA!!! algunas calculadoras no te tiran la tabla)
+\end_layout
+
+\begin_layout Standard
+-> 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_{0}=10.23$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename resources/b.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Propiedad de los fractiles: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{
+\backslash
+alpha}=Z_{1-
+\backslash
+alpha}$
 \end_layout
 
 \end_inset

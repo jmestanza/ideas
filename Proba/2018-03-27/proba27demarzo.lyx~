@@ -1,0 +1,1036 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Probabilidad clase 27/03
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sim$
+\end_layout
+
+\end_inset
+
+N(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu,
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu 
+\backslash
+epsilon R, 
+\backslash
+sigma 
+\backslash
+epsilon R^{+}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma(X)=
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+modo: variable para la cual es maxima la densidad de probabilidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_{x}=
+\backslash
+frac{1}{
+\backslash
+sqrt{2 
+\backslash
+pi}
+\backslash
+sigma} e^{-
+\backslash
+frac{  (
+\backslash
+frac{x-
+\backslash
+mu}{
+\backslash
+sigma})^{2} }{2}}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x 
+\backslash
+epsilon R $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename resources/normal.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La altura máxima de la campana es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$ 
+\backslash
+frac{ 1 }{ 
+\backslash
+sqrt{ 2 
+\backslash
+pi} 
+\backslash
+sigma }$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(a<X<b)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+int_{a}^{b}f_{x}dx= F_{x}(b)-F_{x}(a)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z=
+\backslash
+frac{X-
+\backslash
+mu}{
+\backslash
+sigma} $
+\end_layout
+
+\end_inset
+
+ Estandarización de X.
+\end_layout
+
+\begin_layout Standard
+E(Z)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{E(X)-
+\backslash
+mu}{
+\backslash
+sigma}= 0$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(Z)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V( 
+\backslash
+frac{X}{
+\backslash
+sigma} - 
+\backslash
+frac{
+\backslash
+mu}{
+\backslash
+sigma} ) = V(
+\backslash
+frac{X}{
+\backslash
+sigma})= 
+\backslash
+frac{1}{ 
+\backslash
+sigma^{2} } V(X) = 1 $
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename resources/Cumulative_distribution_function_for_normal_distribution,_mean_0_and_sd_1.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{x}=
+\backslash
+Phi( 
+\backslash
+frac{x-
+\backslash
+mu}{sigma})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+fractil
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Phi(-Z)=1-
+\backslash
+Phi(Z)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Phi^{-1}(
+\backslash
+alpha)=Z_{
+\backslash
+alpha}; Z_{
+\backslash
+alpha}= -Z_{1-
+\backslash
+alpha}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha = 0.25$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{0.25}=q_{1}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{0.5}=0$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{0.75}=q_{3}=-q_{1}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Z_{0.25}=-Z_{0.75}= -0.6745$
+\end_layout
+
+\end_inset
+
+ (Tabla)
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sim$
+\end_layout
+
+\end_inset
+
+N(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu,
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_{1}= 
+\backslash
+mu - 0.6745 
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_{3}= 
+\backslash
+mu + 0.6745 
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$iqr= q_{3}-q_{1} = 1.349 
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename resources/boxplot.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L1 = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu -0.6745
+\backslash
+sigma - 1.5x1.349 
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+=Q1 - 1.5xIQR
+\end_layout
+
+\begin_layout Standard
+L2=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+mu + 0.6745
+\backslash
+sigma + 1.5x1.349 
+\backslash
+sigma= 
+\backslash
+mu + 2.698 
+\backslash
+sigma $
+\end_layout
+
+\end_inset
+
+=Q3 + 1.5xIQR
+\end_layout
+
+\begin_layout Standard
+A: outlier en la distribucion normal
+\end_layout
+
+\begin_layout Standard
+P(A)=P(X<L1)+P(X>L2)= 2P(X<L1) = 2
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{x}$
+\end_layout
+
+\end_inset
+
+(L1)=
+\end_layout
+
+\begin_layout Standard
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2 
+\backslash
+Phi(
+\backslash
+frac{ 
+\backslash
+mu -2.698 
+\backslash
+sigma - 
+\backslash
+mu }{
+\backslash
+sigma})= 2 
+\backslash
+Phi(-2.698) = 2(1- 
+\backslash
+Phi (2.698)) $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+approx 2(1-0.9965)= 0.007$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ejercicio 22 de la guía 4:
+\end_layout
+
+\begin_layout Standard
+D: diametro de remaches en mm
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$D 
+\backslash
+sim N(
+\backslash
+mu,
+\backslash
+sigma)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(D>2.1)=0.0281 = 1 -
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{D}(2.1)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(D<1.5)=0.1379 = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{D}(1.5)$
+\end_layout
+
+\end_inset
+
+ F nota la función distribución
+\end_layout
+
+\begin_layout Standard
+La idea de este ejercicio es que si tengo dos puntos de la curva puedo tener
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color red
+Aca van los graficos de tomi lml UwU
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/joa-m/Desktop/grafico tomi.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{D}(2.1)=0.9719 = 
+\backslash
+Phi(
+\backslash
+frac{2.1-
+\backslash
+mu}{
+\backslash
+sigma})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{D}(1.5)= 0.1379 = 
+\backslash
+Phi(
+\backslash
+frac{1.5-
+\backslash
+mu}{
+\backslash
+sigma})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{2.1-
+\backslash
+mu}{
+\backslash
+sigma}=Z_{0.9719} = 1.91$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1.5- 
+\backslash
+mu }{
+\backslash
+sigma }=Z_{0.1379}=-Z_{0.8671}=-1.09 $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recomienda hacer el 18
+\end_layout
+
+\begin_layout Standard
+Problema 30
+\end_layout
+
+\begin_layout Standard
+Un empleado va en subte el 70% de las veces y en colectivo el 30% restante.
+ El tiempo que tarda cuando va en subte des una varibale aleatoria normal
+ con media 30 min.
+ y dispersión 5 min, mientras que el tiempoque tarda cunaod va en colectivo
+ es una variable aleatoria normal con media 40 min y dispersion 8 min.
+\end_layout
+
+\begin_layout Standard
+a) Si un día tarda en llegar al trabajo mas de 35 minutos, ¿cual es la probabili
+dad de que haya viajado en subte?
+\end_layout
+
+\begin_layout Standard
+b) ¿Cual es la probabilidad de que en almenos dos de 10 dias consecutivos
+ tarde mas de 35 minutos en llegar al trabajo? Indique que suposicion permite
+ el calculo de esta probabilidad
+\end_layout
+
+\begin_layout Standard
+Rta a)
+\end_layout
+
+\begin_layout Standard
+S: viaja en subte
+\end_layout
+
+\begin_layout Standard
+C: viaja en colectivo
+\end_layout
+
+\begin_layout Standard
+T : tiempo de viaje en min
+\end_layout
+
+\begin_layout Standard
+A: T> 35
+\end_layout
+
+\begin_layout Standard
+P(S)=0.7 
+\end_layout
+
+\begin_layout Standard
+P(C)=0.30
+\end_layout
+
+\begin_layout Standard
+P(A) = P(A/S) P(S) + P(A/C) .
+ P(C)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/joa-m/Desktop/eae0d5c7-7614-4a7b-95d4-d55376202526.jpg
+	scale 130
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P(A/C) = 1 - F_{T/s}(35) = 1- 
+\backslash
+Phi(
+\backslash
+frac{35-30}{5}) = 1 - 
+\backslash
+Phi(1) 
+\backslash
+approx 1.1587$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{T}(t)=P(T<t) = 0.7 P(T < t/s )+ 0.3 P(T < t/c)=$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.7 
+\backslash
+Phi(
+\backslash
+frac{t-30}{5}) + 0.3 
+\backslash
+Phi(
+\backslash
+frac{t-40}{8})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+T
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sim$
+\end_layout
+
+\end_inset
+
+(40,8)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_{T}^{'} = f_{T}(t) = 0.7 f_{T/S} + 0.3 f_{T/C}(t)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+funcion para octave: normpdf
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
