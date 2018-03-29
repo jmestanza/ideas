@@ -1,0 +1,513 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Formulas F4:
+\end_layout
+
+\begin_layout Subsection*
+Teorema de Gustav Kirchhoff:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{f} = J(f,T).
+ A_{f}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{f}=$
+\end_layout
+
+\end_inset
+
+ pot emitida por unidad de area y por unidad de frecuencia por un obj particular
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A_{f}=$
+\end_layout
+
+\end_inset
+
+fraccion de la potencia incidente absorbida por unidad de area y por unidad
+ de frecuencia del obj caliente
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$J(f,T)=$
+\end_layout
+
+\end_inset
+
+funcion universal (para todos los cuerpos) que solo depende de f y de T
+ la temperatura absoluta del cuerpo
+\end_layout
+
+\begin_layout Standard
+Se define como un objeto que absorbe toda la radiacion electromagnetica
+ que incide sobre el (por eso parece negro)
+\end_layout
+
+\begin_layout Standard
+Af = 1
+\end_layout
+
+\begin_layout Subsection*
+Stefan
+\end_layout
+
+\begin_layout Standard
+Para un cuerpo negro:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{total}=
+\backslash
+int_{0}^{
+\backslash
+infty}efdf =
+\backslash
+sigma.T^4$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un cuerpo que no es un radiador ideal satisface la misma ley general pero
+ con un coeficiente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$a$
+\end_layout
+
+\end_inset
+
+ < 1 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$e_{total} = a.
+\backslash
+sigma.T^4$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ley de desplazamiento de Wein:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda_{max}.T = 2.898
+\backslash
+e{-3} m.K$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Densidad de energia espectral o energia por unidad de frecuencia de la radiacion
+ dentro de la cavidad de un cuerpo negro:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$J(f,T) = u(f,T).
+ c/4$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ley de Planck:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) = 
+\backslash
+frac{8
+\backslash
+pi hf^{3}}{c^3} .
+ (
+\backslash
+frac{1}{e^{hf/k_{b}T}-1})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$h = 6.626
+\backslash
+e{-34} J.s$
+\end_layout
+
+\end_inset
+
+ cte de Planck
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k_{b} = 1.380 
+\backslash
+e{-23} J/K$
+\end_layout
+
+\end_inset
+
+ cte de Boltzman
+\end_layout
+
+\begin_layout Subsection*
+Ley de Planck: caso particular: Ley exponencial de Wein (valido a izq de
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda_{max}$
+\end_layout
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+A altas frecuencias cuando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$hf/k_{b}T >> 1$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(
+\backslash
+frac{1}{e^{hf/k_{b}T}-1})
+\backslash
+approx e^{-hf/k_{b}T} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo que
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) 
+\backslash
+approx 
+\backslash
+frac{8
+\backslash
+pi hf^{3}}{c^3} .
+ (e^{-hf/k_{b}T})$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+y se recupera la ley exponencial de Wein
+\end_layout
+
+\begin_layout Subsection*
+Ley de Planck: caso particular: Ley exponencial de Rayleigh-Jeans (valido
+ en un rango alejado ubicado a la der de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda_{max}$
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+A bajas frecuencias cuando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$hf/k_{b}T << 1$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(
+\backslash
+frac{1}{e^{hf/k_{b}T}-1})
+\backslash
+approx 
+\backslash
+frac{k_{b}T}{hf} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sucede que
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$u(f,T) 
+\backslash
+approx 
+\backslash
+frac{8
+\backslash
+pi hf^{3}}{c^3} .
+ (
+\backslash
+frac{k_{b}T}{hf}) = 
+\backslash
+frac{8
+\backslash
+pi f^{2}}{c^3} $
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A esta expresión se le asocia el evento histórico denominado como Catástrofe
+ del UV.
+\end_layout
+
+\begin_layout Standard
+nota: utilizar las siguiente expresion para llegar a la de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$J(f,T) = J(
+\backslash
+lambda,T) (
+\backslash
+frac{c}{f^{2}})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
