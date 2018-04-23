@@ -392,48 +392,10 @@ no ocurre lo mismo con la varianza
 
 \begin_layout Standard
 V(X+Y)=
-\begin_inset Formula $E((X+Y)^{2})-(E(X+Y)^{2}))=E(X^{2})+E(Y^{2})+2E(X,Y)-(E(X))^{2}-((E(Y))^{2}-2(E(X)E(Y))$
+\begin_inset Formula $E((X+Y)^{2})-(E(X+Y)^{2}))=E(X^{2})+E(Y^{2})+2$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $V(X+Y)=V(X)+V(Y)+2(E(XY)-E(X)E(Y))$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $E(XY)=\sum_{Rx}\sum_{Ry}x_{i}y_{j}p_{xy}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{x}(x_{i})y_{j}p_{y}(y_{j})=E(X)E(Y)$
-\end_inset
-
- Esto es solo si X,Y son independientes
-\end_layout
-
-\begin_layout Standard
-Si X e Y son v.a.discretas independientes
-\end_layout
-
-\begin_layout Standard
-E(XY)=E(X)E(Y)
-\end_layout
-
-\begin_layout Standard
-y así cov(X,Y)=0
-\end_layout
-
-\begin_layout Standard
-y entonces V(X+Y)=V(X)+V(Y)
-\end_layout
-
-\begin_layout Standard
-OJO: cov(X,Y)= 0 no implica X,Y indep
-\end_layout
-
-\begin_layout Standard
-Si: Cov(X,Y) != 0 entonces X,Yno son independientes
 \end_layout
 
 \end_body

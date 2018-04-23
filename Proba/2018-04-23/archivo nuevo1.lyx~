@@ -216,7 +216,7 @@ sum_{x_{i}}^{}p_{xy}(x_{i},y_{j})$
 \end_layout
 
 \begin_layout Standard
-distribuciones marginales
+A esto se le llama distribuciones marginales
 \end_layout
 
 \begin_layout Standard
@@ -252,7 +252,7 @@ frac{P_{xy}(x_{i},y_{j})}{P_{y}(y_{j})}$
 \end_layout
 
 \begin_layout Standard
-distribuciones condicionales
+A esto se le llama distribuciones condicionales
 \end_layout
 
 \begin_layout Standard
@@ -315,6 +315,125 @@ epsilon R_{xy}$
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
+Ejercicio 20:
+\end_layout
+
+\begin_layout Standard
+P(X=Y)=
+\begin_inset Formula $\sum_{x_{i}=y_{j}}p_{xy}(x_{i},x_{j})=\sum_{xi=yj}p_{x}(x_{i}).p_{y}(y_{j})=0.05x2+0.009+0.0135+0.006=0.1+0.015+0.0135=0.1285$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la funcion de probabilidad conjunta es el producto de las marginales ya
+ que son independientes
+\end_layout
+
+\begin_layout Standard
+P(X+Y)=
+\begin_inset Formula $\sum_{x_{i}+y_{j}\leq3}p_{x}(x_{i})p_{y}(y_{j})=0.03+0.07+0.1+0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+c) P(X>Y)
+\end_layout
+
+\begin_layout Standard
+d) P(Y=2X)
+\end_layout
+
+\begin_layout Standard
+e) P(Y=4/Y>=2)
+\end_layout
+
+\begin_layout Standard
+f) P(X+Y>=3)
+\end_layout
+
+\begin_layout Standard
+Valor esperado
+\end_layout
+
+\begin_layout Standard
+E(G(X,Y)) = 
+\begin_inset Formula $\sum_{Rx}\sum_{Ry}G(x_{i},y_{j})p_{x,y}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{xy}(x_{i},y_{j})=\sum_{Rx}x_{i}\sum_{Ry}p_{xy}(x_{i},y_{j})=\sum_{Rx}x_{i}p_{x}(x_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $\sum_{Ry}p_{xy}(x_{i},y_{j})=p_{x}(x_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X+Y)=
+\begin_inset Formula $\sum_{Rx}\sum_{Ry}(x_{i}+y_{j})p_{x,y}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{xy}(x_{i},y_{j})+\sum_{Rx}\sum_{Ry}y_{j}p_{xy}(x_{i},y_{j})=E(X)+E(Y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+no ocurre lo mismo con la varianza
+\end_layout
+
+\begin_layout Standard
+V(X+Y)=
+\begin_inset Formula $E((X+Y)^{2})-(E(X+Y)^{2}))=E(X^{2})+E(Y^{2})+2E(X,Y)-(E(X))^{2}-((E(Y))^{2}-2(E(X)E(Y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(X+Y)=V(X)+V(Y)+2(E(XY)-E(X)E(Y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(XY)=\sum_{Rx}\sum_{Ry}x_{i}y_{j}p_{xy}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{x}(x_{i})y_{j}p_{y}(y_{j})=E(X)E(Y)$
+\end_inset
+
+ Esto es solo si X,Y son independientes
+\end_layout
+
+\begin_layout Standard
+Si X e Y son v.a.discretas independientes
+\end_layout
+
+\begin_layout Standard
+E(XY)=E(X)E(Y)
+\end_layout
+
+\begin_layout Standard
+y así cov(X,Y)=0
+\end_layout
+
+\begin_layout Standard
+y entonces V(X+Y)=V(X)+V(Y)
+\end_layout
+
+\begin_layout Standard
+OJO: cov(X,Y)= 0 no implica X,Y indep
+\end_layout
+
+\begin_layout Standard
+Si: Cov(X,Y) != 0entonces X,Yno son independientes
 \end_layout
 
 \end_body
