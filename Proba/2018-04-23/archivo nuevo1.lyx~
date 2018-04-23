@@ -169,81 +169,152 @@ geq 0 $
 \end_layout
 
 \begin_layout Standard
-Se tira un dado dos veces y se anota el resultado X1 del primer dado y X2
- el resultado del segundo.
+A partir de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p_{x}(x_{i})= 
+\backslash
+sum_{y_{j}}^{}p_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p_{y}(y_{j})= 
+\backslash
+sum_{x_{i}}^{}p_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+distribuciones marginales
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{Y/X}(y_{j}/x_{i}) = 
+\backslash
+frac{P_{xy}(x_{i},y_{j})}{P_{x}(x_{i})}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{X/Y}(x_{i}/y_{j}) = 
+\backslash
+frac{P_{xy}(x_{i},y_{j})}{P_{y}(y_{j})}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+distribuciones condicionales
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P(G(X,Y)=C)= 
+\backslash
+sum_{(x_{i},y_{j})/G(xi,yj)=C }^{} 
+\backslash
+sum{}^{}p_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si X e Y son v.a.
+ discretas independientes 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Leftrightarrow$
+\end_layout
+
+\end_inset
+
  
-\end_layout
-
-\begin_layout Standard
-Sedefinen dos variables aleatorias;
-\end_layout
-
-\begin_layout Standard
-X=X1 e Y = |X1-X2|
-\end_layout
-
-\begin_layout Standard
-El recorrido de x
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$R_{x}={1,2,3,4,5,6}$
+$p_{xy}= p_{x}(x_{i})p_{y}(y_{j})$
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-El recorrido de y
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$R_{y}={1,2,3,4,5,6}$
+$
+\backslash
+forall (x_{i},y_{i})
+\backslash
+epsilon R_{xy}$
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-(X1,X2) -> (X,Y)
-\end_layout
-
-\begin_layout Standard
-(1,1) -> (1,0)
-\end_layout
-
-\begin_layout Standard
-(3,1) -> (3,2)
-\end_layout
-
-\begin_layout Standard
-...
-\end_layout
-
-\begin_layout Standard
-(1,2) -> (1,1)
-\end_layout
-
-\begin_layout Standard
-(1,6) -> (1,5)
-\end_layout
-
-\begin_layout Standard
-
+ 
 \end_layout
 
 \end_body
