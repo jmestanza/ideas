@@ -27,6 +27,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing other 1.5
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -216,7 +217,9 @@ sum_{x_{i}}^{}p_{xy}(x_{i},y_{j})$
 \end_layout
 
 \begin_layout Standard
-A esto se le llama distribuciones marginales
+A esto se le llama 
+\series bold
+distribuciones marginales
 \end_layout
 
 \begin_layout Standard
@@ -252,7 +255,9 @@ frac{P_{xy}(x_{i},y_{j})}{P_{y}(y_{j})}$
 \end_layout
 
 \begin_layout Standard
-A esto se le llama distribuciones condicionales
+A esto se le llama 
+\series bold
+distribuciones condicionales
 \end_layout
 
 \begin_layout Standard
@@ -318,6 +323,8 @@ epsilon R_{xy}$
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Ejercicio 20:
 \end_layout
 
@@ -359,7 +366,9 @@ f) P(X+Y>=3)
 \end_layout
 
 \begin_layout Standard
-Valor esperado
+
+\series bold
+Valor esperado, Varianza
 \end_layout
 
 \begin_layout Standard
@@ -429,11 +438,21 @@ y entonces V(X+Y)=V(X)+V(Y)
 \end_layout
 
 \begin_layout Standard
-OJO: cov(X,Y)= 0 no implica X,Y indep
+Cov=covarianza
 \end_layout
 
 \begin_layout Standard
-Si: Cov(X,Y) != 0entonces X,Yno son independientes
+
+\series bold
+\bar under
+OJO:
+\series default
+\bar default
+ cov(X,Y)= 0 no implica X,Y indep
+\end_layout
+
+\begin_layout Standard
+Si: cov(X,Y) != 0 entonces X,Y no son independientes
 \end_layout
 
 \end_body
