@@ -393,6 +393,257 @@ P(Y>X) =
 \end_layout
 
 \begin_layout Standard
+Veamos otro ejemplo:
+\end_layout
+
+\begin_layout Standard
+f
+\begin_inset Formula $_{XY}(x,y)=\begin{cases}
+3x & 0\leq y\leq x\leq1\end{cases}$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+A estas dos a continuación se las llama 
+\series bold
+funciones de densidad marginales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{X}(x)=\intop_{-\infty}^{\infty}f_{XY}(x,y)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y}(x)=\intop_{-\infty}^{\infty}f_{XY}(x,y)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{x}(x)=\begin{cases}
+\intop_{0}^{x}3xdy=3x^{2} & x\epsilon(0,1)\end{cases}$
+\end_inset
+
+sino es 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y}(x)=\begin{cases}
+\intop_{y}^{1}3xdx=\frac{3}{2}(1-y^{2}) & y\epsilon(0,1)\end{cases}$
+\end_inset
+
+sino es 0
+\end_layout
+
+\begin_layout Standard
+Def: X e Y v.a.c.
+ son indep si 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{XY}(x,y)=f_{X}(x)f_{Y}(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A estas se las llama 
+\series bold
+funciones de densidad condicionales(si las integro me da 1, no es casualidad
+ que se llamen 
+\begin_inset Quotes eld
+\end_inset
+
+de densidad
+\begin_inset Quotes erd
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y/X}(y/x)=\frac{f_{XY}(x,y)}{f_{X}(x)}$
+\end_inset
+
+; 
+\begin_inset Formula $f_{x}(x)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{X/Y}(x/y)=\frac{f_{XY}(x,y)}{f_{Y}(y)}$
+\end_inset
+
+; 
+\begin_inset Formula $f_{y}(y)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el ejemplo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y/X}(y/x)=\{\frac{3x}{3x^{2}}=\frac{1}{x}$
+\end_inset
+
+con 
+\begin_inset Formula $0\leq y\leq x\leq1$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y/X}(y/x)=\{\frac{3x}{\frac{3}{2}(1-y^{2})}=\frac{x}{\frac{1}{2}(1-y^{2})}$
+\end_inset
+
+con 
+\begin_inset Formula $0\leq y\leq x<1$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+P(X>0.75/Y=0.5) paco dice que nos queda algo del estilo 0 sobre 0
+\end_layout
+
+\begin_layout Standard
+la parte del denominador es entendible ya que Y es una v.a.c.
+ y la probabilidad de que tome un valor es 0
+\end_layout
+
+\begin_layout Standard
+P(X>0.75/Y=0.5)=
+\begin_inset Formula $\intop_{0.75}^{1}\frac{2x}{1-(0.5)^{2}}dx=\frac{7}{12}$
+\end_inset
+
+ aca usó la f
+\begin_inset Formula $_{X/Y}(x,y)$
+\end_inset
+
+ wtf...
+\end_layout
+
+\begin_layout Standard
+E(G(X,Y))=
+\begin_inset Formula $\int\int_{\mathbb{R}^{2}}G(x,y)f_{XY}(x,y)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset Formula $\intop_{0}^{1}[\int_{0}^{x}x.3xdy]dx=\int_{0}^{1}3x^{2}xdx=\frac{3}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Y)=
+\begin_inset Formula $\int_{0}^{1}[\int_{0}^{x}y3xdy]dx=\int_{0}^{1}\frac{3}{2}x^{3}dx=\frac{3}{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+esto es el centro de masa donde f
+\begin_inset Formula $_{XY}$
+\end_inset
+
+ es la función de densidad de masa! 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(XY)=\int_{0}^{1}[\int_{0}^{x}xy3xdy]dx=\int_{0}^{1}3x^{2}\frac{x^{2}}{2}dx=\frac{3}{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recuerdo : cov(X,Y)=E(XY)-E(X)E(Y)
+\end_layout
+
+\begin_layout Standard
+cov(X,Y)=
+\begin_inset Formula $\frac{3}{10}-\frac{9}{32}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{3}{160}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho(X,Y)=\frac{\frac{3}{160}}{\sigma_{X}\sigma_{Y}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X
+\begin_inset Formula $^{2}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{3}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Y
+\begin_inset Formula $^{2}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(X)=
+\begin_inset Formula $\frac{3}{5}-\frac{9}{16}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(Y)=
+\begin_inset Formula $\frac{1}{5}-\frac{9}{64}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y con esto obtengo los correspondientes 
+\begin_inset Formula $\sigma_{x}\sigma_{y}$
+\end_inset
+
 
 \end_layout
 

@@ -336,7 +336,86 @@ A)=
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+Ejemplo:
+\end_layout
+
+\begin_layout Standard
+si f(x,y)=3x(1-xy) (x,y)
+\begin_inset Formula $\epsilon$
+\end_inset
+
+[0,1]x[0,1]
+\end_layout
+
+\begin_layout Standard
+se puede verificar que 
+\begin_inset Formula $\int\int_{A}f(x,y)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(X>
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+,Y<
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+) = 
+\begin_inset Formula $\intop_{0}^{1}dx\intop_{0}^{0.5}dx(3x-3x^{2}y)$
+\end_inset
+
+ = 
+\begin_inset Formula $\frac{29}{64}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+vamos con uno más complicado
+\end_layout
+
+\begin_layout Standard
+si quiero la mitad triangular superior del recinto (que es un cuadrado)
+\end_layout
+
+\begin_layout Standard
+P(Y>X) = 
+\begin_inset Formula $\intop_{0}^{1}dx\intop_{x}^{1}dy(3x-3x^{2}y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veamos otro ejemplo:
+\end_layout
+
+\begin_layout Standard
+f
+\begin_inset Formula $_{XY}(x,y)=\begin{cases}
+3x & 0\leq y\leq x\leq1\end{cases}$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{X}(x)=\intop_{}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y}(x)=$
+\end_inset
+
 
 \end_layout
 
