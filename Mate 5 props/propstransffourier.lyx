@@ -1,0 +1,261 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+Propiedades de la transformada de fourier:
+\end_layout
+
+\begin_layout Standard
+Linealidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ax_{1}(t)+bx_{2}(t)\rightarrow^{F}aX_{1}(f)+bX_{2}(f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dualidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x(-t)\rightarrow^{F}X(-f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Traslación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x(t\boldsymbol{-}t_{0})\rightarrow^{F}X(f)e^{\boldsymbol{-}i2\pi f_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x(t)e^{\boldsymbol{-}i2\pi f_{0}}\rightarrow^{F}X(f-f_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escalamiento:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x(at)\rightarrow\frac{1}{|a|}X(\frac{f}{a})$
+\end_inset
+
+ con 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Derivada:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{(n)}(t)\rightarrow(i2\pi f)^{n}X(f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Formula $t^{n}x(t)\rightarrow\frac{X^{(n)}(f)}{(-i2\pi)^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta última sale con al definición y derivando X(f) (por consecuente la
+ integral) y aceptando que 
+\begin_inset Formula $\left[\frac{d}{df}\left(\int\right)=\int\left(\frac{d}{df}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integral:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y(t)=\int_{-\infty}^{t}x(\tau)d\tau\rightarrow\frac{X(f)}{i2\pi f}+\frac{X(0)}{2}\delta(f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Algunas transformadas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi(\frac{t}{\tau})\longleftrightarrow\tau sinc(f\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+_
+\begin_inset Formula $\wedge$
+\end_inset
+
+_
+\begin_inset Formula $(\frac{t}{\tau})\longleftrightarrow\tau^{2}sinc^{2}(f\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u(t)\rightarrow\frac{1}{i2\pi f}+\frac{1}{2}\delta(f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+transformadas en 
+\bar under
+sentido generalizado
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta(t)\rightarrow1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1\rightarrow\delta(f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $sign(t)\rightarrow\frac{1}{i\pi f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{-\alpha t}u(t)\rightarrow\frac{1}{\alpha+i2\pi f}$
+\end_inset
+
+ con 
+\begin_inset Formula $\alpha$
+\end_inset
+
+>0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{-\alpha t}\longleftrightarrow\frac{2\alpha}{\alpha^{2}+4\pi^{2}f^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Propiedades random de la carpeta: (a completar dsp)
+\end_layout
+
+\end_body
+\end_document
