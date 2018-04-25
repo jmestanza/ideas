@@ -27,6 +27,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing other 1.5
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -70,103 +71,15 @@
 
 \begin_body
 
-\begin_layout Section*
-Formulas F4:
-\end_layout
-
-\begin_layout Subsection*
-Teorema de Gustav Kirchhoff:
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$e_{f} = J(f,T).
- A_{f}$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$e_{f}=$
-\end_layout
-
-\end_inset
-
- pot emitida por unidad de area y por unidad de frecuencia por un obj particular
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$A_{f}=$
-\end_layout
-
-\end_inset
-
-fraccion de la potencia incidente absorbida por unidad de area y por unidad
- de frecuencia del obj caliente
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$J(f,T)=$
-\end_layout
-
-\end_inset
-
-funcion universal (para todos los cuerpos) que solo depende de f y de T
- la temperatura absoluta del cuerpo
-\end_layout
-
-\begin_layout Standard
-Se define como un objeto que absorbe toda la radiacion electromagnetica
- que incide sobre el (por eso parece negro)
-\end_layout
-
-\begin_layout Standard
-Af = 1
-\end_layout
-
-\begin_layout Subsection*
-Stefan
-\end_layout
-
-\begin_layout Standard
-Para un cuerpo negro:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$e_{total}=
+$(X,Y): S -> R_{x,y} 
 \backslash
-int_{0}^{
-\backslash
-infty}efdf =
-\backslash
-sigma.T^4$
+subset R_{x} x R_{y}$
 \end_layout
 
 \end_inset
@@ -175,19 +88,37 @@ sigma.T^4$
 \end_layout
 
 \begin_layout Standard
-Un cuerpo que no es un radiador ideal satisface la misma ley general pero
- con un coeficiente 
+variable aleatoria 2D
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename dibujo.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si X e Y son v.a.
+ discretas
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$a$
+$P_{xy}(x_{i},y_{j}))=P(X=x_{i},Y=y_{j})$
 \end_layout
 
 \end_inset
 
- < 1 :
+ función de prob.
+ conjunta
 \end_layout
 
 \begin_layout Standard
@@ -196,9 +127,9 @@ status open
 
 \begin_layout Plain Layout
 
-$e_{total} = a.
+$X_{i} 
 \backslash
-sigma.T^4$
+epsilon Rx$
 \end_layout
 
 \end_inset
@@ -206,11 +137,150 @@ sigma.T^4$
 
 \end_layout
 
-\begin_layout Subsection*
-Ley de desplazamiento de Wein:
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Y_{j} 
+\backslash
+epsilon Ry$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{xy}(x,y) 
+\backslash
+geq 0 $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p_{x}(x_{i})= 
+\backslash
+sum_{y_{j}}^{}p_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$p_{y}(y_{j})= 
+\backslash
+sum_{x_{i}}^{}p_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A esto se le llama 
+\series bold
+distribuciones marginales
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{Y/X}(y_{j}/x_{i}) = 
+\backslash
+frac{P_{xy}(x_{i},y_{j})}{P_{x}(x_{i})}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_{X/Y}(x_{i}/y_{j}) = 
+\backslash
+frac{P_{xy}(x_{i},y_{j})}{P_{y}(y_{j})}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A esto se le llama 
+\series bold
+distribuciones condicionales
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P(G(X,Y)=C)= 
+\backslash
+sum_{(x_{i},y_{j})/G(xi,yj)=C }^{} 
+\backslash
+sum{}^{}p_{xy}(x_{i},y_{j})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si X e Y son v.a.
+ discretas independientes 
 \begin_inset ERT
 status open
 
@@ -218,95 +288,22 @@ status open
 
 $
 \backslash
-lambda_{max}.T = 2.898
-\backslash
-e{-3} m.K$
+Leftrightarrow$
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Subsection*
-Densidad de energia espectral o energia por unidad de frecuencia de la radiacion
- dentro de la cavidad de un cuerpo negro:
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$J(f,T) = u(f,T).
- c/4$
+$p_{xy}= p_{x}(x_{i})p_{y}(y_{j})$
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Subsection*
-Ley de Planck:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$u(f,T) = 
-\backslash
-frac{8
-\backslash
-pi hf^{3}}{c^3} .
- (
-\backslash
-frac{1}{e^{hf/k_{b}T}-1})$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$h = 6.626
-\backslash
-e{-34} J.s$
-\end_layout
-
-\end_inset
-
- cte de Planck
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$k_{b} = 1.380 
-\backslash
-e{-23} J/K$
-\end_layout
-
-\end_inset
-
- cte de Boltzman
-\end_layout
-
-\begin_layout Subsection*
-Ley de Planck: caso particular: Ley exponencial de Wein (valido a izq de
  
 \begin_inset ERT
 status open
@@ -315,22 +312,9 @@ status open
 
 $
 \backslash
-lambda_{max}$
-\end_layout
-
-\end_inset
-
-) 
-\end_layout
-
-\begin_layout Standard
-A altas frecuencias cuando 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$hf/k_{b}T >> 1$
+forall (x_{i},y_{i})
+\backslash
+epsilon R_{xy}$
 \end_layout
 
 \end_inset
@@ -339,174 +323,142 @@ $hf/k_{b}T >> 1$
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-$(
-\backslash
-frac{1}{e^{hf/k_{b}T}-1})
-\backslash
-approx e^{-hf/k_{b}T} $
+\series bold
+Ejercicio 20:
 \end_layout
 
+\begin_layout Standard
+P(X=Y)=
+\begin_inset Formula $\sum_{x_{i}=y_{j}}p_{xy}(x_{i},x_{j})=\sum_{xi=yj}p_{x}(x_{i}).p_{y}(y_{j})=0.05x2+0.009+0.0135+0.006=0.1+0.015+0.0135=0.1285$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-por lo que
+la funcion de probabilidad conjunta es el producto de las marginales ya
+ que son independientes
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$u(f,T) 
-\backslash
-approx 
-\backslash
-frac{8
-\backslash
-pi hf^{3}}{c^3} .
- (e^{-hf/k_{b}T})$
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-y se recupera la ley exponencial de Wein
-\end_layout
-
-\begin_layout Subsection*
-Ley de Planck: caso particular: Ley exponencial de Rayleigh-Jeans (valido
- en un rango alejado ubicado a la der de 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-lambda_{max}$
-\end_layout
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-A bajas frecuencias cuando 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$hf/k_{b}T << 1$
-\end_layout
-
+P(X+Y)=
+\begin_inset Formula $\sum_{x_{i}+y_{j}\leq3}p_{x}(x_{i})p_{y}(y_{j})=0.03+0.07+0.1+0.05$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$(
-\backslash
-frac{1}{e^{hf/k_{b}T}-1})
-\backslash
-approx 
-\backslash
-frac{k_{b}T}{hf} $
+c) P(X>Y)
 \end_layout
 
+\begin_layout Standard
+d) P(Y=2X)
+\end_layout
+
+\begin_layout Standard
+e) P(Y=4/Y>=2)
+\end_layout
+
+\begin_layout Standard
+f) P(X+Y>=3)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Valor esperado, Varianza
+\end_layout
+
+\begin_layout Standard
+E(G(X,Y)) = 
+\begin_inset Formula $\sum_{Rx}\sum_{Ry}G(x_{i},y_{j})p_{x,y}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{xy}(x_{i},y_{j})=\sum_{Rx}x_{i}\sum_{Ry}p_{xy}(x_{i},y_{j})=\sum_{Rx}x_{i}p_{x}(x_{i})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-sucede que
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$u(f,T) 
-\backslash
-approx 
-\backslash
-frac{8
-\backslash
-pi hf^{3}}{c^3} .
- (
-\backslash
-frac{k_{b}T}{hf}) = 
-\backslash
-frac{8
-\backslash
-pi f^{2}}{c^3} $
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-A esta expresión se le asocia el evento histórico denominado como Catástrofe
- del UV.
-\end_layout
-
-\begin_layout Standard
-nota: utilizar las siguiente expresion para llegar a la de 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-lambda$
-\end_layout
-
+donde 
+\begin_inset Formula $\sum_{Ry}p_{xy}(x_{i},y_{j})=p_{x}(x_{i})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$J(f,T) = J(
-\backslash
-lambda,T) (
-\backslash
-frac{c}{f^{2}})$
-\end_layout
-
+E(X+Y)=
+\begin_inset Formula $\sum_{Rx}\sum_{Ry}(x_{i}+y_{j})p_{x,y}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{xy}(x_{i},y_{j})+\sum_{Rx}\sum_{Ry}y_{j}p_{xy}(x_{i},y_{j})=E(X)+E(Y)$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+no ocurre lo mismo con la varianza
+\end_layout
+
+\begin_layout Standard
+V(X+Y)=
+\begin_inset Formula $E((X+Y)^{2})-(E(X+Y)^{2}))=E(X^{2})+E(Y^{2})+2E(X,Y)-(E(X))^{2}-((E(Y))^{2}-2(E(X)E(Y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(X+Y)=V(X)+V(Y)+2(E(XY)-E(X)E(Y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(XY)=\sum_{Rx}\sum_{Ry}x_{i}y_{j}p_{xy}(x_{i},y_{j})=\sum_{Rx}\sum_{Ry}x_{i}p_{x}(x_{i})y_{j}p_{y}(y_{j})=E(X)E(Y)$
+\end_inset
+
+ Esto es solo si X,Y son independientes
+\end_layout
+
+\begin_layout Standard
+Si X e Y son v.a.discretas independientes
+\end_layout
+
+\begin_layout Standard
+E(XY)=E(X)E(Y)
+\end_layout
+
+\begin_layout Standard
+y así cov(X,Y)=0
+\end_layout
+
+\begin_layout Standard
+y entonces V(X+Y)=V(X)+V(Y)
+\end_layout
+
+\begin_layout Standard
+Cov=covarianza
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+OJO:
+\series default
+\bar default
+ cov(X,Y)= 0 
+\series bold
+\bar under
+NO
+\series default
+\bar default
+ implica X,Y indep
+\end_layout
+
+\begin_layout Standard
+Si: cov(X,Y) != 0 entonces X,Y no son independientes
 \end_layout
 
 \end_body

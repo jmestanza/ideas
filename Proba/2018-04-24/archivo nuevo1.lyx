@@ -1,0 +1,651 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+E(X+Y)=E(X)+E(Y)
+\end_layout
+
+\begin_layout Standard
+V(X+Y)=V(X)+V(T)+2cov(X,Y)
+\end_layout
+
+\begin_layout Standard
+Donde cov(X,Y)=E(XY)-E(X)E(Y)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Def covarianza:
+\end_layout
+
+\begin_layout Itemize
+cov(X,Y) = E((X-E(X)(Y-E(Y))
+\end_layout
+
+\begin_layout Itemize
+cov(X,Y) = cov(Y,X)
+\end_layout
+
+\begin_layout Itemize
+si Y es una cte 
+\begin_inset Formula $\implies$
+\end_inset
+
+E(Y) (Y-E(Y)) =0
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+cov(X,C)=0
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+cov(X,X)=V(X)
+\end_layout
+
+\begin_layout Itemize
+cov(aX,bY) = (ab)cov(X,Y)
+\end_layout
+
+\begin_layout Itemize
+matriz de covarianza
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{cc}
+V(X) & cov(X,Y)\\
+cov(Y,X) & V(Y)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+si X e Y son indep 
+\begin_inset Formula $\implies$
+\end_inset
+
+cov(X,Y)=0
+\end_layout
+
+\begin_layout Standard
+esto lo deja para que nosotros los probemos:
+\end_layout
+
+\begin_layout Itemize
+cov(X,Y) = E(XY)-E(X)E(Y)
+\end_layout
+
+\begin_layout Standard
+la covarianza tiene algún parecido con el producto interno
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Def: Coeficiente de correlación 
+\bar under
+lineal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho$
+\end_inset
+
+(X,Y)=
+\begin_inset Formula $\frac{cov(X,Y)}{\sigma(X)\sigma(Y)}$
+\end_inset
+
+ (sim con algb.
+ :prod de dos vect div por el producto de los modulos)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\rho$
+\end_inset
+
+(aX,bY)=
+\begin_inset Formula $\frac{(ab)cov(X,Y)}{|a|\sigma(X)|b|\sigma(Y)}$
+\end_inset
+
+=sign(a)sign(b)
+\begin_inset Formula $\rho$
+\end_inset
+
+(X,Y) con a,b != 0
+\end_layout
+
+\begin_layout Itemize
+si X e Y son indep 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\rho$
+\end_inset
+
+(X,Y) = 0
+\end_layout
+
+\begin_layout Itemize
+-1 
+\begin_inset Formula $\leq p(X,Y)\leq$
+\end_inset
+
+1
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En particular los extremos tiene una peculiaridad que le da el carácter
+ lineal:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Si Y= aX+b ,a!= 0, 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\rho$
+\end_inset
+
+(X,Y) = sign(a) (no es difícil de demostrar)
+\end_layout
+
+\begin_layout Itemize
+si |
+\begin_inset Formula $\rho$
+\end_inset
+
+(X,Y)|=1 entonces en la prop anterior vale la vuelta o sea Y= aX+b , a!=0
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+
+\begin_inset Formula $\rho$
+\end_inset
+
+(X,Y) = sign(a)
+\end_layout
+
+\begin_layout Standard
+(X,Y) es una variable aleatoria 2D continua si X e Y lo son
+\end_layout
+
+\begin_layout Standard
+(X,Y): S
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+R
+\begin_inset Formula $_{X,Y}$
+\end_inset
+
+
+\begin_inset Formula $\subset$
+\end_inset
+
+R
+\begin_inset Formula $_{X}x$
+\end_inset
+
+R
+\begin_inset Formula $_{Y}$
+\end_inset
+
+ 
+\begin_inset Formula $\subset$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+f
+\begin_inset Formula $_{X,Y}(x,y)$
+\end_inset
+
+ función densidad de probabilidad conjunta
+\end_layout
+
+\begin_layout Itemize
+f
+\begin_inset Formula $_{XY}(x,y)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\int_{\mathbb{R}^{2}}$
+\end_inset
+
+
+\begin_inset Formula $f_{XY}(x,y)dxdy=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A
+\begin_inset Formula $\subset$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula $^{2}$
+\end_inset
+
+ P((X,Y)
+\begin_inset Formula $\epsilon$
+\end_inset
+
+A)=
+\begin_inset Formula $\int\int_{A}f_{XY}(x,y)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ejemplo:
+\end_layout
+
+\begin_layout Standard
+si f(x,y)=3x(1-xy) (x,y)
+\begin_inset Formula $\epsilon$
+\end_inset
+
+[0,1]x[0,1]
+\end_layout
+
+\begin_layout Standard
+se puede verificar que 
+\begin_inset Formula $\int\int_{A}f(x,y)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(X>
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+,Y<
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+) = 
+\begin_inset Formula $\intop_{0}^{1}dx\intop_{0}^{0.5}dx(3x-3x^{2}y)$
+\end_inset
+
+ = 
+\begin_inset Formula $\frac{29}{64}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+vamos con uno más complicado
+\end_layout
+
+\begin_layout Standard
+si quiero la mitad triangular superior del recinto (que es un cuadrado)
+\end_layout
+
+\begin_layout Standard
+P(Y>X) = 
+\begin_inset Formula $\intop_{0}^{1}dx\intop_{x}^{1}dy(3x-3x^{2}y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veamos otro ejemplo:
+\end_layout
+
+\begin_layout Standard
+f
+\begin_inset Formula $_{XY}(x,y)=\begin{cases}
+3x & 0\leq y\leq x\leq1\end{cases}$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+A estas dos a continuación se las llama 
+\series bold
+funciones de densidad marginales
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{X}(x)=\intop_{-\infty}^{\infty}f_{XY}(x,y)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y}(x)=\intop_{-\infty}^{\infty}f_{XY}(x,y)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{x}(x)=\begin{cases}
+\intop_{0}^{x}3xdy=3x^{2} & x\epsilon(0,1)\end{cases}$
+\end_inset
+
+sino es 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y}(x)=\begin{cases}
+\intop_{y}^{1}3xdx=\frac{3}{2}(1-y^{2}) & y\epsilon(0,1)\end{cases}$
+\end_inset
+
+sino es 0
+\end_layout
+
+\begin_layout Standard
+Def: X e Y v.a.c.
+ son indep si 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{XY}(x,y)=f_{X}(x)f_{Y}(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A estas se las llama 
+\series bold
+funciones de densidad condicionales(si las integro me da 1, no es casualidad
+ que se llamen 
+\begin_inset Quotes eld
+\end_inset
+
+de densidad
+\begin_inset Quotes erd
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y/X}(y/x)=\frac{f_{XY}(x,y)}{f_{X}(x)}$
+\end_inset
+
+; 
+\begin_inset Formula $f_{x}(x)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{X/Y}(x/y)=\frac{f_{XY}(x,y)}{f_{Y}(y)}$
+\end_inset
+
+; 
+\begin_inset Formula $f_{y}(y)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el ejemplo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y/X}(y/x)=\{\frac{3x}{3x^{2}}=\frac{1}{x}$
+\end_inset
+
+con 
+\begin_inset Formula $0\leq y\leq x\leq1$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{Y/X}(y/x)=\{\frac{3x}{\frac{3}{2}(1-y^{2})}=\frac{x}{\frac{1}{2}(1-y^{2})}$
+\end_inset
+
+con 
+\begin_inset Formula $0\leq y\leq x<1$
+\end_inset
+
+ sino es 0
+\end_layout
+
+\begin_layout Standard
+P(X>0.75/Y=0.5) paco dice que nos queda algo del estilo 0 sobre 0
+\end_layout
+
+\begin_layout Standard
+la parte del denominador es entendible ya que Y es una v.a.c.
+ y la probabilidad de que tome un valor es 0
+\end_layout
+
+\begin_layout Standard
+P(X>0.75/Y=0.5)=
+\begin_inset Formula $\intop_{0.75}^{1}\frac{2x}{1-(0.5)^{2}}dx=\frac{7}{12}$
+\end_inset
+
+ aca usó la f
+\begin_inset Formula $_{X/Y}(x,y)$
+\end_inset
+
+ wtf...
+\end_layout
+
+\begin_layout Standard
+E(G(X,Y))=
+\begin_inset Formula $\int\int_{\mathbb{R}^{2}}G(x,y)f_{XY}(x,y)dxdy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset Formula $\intop_{0}^{1}[\int_{0}^{x}x.3xdy]dx=\int_{0}^{1}3x^{2}xdx=\frac{3}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Y)=
+\begin_inset Formula $\int_{0}^{1}[\int_{0}^{x}y3xdy]dx=\int_{0}^{1}\frac{3}{2}x^{3}dx=\frac{3}{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+esto es el centro de masa donde f
+\begin_inset Formula $_{XY}$
+\end_inset
+
+ es la función de densidad de masa! 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(XY)=\int_{0}^{1}[\int_{0}^{x}xy3xdy]dx=\int_{0}^{1}3x^{2}\frac{x^{2}}{2}dx=\frac{3}{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recuerdo : cov(X,Y)=E(XY)-E(X)E(Y)
+\end_layout
+
+\begin_layout Standard
+cov(X,Y)=
+\begin_inset Formula $\frac{3}{10}-\frac{9}{32}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{3}{160}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho(X,Y)=\frac{\frac{3}{160}}{\sigma_{X}\sigma_{Y}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X
+\begin_inset Formula $^{2}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{3}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Y
+\begin_inset Formula $^{2}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(X)=
+\begin_inset Formula $\frac{3}{5}-\frac{9}{16}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(Y)=
+\begin_inset Formula $\frac{1}{5}-\frac{9}{64}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y con esto obtengo los correspondientes 
+\begin_inset Formula $\sigma_{x}\sigma_{y}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
