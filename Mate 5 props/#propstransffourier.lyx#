@@ -27,9 +27,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing onehalf
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -121,8 +126,11 @@ Escalamiento:
 \end_layout
 
 \begin_layout Standard
-con a!=0 
 \begin_inset Formula $x(at)\rightarrow\frac{1}{|a|}X(\frac{f}{a})$
+\end_inset
+
+ con 
+\begin_inset Formula $a\neq0$
 \end_inset
 
 
@@ -194,10 +202,63 @@ _
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $u(t)\rightarrow\frac{1}{i2\pi f}+\frac{1}{2}$
+\begin_inset Formula $u(t)\rightarrow\frac{1}{i2\pi f}+\frac{1}{2}\delta(f)$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+transformadas en 
+\bar under
+sentido generalizado
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta(t)\rightarrow1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1\rightarrow\delta(f)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $sign(t)\rightarrow\frac{1}{i\pi f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{-\alpha t}u(t)\rightarrow\frac{1}{\alpha+i2\pi f}$
+\end_inset
+
+ con 
+\begin_inset Formula $\alpha$
+\end_inset
+
+>0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{-\alpha t}\longleftrightarrow\frac{2\alpha}{\alpha^{2}+4\pi^{2}f^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Propiedades random de la carpeta: (a completar dsp)
 \end_layout
 
 \end_body
