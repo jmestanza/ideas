@@ -54,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -104,7 +108,7 @@ Traslación
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $x(t\boldsymbol{-}t_{0})\rightarrow^{F}X(f)e^{\boldsymbol{-}i2\pi f_{0}}$
+\begin_inset Formula $x(t\boldsymbol{-}t_{0})\rightarrow^{F}X(f)e^{\boldsymbol{-}i2\pi ft_{0}}$
 \end_inset
 
 
@@ -251,10 +255,6 @@ sentido generalizado
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Propiedades random de la carpeta: (a completar dsp)
 \end_layout
 
 \end_body
