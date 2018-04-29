@@ -26,6 +26,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -530,6 +531,42 @@ Si x(t) es una señal impar entonces
 \end_inset
 
  
+\end_layout
+
+\begin_layout Standard
+FALTA ESPECTRO UNILATERAL Y BILATERAL
+\end_layout
+
+\begin_layout Standard
+alta japa bro
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Convergencia de las series de Fourier:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muy importante para este teorema que X'()
 \end_layout
 
 \end_body
