@@ -562,11 +562,10 @@ Si x(t) es una señal impar entonces
 \end_layout
 
 \begin_layout Standard
-FALTA ESPECTRO UNILATERAL Y BILATERAL DE FUNCIONES REALES
-\end_layout
 
-\begin_layout Standard
-alta japa bro
+\series bold
+\bar under
+FALTA ESPECTRO UNILATERAL Y BILATERAL DE FUNCIONES REALES
 \end_layout
 
 \begin_layout Standard
@@ -639,6 +638,115 @@ Muy importante para este teorema que
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Nota 3:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota5.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota6.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Después de esto es básicamente fijarse en la tabla 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Transformada de una periódica con tren de deltas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Falta densidad espectral de energía, de potencia y edos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Por ahora no considero importante la primera y edos es relativamente sencillo.
+\end_layout
+
+\begin_layout Standard
+Nota 4:
 \end_layout
 
 \end_body
