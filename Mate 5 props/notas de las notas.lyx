@@ -516,8 +516,7 @@ Si x(t) es una señal real:
 \end_layout
 
 \begin_layout Standard
-X
-\begin_inset Formula $_{n}=X_{-n}=X_{n}^{*}\forall n\epsilon\mathbb{\mathbb{N}}$
+\begin_inset Formula $X_{-n}=X_{n}^{*}\forall n\epsilon\mathbb{\mathbb{N}}$
 \end_inset
 
 
