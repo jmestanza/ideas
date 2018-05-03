@@ -475,7 +475,7 @@ sum_{k=1}^{n} Z_{K}$
 \end_layout
 
 \begin_layout Standard
-como para generar la siguienten necesito la anterior no son independientes
+como para generar la siguiente necesito la anterior no son independientes
 \end_layout
 
 \begin_layout Standard
@@ -568,6 +568,82 @@ tiene la propiedad de que crecen con el tiempo
 \begin_layout Standard
 Además se puede demostrar que Xn tiene una distribución de probabilidades
  que depende de n (es un problema de la práctica 3)
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D
+\begin_inset Formula $_{n}$
+\end_inset
+
+: # pasos a derecha al instante n
+\end_layout
+
+\begin_layout Standard
+p(X
+\begin_inset Formula $_{n}=k$
+\end_inset
+
+)=p(2D
+\begin_inset Formula $_{n}$
+\end_inset
+
+-n=k)=p(D
+\begin_inset Formula $_{n}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{n+k}{2}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+k=D
+\begin_inset Formula $_{n}$
+\end_inset
+
+-(n-D
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=2D
+\begin_inset Formula $_{n}-n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta varible aleatoria tiene distribución binomial
+\end_layout
+
+\begin_layout Standard
+p(X
+\begin_inset Formula $_{n}=k$
+\end_inset
+
+)=
+\begin_inset Formula ${{n} \choose {\frac{n+k}{2}}}$
+\end_inset
+
+p
+\begin_inset Formula $^{\frac{n\text{´+k}}{2}}$
+\end_inset
+
+(1-p)
+\begin_inset Formula $^{\frac{n-k}{2}}$
+\end_inset
+
+
 \end_layout
 
 \end_body
