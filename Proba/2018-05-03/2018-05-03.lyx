@@ -650,5 +650,254 @@ p
 Procesos de Markov:
 \end_layout
 
+\begin_layout Standard
+Se dice que un proceso estocastico es un proceso de Markov si y solo si
+ para todo n, toda secuencia t
+\begin_inset Formula $_{1}<t_{2}<...<$
+\end_inset
+
+t
+\begin_inset Formula $_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Procesos Estacionarios:
+\end_layout
+
+\begin_layout Standard
+Se dice que un proceso estocástico es un estacionario sii para todo n, toda
+ secuencia t
+\begin_inset Formula $_{1}<t_{2}<...<t_{n}$
+\end_inset
+
+ y todo conjunto de valores x
+\begin_inset Formula $_{1},x_{2},..,x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+p(X(t
+\begin_inset Formula $_{n}$
+\end_inset
+
+)
+\begin_inset Formula $\leq x_{n},X(t_{n-1})$
+\end_inset
+
+)
+\begin_inset Formula $\leq x_{n-1},...,X(t_{1})\leq x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+= p(X(t
+\begin_inset Formula $_{n}-t_{1}$
+\end_inset
+
+)) algo que supongo que está en el libro
+\end_layout
+
+\begin_layout Standard
+se dice que las probabilidades no dependen del tiempo
+\end_layout
+
+\begin_layout Standard
+la caminata aleatoria es de markov y no es estacionario, pero es de incrementos
+ estacionarios.
+\end_layout
+
+\begin_layout Standard
+Incrementos estacionarios
+\end_layout
+
+\begin_layout Standard
+Incrementos independientes
+\end_layout
+
+\begin_layout Standard
+Acá aparecen las series telescópicas
+\end_layout
+
+\begin_layout Standard
+Procesos de conteo
+\end_layout
+
+\begin_layout Standard
+Se dice que un proceso estocástico n(t) es de conteo si y solo si
+\end_layout
+
+\begin_layout Standard
+N(0)=0
+\end_layout
+
+\begin_layout Standard
+N(t)>=0 para todo t >=0
+\end_layout
+
+\begin_layout Standard
+s<t N(s) <= N(t)
+\end_layout
+
+\begin_layout Standard
+E=N
+\begin_inset Formula $^{0}$
+\end_inset
+
+(naturales con el 0)
+\end_layout
+
+\begin_layout Standard
+N(t)-N(s) representa el número de eventos que ocurrieron despues de s pero
+ antes de t
+\end_layout
+
+\begin_layout Standard
+Procesos de Poisson
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda se llama intensidad o tasa de eventos$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se dice que un proceso estocástico de conteo N(t) es un proceso de Poisson
+ con parámetro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ sii:
+\end_layout
+
+\begin_layout Standard
+1.
+ Tiene incrementos independientes
+\end_layout
+
+\begin_layout Standard
+2.
+ Los incremntos son estacionarios.
+\end_layout
+
+\begin_layout Standard
+3.
+ La probabilidad de que exactamente un evneto ocurra en un intervalo de
+ tiempo de longitud h es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+h + o(h)
+\end_layout
+
+\begin_layout Standard
+4.
+ La probbailidad de que más de 1 evento ocurra en un intervalo de tiempo
+ de longitud h es o(h)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+:# promedio de eventos por unidad de tiempo (si t es el tiempo)
+\end_layout
+
+\begin_layout Standard
+P( N(t+h)-N(t) = 1) = P(N(h)=1)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+h+o(h)
+\end_layout
+
+\begin_layout Standard
+o(h) se lee como 
+\begin_inset Quotes eld
+\end_inset
+
+la o chica
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+g(h)=o(h)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cc}
+lím & \frac{o(h)}{h}\\
+h\shortrightarrow0
+\end{array}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(N(h)>1)=o(h) la probabilidad de que haya más de un evento en un intervalo
+ muy corto
+\end_layout
+
+\begin_layout Standard
+o(h) se le llama infinitésimo
+\end_layout
+
 \end_body
 \end_document
