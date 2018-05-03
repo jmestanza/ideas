@@ -83,10 +83,13 @@ Notas de las notas de mate 5:
 \begin_layout Standard
 
 \series bold
+\size large
 Funciones de singularidad
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $u(t)=\begin{cases}
 0 & t<0\\
 1 & t\geq0
@@ -97,6 +100,8 @@ Funciones de singularidad
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Rampa unitaria: 
 \begin_inset Formula $r(t)=\begin{cases}
 0 & t\leq0\\
@@ -108,6 +113,8 @@ t & t>0
 \end_layout
 
 \begin_layout Standard
+
+\size large
 notar: 
 \begin_inset Formula $r(t)=\int_{-\infty}^{t}u(s)ds$
 \end_inset
@@ -116,6 +123,8 @@ notar:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Parábola unitaria: 
 \begin_inset Formula $p(t)=\begin{cases}
 0 & t\leq0\\
@@ -127,6 +136,8 @@ Parábola unitaria:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $p(t)=\int_{-\infty}^{t}r(s)ds$
 \end_inset
 
@@ -134,10 +145,14 @@ Parábola unitaria:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 notar: 
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Pulso unitario: 
 \begin_inset Formula $\Pi(t)=\begin{cases}
 1 & \text{|t|}\leq\frac{1}{2}\\
@@ -149,6 +164,8 @@ Pulso unitario:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Triangular unitaria: 
 \begin_inset Formula $\varLambda(t)=\begin{cases}
 1-|t| & |t|<1\\
@@ -160,6 +177,8 @@ Triangular unitaria:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Son funciones de singularidad porque en algún punto del dominio no existen
  las derivadas de algún orden.
 \end_layout
@@ -167,14 +186,19 @@ Son funciones de singularidad porque en algún punto del dominio no existen
 \begin_layout Standard
 
 \series bold
+\size large
 Energía y potencia
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Señales de energía:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $Ex=\begin{array}{cc}
 lím\\
 t\rightarrow+\infty
@@ -189,10 +213,14 @@ t\rightarrow+\infty
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Señales de potencia:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $Px=\begin{array}{cc}
 lím\\
 t\rightarrow+\infty
@@ -209,16 +237,20 @@ t\rightarrow+\infty
 \begin_layout Standard
 
 \series bold
+\size large
 Propiedades de señales de energía y potencia:
 \end_layout
 
 \begin_layout Standard
 
 \series bold
+\size large
 Desplazamiento:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 sea 
 \begin_inset Formula $y(t)=x(t+t_{0})$
 \end_inset
@@ -235,6 +267,8 @@ sea
 \end_layout
 
 \begin_layout Standard
+
+\size large
 sea 
 \begin_inset Formula $y(t)=x(t+t_{0})$
 \end_inset
@@ -253,6 +287,7 @@ sea
 \begin_layout Standard
 
 \series bold
+\size large
 Efecto de escalamiento por un 
 \begin_inset Formula $\alpha\neq0$
 \end_inset
@@ -261,10 +296,14 @@ Efecto de escalamiento por un
 \end_layout
 
 \begin_layout Standard
+
+\size large
 supongamos x una señal de energía con energía Ex se puede probar que
 \end_layout
 
 \begin_layout Standard
+
+\size large
 si 
 \begin_inset Formula $y(t)=x(\alpha t)$
 \end_inset
@@ -277,10 +316,14 @@ si
 \end_layout
 
 \begin_layout Standard
+
+\size large
 supongamos x una señal de potencia con potencia Px se puede probar
 \end_layout
 
 \begin_layout Standard
+
+\size large
 si 
 \begin_inset Formula $y(t)=x(\alpha t)$
 \end_inset
@@ -320,16 +363,20 @@ Funciones generalizadas empieza en la nota 1 página 16 hasta el final de
 \begin_layout Standard
 
 \series bold
+\size large
 Nota 2:
 \end_layout
 
 \begin_layout Standard
 
 \series bold
+\size large
 Serie exponencial de Fourier:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $x(t)\sim\begin{array}{cc}
 \sum\\
 k\epsilon\mathbb{Z}
@@ -340,10 +387,14 @@ k\epsilon\mathbb{Z}
 \end_layout
 
 \begin_layout Standard
+
+\size large
 donde:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $X_{k}=\frac{1}{T}\int_{t_{0}}^{t_{0}+T}x(t)e^{-ik\omega_{0}t}dt$
 \end_inset
 
@@ -355,10 +406,14 @@ donde:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Igualdad de parserval para la exponencial de fourier:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $\begin{array}{cc}
 \sum\\
 k\epsilon\mathbb{Z}
@@ -371,10 +426,13 @@ k\epsilon\mathbb{Z}
 \begin_layout Standard
 
 \series bold
+\size large
 Serie trigonométrica:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $a_{0}=\int_{t_{0}}^{t_{0}+T}x(t)dt$
 \end_inset
 
@@ -382,6 +440,8 @@ Serie trigonométrica:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $a_{n}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}x(t)cos(n\omega_{0}t)dt$
 \end_inset
 
@@ -393,6 +453,8 @@ Serie trigonométrica:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $b_{n}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}x(t)sen(n\omega_{0}t)dt$
 \end_inset
 
@@ -404,10 +466,14 @@ Serie trigonométrica:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 En cuanto a la igualdad de parserval:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $|a_{0}|$
 \end_inset
 
@@ -428,12 +494,14 @@ n\epsilon\mathbb{N}
 \begin_layout Standard
 
 \series bold
+\size large
 Coeficientes de las series exponencial:
 \end_layout
 
 \begin_layout Standard
 
 \series bold
+\size large
 Desplazamiento 
 \begin_inset Formula $\tau$
 \end_inset
@@ -442,6 +510,8 @@ Desplazamiento
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Sea x(t) periódica de período T y supongamos que {
 \begin_inset Formula $X_{n},n\epsilon\mathbb{Z}$
 \end_inset
@@ -455,6 +525,8 @@ Sea x(t) periódica de período T y supongamos que {
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $Y_{n}=X_{n}e^{in\omega_{0}\tau}$
 \end_inset
 
@@ -464,10 +536,13 @@ Sea x(t) periódica de período T y supongamos que {
 \begin_layout Standard
 
 \series bold
+\size large
 Relaciones y valor medio de la señal:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 x(t) periódica de período T, {
 \begin_inset Formula $X_{n},n\epsilon\mathbb{Z}$
 \end_inset
@@ -480,6 +555,8 @@ x(t) periódica de período T, {
 \end_layout
 
 \begin_layout Standard
+
+\size large
 X
 \begin_inset Formula $_{0}=\frac{1}{T}\int_{t_{0}}^{t_{0}+T}x(t)dt=a_{0}$
 \end_inset
@@ -488,6 +565,8 @@ X
 \end_layout
 
 \begin_layout Standard
+
+\size large
 X
 \begin_inset Formula $_{0}$
 \end_inset
@@ -496,6 +575,8 @@ X
 \end_layout
 
 \begin_layout Standard
+
+\size large
 X
 \begin_inset Formula $_{n}=\frac{1}{2}(a_{n}-ib_{n})$
 \end_inset
@@ -512,10 +593,14 @@ X
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Si x(t) es una señal real:
 \end_layout
 
 \begin_layout Standard
+
+\size large
 X
 \begin_inset Formula $_{n}=X_{-n}=X_{n}^{*}\forall n\epsilon\mathbb{\mathbb{N}}$
 \end_inset
@@ -524,6 +609,8 @@ X
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Si x(t) es una señal par entonces b
 \begin_inset Formula $_{n}=0$
 \end_inset
@@ -532,6 +619,8 @@ Si x(t) es una señal par entonces b
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $X_{n}=X_{-n}=\frac{a_{n}}{2}$
 \end_inset
 
@@ -543,6 +632,8 @@ Si x(t) es una señal par entonces b
 \end_layout
 
 \begin_layout Standard
+
+\size large
 Si x(t) es una señal impar entonces 
 \begin_inset Formula $a_{n}=0$
 \end_inset
@@ -551,6 +642,8 @@ Si x(t) es una señal impar entonces
 \end_layout
 
 \begin_layout Standard
+
+\size large
 \begin_inset Formula $X_{n}=-X_{-n}=-i\frac{b_{n}}{2}$
 \end_inset
 
