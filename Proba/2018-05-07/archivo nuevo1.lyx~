@@ -1,0 +1,955 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Proceso estocástico:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+={X(t) , t 
+\begin_inset Formula $\epsilon T$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+E =
+\begin_inset Formula $\begin{array}{cc}
+\cup & R_{x(t)}\\
+t\epsilon T
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+N(t):
+\begin_inset Formula $\#$
+\end_inset
+
+ de eventos en (0,t) t
+\begin_inset Formula $\epsilon\mathbb{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un proceso de conteo por ejemplo es un experimento binomial
+\end_layout
+
+\begin_layout Standard
+N(t
+\begin_inset Formula $_{2}$
+\end_inset
+
+)-N(t
+\begin_inset Formula $_{1}$
+\end_inset
+
+) a esto le llamabamos incremento
+\end_layout
+
+\begin_layout Standard
+N(t
+\begin_inset Formula $_{2}$
+\end_inset
+
+)-N(t
+\begin_inset Formula $_{1}$
+\end_inset
+
+) Numero de ocurrencias en t
+\begin_inset Formula $_{2}$
+\end_inset
+
+- Numero de ocurriencias en t
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+N(t
+\begin_inset Formula $_{2}$
+\end_inset
+
+)-N(t
+\begin_inset Formula $_{1}$
+\end_inset
+
+) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+approx$
+\end_layout
+
+\end_inset
+
+ bin(t2-t1,p) => No es estacionario.
+\end_layout
+
+\begin_layout Standard
+Un proceso de conteo se dice que es un processon de Poisson con parametro
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ si solo si
+\end_layout
+
+\begin_layout Standard
+1.
+ Tiene incrementos independientes
+\end_layout
+
+\begin_layout Standard
+2.
+ Los incrementos son estacionarios
+\end_layout
+
+\begin_layout Standard
+3.
+ La probabilidad de que exactmanete un evento ocurra en un intervalo de
+ tiempo de longitud h es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+h + o(h)
+\end_layout
+
+\begin_layout Standard
+4.
+ La probabilidad de que más de un evento ocurra en el intervalo de tiempo
+ de longitud h es o(h)
+\end_layout
+
+\begin_layout Standard
+Aclaracion:
+\end_layout
+
+\begin_layout Standard
+Que sea de incrementos independientes significa que si tengo un intervalo
+ 
+\end_layout
+
+\begin_layout Standard
+(con la condición de que sean disjuntos)
+\end_layout
+
+\begin_layout Standard
+t1 , t1 + d1 , t2 , t2+d2
+\end_layout
+
+\begin_layout Standard
+N(t1+d1)-N(t1) son v.a.
+ indep.
+ N(t2+d2)-N(t2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename grafico1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En cambio los incrementos estacionarios cumplen que
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename grafico2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(N(t1+D)-N(t1)=k)=P(N(t2+D)-N(t2)=k) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall$
+\end_layout
+
+\end_inset
+
+k,D
+\end_layout
+
+\begin_layout Standard
+P(N(t+h)-N(t)=1)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda h$
+\end_layout
+
+\end_inset
+
++o(h)
+\end_layout
+
+\begin_layout Standard
+si o(h)=g(h)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{g(h)}{h}\begin{array}{cc}
+\rightarrow & 0\\
+h\rightarrow0
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(N(t+h)-N(t)>1)=o(h)
+\end_layout
+
+\begin_layout Standard
+Proceso de Poisson:
+\end_layout
+
+\begin_layout Standard
+P(N(t)=n)=
+\begin_inset Formula $\frac{e^{-\lambda t}}{n!}(\lambda t)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(N(t))=
+\begin_inset Formula $\lambda t\rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\frac{E(N(t))}{t}=\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cuando se conoce la tasa de ocurrencias el proceso de poisson queda univocamente
+ definido
+\end_layout
+
+\begin_layout Standard
+V(N(t))=
+\begin_inset Formula $\lambda t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma$
+\end_inset
+
+(N(t))=
+\begin_inset Formula $\sqrt{\lambda t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto sirve para los servidores, cuantos pedidos llegan en promedio a un
+ t determinado (creo)
+\end_layout
+
+\begin_layout Standard
+Dice paco que hay que tener cuidado con las unidades
+\end_layout
+
+\begin_layout Standard
+Recordamos que 
+\end_layout
+
+\begin_layout Standard
+si T~
+\begin_inset Formula $e^{\lambda}\rightarrow\begin{cases}
+E(T)=\frac{1}{\lambda}\\
+\sigma(T)=\frac{1}{\lambda}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un proceso de Poisson es estacionario.
+\end_layout
+
+\begin_layout Standard
+No nos importa cuando empieza sino cuanto dure.
+\end_layout
+
+\begin_layout Standard
+Te preguntan sobre cual es la probabilidad de que arriben mas de 3 automoviles
+ en un intervalo de 15 min
+\end_layout
+
+\begin_layout Standard
+P(N(t1+D)-N(t1)=k)=P(N(D)=k)=P(N(15min)=k)
+\end_layout
+
+\begin_layout Standard
+N(15min)~Poisson(3)
+\end_layout
+
+\begin_layout Standard
+P(N(15min)>3))=1-P(N(15min)
+\begin_inset Formula $\leq3$
+\end_inset
+
+)=1-
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=0}^{3}$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\frac{e^{-3}}{k!}3$
+\end_inset
+
+
+\begin_inset Formula $^{k}\approx0.353$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cual es la probabilidad de que el tiempo entre dos arribos consecutivos
+ exceda 10 min.
+\end_layout
+
+\begin_layout Standard
+P(T>10min)= 1-P(T
+\begin_inset Formula $\leq$
+\end_inset
+
+10min)=1-(1-e
+\begin_inset Formula $^{-\frac{0.2}{min}10min}$
+\end_inset
+
+)=e
+\begin_inset Formula $^{-2}\approx0.1353$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{0.2}{min}=\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Cual es la probabilidad de que el numero de automoviles que arriben en
+ 20min sea menor que 5 sabiendo que fue mayor que 2?
+\end_layout
+
+\begin_layout Standard
+P(N(20min)<5 / N(20min)>2)= 
+\begin_inset Formula $\frac{P(N(20min)=3)+P(N(20min)=4)}{P(N(20min)>2)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+N(t)~Poisson(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+t)con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ h = 0.2 x 20
+\end_layout
+
+\begin_layout Standard
+p
+\begin_inset Formula $_{k}$
+\end_inset
+
+=P(N
+\begin_inset Formula $_{h}=k$
+\end_inset
+
+)=(e
+\begin_inset Formula $^{-\lambda h}$
+\end_inset
+
+)
+\begin_inset Formula $\frac{(\lambda h)^{k}}{k!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Otro ejemplo.
+\end_layout
+
+\begin_layout Standard
+El estacionamiento abre a las 8 hs
+\end_layout
+
+\begin_layout Standard
+¿Cual es la probabilidad de que el quinto arribe antes de 8.30hs?
+\end_layout
+
+\begin_layout Standard
+Como Poisson no tiene memoria es o mismo empezar a las 8 que a las 0 hs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{s}:tiempo$
+\end_inset
+
+ hasta la ocurrrencia del 5
+\begin_inset Formula $^{to}$
+\end_inset
+
+evento
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\tau_{s}<30$
+\end_inset
+
+)=P(N(30min)
+\begin_inset Formula $\geq$
+\end_inset
+
+5)=1-
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=0}^{4}$
+\end_layout
+
+\end_inset
+
+(e
+\begin_inset Formula $^{-6})\frac{(6)^{k}}{k!}\approx0.715$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{k}>x$
+\end_inset
+
+ si no ocurre ningun evento (T
+\begin_inset Formula $_{k-1},T_{k-1}+x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+entonces
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\tau_{k}>x$
+\end_inset
+
+)=P(N(T
+\begin_inset Formula $_{k-1}+x$
+\end_inset
+
+))-N(T
+\begin_inset Formula $_{k-1}$
+\end_inset
+
+)=0) = P(N(x)=0)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{k}:$
+\end_inset
+
+tiempo entre ocurrencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{1}=T_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{2}=T_{2}-T_{1}\rightarrow T_{2}=\tau_{1}+\tau_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{2}=T_{3}-T_{2}\rightarrow T_{3}=T_{2}+\tau_{3}=\tau_{1}+\tau_{2}+\tau_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+T
+\begin_inset Formula $_{r}$
+\end_inset
+
+:instante hasta la ocurrencia del r-ésimo evento
+\end_layout
+
+\begin_layout Standard
+T
+\begin_inset Formula $_{r}$
+\end_inset
+
+=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=1}^{r}$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\tau_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau_{k}\sim Exp(\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+{
+\begin_inset Formula $\tau_{k}$
+\end_inset
+
+}
+\begin_inset Formula $_{k\epsilon\mathbb{N}}$
+\end_inset
+
+
+\bar under
+v.a.
+ independientes
+\bar default
+ (exponenciales) -> v.a.i.i.d.
+ (la primera i es por independientes, i.d = idénticamente distribuidas)
+\end_layout
+
+\begin_layout Standard
+T
+\begin_inset Formula $_{r}\sim r(r,\lambda)$
+\end_inset
+
+ r:1,2,...
+ 
+\begin_inset Formula $\lambda\epsilon\mathbb{R}^{\text{+}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(T
+\begin_inset Formula $_{r}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{r}{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(T
+\begin_inset Formula $_{r}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{r}{\lambda^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ejemplo: 
+\end_layout
+
+\begin_layout Standard
+A las 12 hs se abre una entrada auxiliar al estacionamiento, por la que
+ entran automóviles según otro proceso de Poisson con parámetro 
+\begin_inset Formula $\lambda a=0.1$
+\end_inset
+
+(1/min) en forma independiente de lo que ocurre por la entrada principal.
+\end_layout
+
+\begin_layout Standard
+¿Cuál es la probabilidad de que el numero total de automoviles que arriban
+ al estacionamiento durante 20 min a partir de las 12hs exceda 10?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rightarrow_{X_{1}=N_{1}(20min)}^{\lambda_{1}=0.2\frac{1}{min}}$
+\end_inset
+
+ 
+\begin_inset Formula $\leftarrow_{X_{2}=N_{2}(20min)}^{\lambda_{2}=0.1\frac{1}{min}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(X
+\begin_inset Formula $_{1}$
+\end_inset
+
++X
+\begin_inset Formula $_{2}$
+\end_inset
+
+>10)=1- P(X
+\begin_inset Formula $_{1}+X_{2}$
+\end_inset
+
+
+\begin_inset Formula $\leq10$
+\end_inset
+
+)= 1-P(X
+\begin_inset Formula $_{1}\geq0,0\leq X_{2}\leq10-X_{1}$
+\end_inset
+
+)=(*) (cuenta difícil de hacer)
+\end_layout
+
+\begin_layout Standard
+esto equivale cuando sumamos por separado la suma de las tasas
+\end_layout
+
+\begin_layout Standard
+(solo es válido cuando son independientes)
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{3}$
+\end_inset
+
+=N
+\begin_inset Formula $_{3}(20min)$
+\end_inset
+
+; 
+\begin_inset Formula $\lambda=\lambda_{1}+\lambda_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+=>(*)=P(X
+\begin_inset Formula $_{3}>10)$
+\end_inset
+
+= 1-P(X
+\begin_inset Formula $_{3}\leq10$
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Standard
+¿Cual es la probabilidad de que arriben 5 automoviles por la entrada principal
+ y 3 por la entrada auxiliar en un intervalo de 30 min a partir de las 12hs?
+\end_layout
+
+\begin_layout Standard
+P(X
+\begin_inset Formula $_{1}=5\land X_{2}=3$
+\end_inset
+
+ )=P(X
+\begin_inset Formula $_{1}=5$
+\end_inset
+
+)P(X
+\begin_inset Formula $_{2}=3$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{e^{-6}6^{5}}{5!}$
+\end_inset
+
+
+\begin_inset Formula $\frac{e^{-3}5^{3}}{3!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Cual es la probabilidad de que arriben 4 automoviles en los primeros 20
+ min, 8 en los primeros 40 minutos y 20 en los primeros 90 min?
+\end_layout
+
+\begin_layout Standard
+Suponga 
+\begin_inset Formula $\lambda=0.2\frac{1}{min}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estos intervalos no son disjuntos
+\end_layout
+
+\begin_layout Standard
+N
+\begin_inset Formula $_{20}$
+\end_inset
+
+=4 (de 0 a 4)
+\end_layout
+
+\begin_layout Standard
+N
+\begin_inset Formula $_{40}$
+\end_inset
+
+=8 (de 0 a 8)
+\end_layout
+
+\begin_layout Standard
+N
+\begin_inset Formula $_{90}$
+\end_inset
+
+=20(de 0 a 20)
+\end_layout
+
+\begin_layout Standard
+P(N
+\begin_inset Formula $_{20}=4,$
+\end_inset
+
+N
+\begin_inset Formula $_{40}=8$
+\end_inset
+
+,N
+\begin_inset Formula $_{90}=20$
+\end_inset
+
+)=P(N
+\begin_inset Formula $_{20}=4,$
+\end_inset
+
+N
+\begin_inset Formula $_{40}-N_{20}=4$
+\end_inset
+
+,N
+\begin_inset Formula $_{90}-N_{40}=12$
+\end_inset
+
+)=P(N
+\begin_inset Formula $_{20}=4,$
+\end_inset
+
+N
+\begin_inset Formula $_{20}=4$
+\end_inset
+
+,N
+\begin_inset Formula $_{50}=12$
+\end_inset
+
+)=P(N
+\begin_inset Formula $_{20}=4$
+\end_inset
+
+)
+\begin_inset Formula $^{2}P(N_{50}=12)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
