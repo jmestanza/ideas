@@ -1,0 +1,528 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Llegué media hora tarde así que pls no me maten.
+\end_layout
+
+\begin_layout Standard
+E={e
+\begin_inset Formula $_{1},e_{2},...,e_{N}$
+\end_inset
+
+} N estados
+\end_layout
+
+\begin_layout Standard
+T={0,1,..}=
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+
+\begin_inset Formula $_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{n}$
+\end_inset
+
+: estado al instante n
+\end_layout
+
+\begin_layout Standard
+P(X
+\begin_inset Formula $_{n}=e_{i}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+cadena de Markov
+\end_layout
+
+\begin_layout Standard
+P(X
+\begin_inset Formula $_{n+1}$
+\end_inset
+
+=e
+\begin_inset Formula $_{j}$
+\end_inset
+
+/X
+\begin_inset Formula $_{n}=e_{i},X_{n-1}=e_{i1},X_{n-2}=e_{i2},...,X_{0}=e_{i0}$
+\end_inset
+
+)=P(X
+\begin_inset Formula $_{n+1}=e_{j}/X_{n}=e_{i}$
+\end_inset
+
+) 
+\series bold
+depende de n, de i y de j.
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{n+1}$
+\end_inset
+
+=e
+\begin_inset Formula $_{j}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+mañana
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{n}=e_{i}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+hoy
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{n-1}=e_{i1},X_{n-2}=e_{i2},...,X_{0}=e_{i0}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+la historia previa
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cadena de Markov es estacionaria si 
+\end_layout
+
+\begin_layout Standard
+P(X
+\begin_inset Formula $_{n+1}=e_{j}/X$
+\end_inset
+
+
+\begin_inset Formula $_{n}=e_{i}$
+\end_inset
+
+) 
+\series bold
+es independiente de n
+\end_layout
+
+\begin_layout Standard
+(1) : P(
+\begin_inset Formula $i\rightarrow j$
+\end_inset
+
+)=p
+\begin_inset Formula $_{ij}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+p
+\begin_inset Formula $_{ij}=P(i\rightarrow j)$
+\end_inset
+
+=(|P
+\begin_inset Formula $_{ij}$
+\end_inset
+
+) Notar que |P es distinta a los demas
+\end_layout
+
+\begin_layout Standard
+|P 
+\begin_inset Formula $\epsilon\mathbb{R}^{NxN}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+p
+\begin_inset Formula $_{ij}\geq0\forall(i,j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{j=1}^{N}$
+\end_layout
+
+\end_inset
+
+p
+\begin_inset Formula $_{ij}$
+\end_inset
+
+=1 
+\begin_inset Formula $\forall i:1,..,N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+|P matriz de probabilidades de transición en un paso
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{n}:$
+\end_inset
+
+distribución de prob.
+ del proceso al instante n
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{n}\epsilon\mathbb{R}^{1xN}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\Pi_{n}\right)=P(X_{n}=i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\Pi_{n+1}\right)_{j}=$
+\end_inset
+
+P(X
+\begin_inset Formula $_{n\text{+1}}=j$
+\end_inset
+
+)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{i=1}^{N}$
+\end_layout
+
+\end_inset
+
+P(X
+\begin_inset Formula $_{n+1}=j$
+\end_inset
+
+,X
+\begin_inset Formula $_{n}=i$
+\end_inset
+
+)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{i=1}^{N}$
+\end_layout
+
+\end_inset
+
+P(X
+\begin_inset Formula $_{n\text{+1}}=j$
+\end_inset
+
+/X
+\begin_inset Formula $_{n}=i$
+\end_inset
+
+)P(X
+\begin_inset Formula $_{n}=i$
+\end_inset
+
+)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{i=1}^{N}$
+\end_layout
+
+\end_inset
+
+p
+\begin_inset Formula $_{ij}$
+\end_inset
+
+
+\begin_inset Formula $\left(\Pi_{n}\right)_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename grafico.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El estado inicial es 1 (Por puteadas por favor dirigirse Thomas Reller Legajo:
+ 57743 mail: treller@itba.edu.ar)
+\end_layout
+
+\begin_layout Standard
+El doctor también dice que queda fija la matriz cuando N es grande
+\end_layout
+
+\begin_layout Standard
+si voy de 1 a 1 -> 0.2
+\end_layout
+
+\begin_layout Standard
+de 1 a 2 -> 0.8
+\end_layout
+
+\begin_layout Standard
+and so on.
+\end_layout
+
+\begin_layout Standard
+|P=
+\begin_inset Formula $\left(\begin{array}{cc}
+0.2 & 0.8\\
+0.6 & 0.4
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede ocurrir 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{n}\begin{array}{cc}
+\rightarrow\\
+n\rightarrow\infty
+\end{array}\Pi_{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{k}$
+\end_inset
+
+es un vector de probablidades fijo en un instante k 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{n+1}=\Pi_{n}$
+\end_inset
+
+|P
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{1}=\Pi_{0}$
+\end_inset
+
+|P
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{2}=\Pi_{1}$
+\end_inset
+
+|P
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{n}=\Pi_{0}$
+\end_inset
+
+(|P)
+\begin_inset Formula $^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+((|P)
+\begin_inset Formula $^{n}$
+\end_inset
+
+)
+\begin_inset Formula $_{ij}$
+\end_inset
+
+=P(i
+\begin_inset Formula $\rightarrow^{(n)}$
+\end_inset
+
+j) 
+\end_layout
+
+\begin_layout Standard
+|P
+\begin_inset Formula $^{n}$
+\end_inset
+
+: matriz de probabilidades de transición en n pasos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{n+1}=\Pi_{n}$
+\end_inset
+
+|P
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Pi_{\infty}=\Pi_{\infty}$
+\end_inset
+
+|P 
+\end_layout
+
+\begin_layout Standard
+|P
+\begin_inset Formula $^{T}$
+\end_inset
+
+
+\begin_inset Formula $\Pi_{\infty}^{T}=1.\Pi_{\infty}^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+autovector con su correspondiente autovalor
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
