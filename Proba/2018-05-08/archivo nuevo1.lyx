@@ -521,7 +521,259 @@ autovector con su correspondiente autovalor
 \end_layout
 
 \begin_layout Standard
+Ejemplo:
+\end_layout
 
+\begin_layout Standard
+
+\series bold
+El vendedor viajero:(está subido)
+\end_layout
+
+\begin_layout Standard
+La region de ventas de un vendedor la componen tres ciudades A , B y C.
+\end_layout
+
+\begin_layout Standard
+Nunca vende en la misma ciudad en días segidos.
+ Si vende en la ciudad A, entonces al día siguiente vende en la ciudad B.
+ Sin embargo, si vende en una de las dos ciudades B ó C, entonces al día
+ siguiente la probabilidad de vender en A es el doble de la vender en la
+ restante.
+\end_layout
+
+\begin_layout Standard
+Si no vuelve a sí mismo la probabilidad es 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{ccc}
+0 & 1 & 0\\
+\frac{2}{3} & 0 & \frac{1}{3}\\
+\frac{2}{3} & \frac{1}{3} & 0
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hoy - Mañana
+\end_layout
+
+\begin_layout Standard
+cada fila estoy en A B o C
+\end_layout
+
+\begin_layout Standard
+En cada fila tiene que sumar 1.
+ A este tipo de matrices se las llama estocásticas.
+\end_layout
+
+\begin_layout Standard
+Estas probabilidades son condicionales.
+\end_layout
+
+\begin_layout Standard
+Una condición para que exista el límite(
+\begin_inset Formula $\Pi_{\infty}$
+\end_inset
+
+) es que la cadena sea 
+\series bold
+regular.
+\end_layout
+
+\begin_layout Standard
+La 
+\series bold
+cadena de Markov es regular
+\series default
+ si existe 
+\begin_inset Formula $k\epsilon\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(|P
+\begin_inset Formula $^{K}$
+\end_inset
+
+)
+\begin_inset Formula $_{ij}$
+\end_inset
+
+>0 
+\begin_inset Formula $\forall(i,j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el ejemplo anterior había que elevar a la cuarta potencia a P y ocurria
+ que todas las p de la matriz eran >0
+\end_layout
+
+\begin_layout Standard
+Si una cadena de Markov es regular entonces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cc}
+lím & \Pi_{n}=\Pi_{\infty}\\
+n\rightarrow\infty
+\end{array}$
+\end_inset
+
+,(existe) independiente mente de 
+\begin_inset Formula $\Pi_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con (
+\begin_inset Formula $\Pi_{\infty}$
+\end_inset
+
+)
+\begin_inset Formula $_{i}$
+\end_inset
+
+>0 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ y es solución de 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\Pi_{\infty}=\Pi_{\infty}|P\\
+\sum_{i=1}^{N}(\Pi_{\infty})_{i}=1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+además 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cc}
+lím\\
+n\rightarrow\infty
+\end{array}$
+\end_inset
+
+|P
+\begin_inset Formula $^{n}$
+\end_inset
+
+=
+\begin_inset Formula $\left(\begin{array}{c}
+\Pi_{\infty}\\
+\Pi_{\infty}\\
+...\\
+\Pi_{\infty}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a b c )= (a b c)
+\begin_inset Formula $\left(\begin{array}{ccc}
+0 & 1 & 0\\
+\frac{2}{3} & 0 & \frac{1}{3}\\
+\frac{2}{3} & \frac{1}{3} & 0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tengo que añadir una ecuacion más ya que la ecuación tiene infinitas soluciones
+ 
+\end_layout
+
+\begin_layout Standard
+a = 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+b+
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+c
+\end_layout
+
+\begin_layout Standard
+b=a+
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+c
+\end_layout
+
+\begin_layout Standard
+c=b
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+a+b+c=1
+\end_layout
+
+\begin_layout Standard
+despejando se obtiene
+\end_layout
+
+\begin_layout Standard
+c=
+\begin_inset Formula $\frac{3}{20}$
+\end_inset
+
+=0.15
+\end_layout
+
+\begin_layout Standard
+b=0.45
+\end_layout
+
+\begin_layout Standard
+a=0.40
+\end_layout
+
+\begin_layout Standard
+Se puede demostrar que la matriz siempre tiene el 1 como autovalor
+\end_layout
+
+\begin_layout Standard
+si lo tengo como autovalor simple y -1 no sea autovalor de |P
+\end_layout
+
+\begin_layout Standard
+entonces la cadena es regular
+\end_layout
+
+\begin_layout Standard
+se puede demostrar que los autovalores de las matrices estocasticas en modulo
+ son menores que uno
 \end_layout
 
 \end_body
