@@ -1,0 +1,804 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+El conjunto de variables aleatorias X={X(t):t
+\begin_inset Formula $\epsilon$
+\end_inset
+
+T} se denomina un
+\series bold
+ proceso estocástico.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+T es el espacio del parámetro
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+la unión de los recorridos de las variables X(t) se denomina el 
+\series bold
+espacio de estados
+\series default
+ E del proceso
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Requisito: debemos poder hablar de la probabilidad conjunta para poder hacer
+ cálculos con procesos estocásticos
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\backslash
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+discreto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+continuo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+discreto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ejemplo cadenas de markov
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ejemplo Proceso de Poisson
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+continuo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+x = no lo vemos.
+\end_layout
+
+\begin_layout Section
+\paragraph_spacing onehalf
+Random walk o caminata aleatoria:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+procceso estocástico con espacio de estados discreto y en tiempo discreto
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+A partir de t=0, x=0 en cada instante el cambio de posición es1 o -1 con
+ probabilidades p y (1-p)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+T=
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ E=
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+p=0.5;
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+N=100;
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+X
+\begin_inset Formula $_{n}:$
+\end_inset
+
+posición en el instante n
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+En random walk se da que:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+p(X
+\begin_inset Formula $_{n}=k+1$
+\end_inset
+
+/X
+\begin_inset Formula $_{n-1}=k$
+\end_inset
+
+)=p
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+p(X
+\begin_inset Formula $_{n}=k+1$
+\end_inset
+
+/X
+\begin_inset Formula $_{n-1}=j$
+\end_inset
+
+)=
+\begin_inset Formula $\begin{cases}
+p & j=k\\
+0 & j\neq k,j\neq k\text{+2}\\
+1-p & j=k\text{+2}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Z
+\begin_inset Formula $_{K}$
+\end_inset
+
+=
+\begin_inset Formula $\begin{cases}
+1 & p\\
+-1 & 1-p
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Z
+\begin_inset Formula $_{K}$
+\end_inset
+
+ son independientes
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+X
+\begin_inset Formula $_{0}=0$
+\end_inset
+
+;X
+\begin_inset Formula $_{1}=Z_{1};X_{2}=Z_{1}+Z_{2}$
+\end_inset
+
+;...
+ ; X
+\begin_inset Formula $_{n}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=1}^{n} Z_{K}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+como para generar la siguiente necesito la anterior no son independientes
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+E(X
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=1}^{n} E(Z_{K})$
+\end_layout
+
+\end_inset
+
+ =
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=1}^{n} (p-(1-p))$
+\end_layout
+
+\end_inset
+
+ = n (2p-1)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+V(X
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{k=1}^{n} V(Z_{K})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+V(Z
+\begin_inset Formula $_{k}$
+\end_inset
+
+)= p +1 -p -(2p-1)
+\begin_inset Formula $^{2}$
+\end_inset
+
+= 1-4p
+\begin_inset Formula $^{2}$
+\end_inset
+
++4p -1 = 4p(1-p)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+entonces 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+V(X
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=4np(1-p)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+tiene la propiedad de que crecen con el tiempo
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Además se puede demostrar que Xn tiene una distribución de probabilidades
+ que depende de n (es un problema de la práctica 3)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+X
+\begin_inset Formula $_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+D
+\begin_inset Formula $_{n}$
+\end_inset
+
+: # pasos a derecha al instante n
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+p(X
+\begin_inset Formula $_{n}=k$
+\end_inset
+
+)=p(2D
+\begin_inset Formula $_{n}$
+\end_inset
+
+-n=k)=p(D
+\begin_inset Formula $_{n}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{n+k}{2}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+k=D
+\begin_inset Formula $_{n}$
+\end_inset
+
+-(n-D
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=2D
+\begin_inset Formula $_{n}-n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Esta varible aleatoria tiene distribución binomial
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+p(X
+\begin_inset Formula $_{n}=k$
+\end_inset
+
+)=
+\begin_inset Formula ${{n} \choose {\frac{n+k}{2}}}$
+\end_inset
+
+p
+\begin_inset Formula $^{\frac{n\text{´+k}}{2}}$
+\end_inset
+
+(1-p)
+\begin_inset Formula $^{\frac{n-k}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Procesos de Markov:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sin título.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Procesos Estacionarios:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\begin_inset Graphics
+	filename estacionario.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename estacionario2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+la caminata aleatoria es de markov y no es estacionario, pero es de incrementos
+ estacionarios.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Incrementos estacionarios
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Incrementos independientes
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Acá aparecen las series telescópicas
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Procesos de conteo
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Se dice que un proceso estocástico n(t) es de conteo si y solo si
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+N(0)=0
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+N(t)>=0 para todo t >=0
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+s<t N(s) <= N(t)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+E=N
+\begin_inset Formula $^{0}$
+\end_inset
+
+(naturales con el 0)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+N(t)-N(s) representa el número de eventos que ocurrieron despues de s pero
+ antes de t
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Procesos de Poisson
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ se llama intensidad o tasa de eventos
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+Se dice que un proceso estocástico de conteo N(t) es un proceso de Poisson
+ con parámetro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+ sii:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+1.
+ Tiene incrementos independientes
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+2.
+ Los incremntos son estacionarios.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+3.
+ La probabilidad de que exactamente un evneto ocurra en un intervalo de
+ tiempo de longitud h es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+h + o(h)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+4.
+ La probbailidad de que más de 1 evento ocurra en un intervalo de tiempo
+ de longitud h es o(h)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+:# promedio de eventos por unidad de tiempo (si t es el tiempo)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+P( N(t+h)-N(t) = 1) = P(N(h)=1)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lambda$
+\end_layout
+
+\end_inset
+
+h+o(h)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+o(h) se lee como 
+\begin_inset Quotes eld
+\end_inset
+
+la o chica
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+g(h)=o(h)
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\begin_inset Formula $\begin{array}{cc}
+lím & \frac{o(h)}{h}\\
+h\shortrightarrow0
+\end{array}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+P(N(h)>1)=o(h) la probabilidad de que haya más de un evento en un intervalo
+ muy corto
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+o(h) se le llama infinitésimo
+\end_layout
+
+\end_body
+\end_document

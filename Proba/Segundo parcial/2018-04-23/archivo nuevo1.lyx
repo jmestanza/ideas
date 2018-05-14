@@ -30,7 +30,7 @@
 \spacing other 1.5
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -54,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -77,11 +81,17 @@ status open
 
 \begin_layout Plain Layout
 
-$(X,Y): S -> R_{x,y} 
+$(X,Y): S 
 \backslash
-subset R_{x} x R_{y}$
+rightarrow R_{x,y} 
+\backslash
+subset$
 \end_layout
 
+\end_inset
+
+
+\begin_inset Formula $R_{x}\vartimes R_{y}$
 \end_inset
 
 
@@ -94,7 +104,7 @@ variable aleatoria 2D
 \begin_layout Standard
 \begin_inset Graphics
 	filename dibujo.png
-	scale 50
+	scale 25
 
 \end_inset
 
@@ -106,7 +116,7 @@ Si X e Y son v.a.
  discretas
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset ERT
 status open
 
@@ -121,6 +131,7 @@ $P_{xy}(x_{i},y_{j}))=P(X=x_{i},Y=y_{j})$
  conjunta
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -134,10 +145,7 @@ epsilon Rx$
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset ERT
 status open
 
@@ -169,6 +177,7 @@ geq 0 $
 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 A partir de 
 \begin_inset ERT
@@ -182,6 +191,12 @@ $P_{xy}(x_{i},y_{j})$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Distribuciones marginales
 \end_layout
 
 \begin_layout Standard
@@ -217,9 +232,9 @@ sum_{x_{i}}^{}p_{xy}(x_{i},y_{j})$
 \end_layout
 
 \begin_layout Standard
-A esto se le llama 
+
 \series bold
-distribuciones marginales
+Distribuciones condicionales
 \end_layout
 
 \begin_layout Standard
@@ -255,24 +270,21 @@ frac{P_{xy}(x_{i},y_{j})}{P_{y}(y_{j})}$
 \end_layout
 
 \begin_layout Standard
-A esto se le llama 
-\series bold
-distribuciones condicionales
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$P(G(X,Y)=C)= 
-\backslash
-sum_{(x_{i},y_{j})/G(xi,yj)=C }^{} 
-\backslash
-sum{}^{}p_{xy}(x_{i},y_{j})$
+$P(G(X,Y)=C)= $
 \end_layout
 
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{cc}
+\sum & \sum p_{xy}(x_{i},y_{j})\\
+\left[(x_{i},y_{j})/G(x_{i},y_{j})=C\right]
+\end{array}$
 \end_inset
 
 

@@ -1,0 +1,326 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{k}$
+\end_inset
+
+}
+\begin_inset Formula $_{k=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{k}$
+\end_inset
+
+ v.a.
+ independientes
+\end_layout
+
+\begin_layout Standard
+e idénticamente
+\end_layout
+
+\begin_layout Standard
+distribuidas
+\end_layout
+
+\begin_layout Standard
+(v.a.i.i.d.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$S_{n}=
+\backslash
+sum_{k=1}^{n} X_{k}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$E(S_{n})=
+\backslash
+sum_{k=1}^{n} E(X_{k})$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V(S_{n})=
+\backslash
+sum_{k=1}^{n} V(X_{k})$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Cual es la distrib de prob de Sn?
+\end_layout
+
+\begin_layout Standard
+1) X
+\begin_inset Formula $_{k}\sim$
+\end_inset
+
+ Bernoulli(p)
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{k}\begin{cases}
+0 & 1-p\\
+1 & p
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Variable de Bernoulli es cuando una variable solo toma 2 valores, 0 o 1
+ y la tasa de 0 y 1 es constante.
+ 
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}\sim$
+\end_inset
+
+Bin(n,p)
+\end_layout
+
+\begin_layout Standard
+2)X
+\begin_inset Formula $_{k}\sim Bin(n_{k},p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}\sim Bin(N,p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+N=n
+\begin_inset Formula $_{1}+$
+\end_inset
+
+n
+\begin_inset Formula $_{2}+...+n$
+\end_inset
+
+
+\begin_inset Formula $_{n}\ensuremath{=\sum_{k=1}^{n}n_{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3) X
+\begin_inset Formula $_{k}\sim Poisson(\lambda_{k})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{n}\sim Poisson(\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=\sum_{k=1}^{n}\lambda_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4) X
+\begin_inset Formula $_{k}\sim U(a,b)$
+\end_inset
+
+ (distrib uniforme)
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}$
+\end_inset
+
+ no tiene distribución uniforme
+\end_layout
+
+\begin_layout Standard
+5)X
+\begin_inset Formula $_{k}\sim Exp(\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}$
+\end_inset
+
+~
+\begin_inset Formula $\varGamma(n,\lambda)$
+\end_inset
+
+ 
+\begin_inset Formula $\varGamma:$
+\end_inset
+
+distribución gamma
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedad importante según paco:
+\end_layout
+
+\begin_layout Standard
+6)X
+\begin_inset Formula $_{k}$
+\end_inset
+
+~N(
+\begin_inset Formula $\mu_{k},\sigma_{k}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}\sim N(\mu,\sigma)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=\sum_{k=1}^{n}\mu_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma=\sqrt{\sum_{k=1}^{n}\sigma_{k}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
