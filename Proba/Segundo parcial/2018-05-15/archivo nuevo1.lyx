@@ -567,5 +567,339 @@ P(
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+Problema 6 Guia 6
+\end_layout
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{k}$
+\end_inset
+
+}
+\begin_inset Formula $_{k=1}^{1500}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{k}:$
+\end_inset
+
+error en el número k
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{1500}=\sum_{k=1}^{1500}X_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{k}\sim U(-0.5,0.5)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(|S
+\begin_inset Formula $_{1500}$
+\end_inset
+
+|>15)= P({S
+\begin_inset Formula $_{1500}>15\}$
+\end_inset
+
+U{S
+\begin_inset Formula $_{1500}<-15$
+\end_inset
+
+})
+\begin_inset Formula $\approx$
+\end_inset
+
+(aprox con media 0 y sigma calculado abajo) 2
+\begin_inset Formula $\Phi(\frac{-15-0}{5\sqrt{5}})$
+\end_inset
+
+=2
+\begin_inset Formula $\Phi(-\frac{3\sqrt{5}}{5})$
+\end_inset
+
+
+\begin_inset Formula $\approx0.18$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(S
+\begin_inset Formula $_{1500}$
+\end_inset
+
+)=1500E(X
+\begin_inset Formula $_{1}$
+\end_inset
+
+)=0
+\end_layout
+
+\begin_layout Standard
+Porque E(X
+\begin_inset Formula $_{1}$
+\end_inset
+
+)=0
+\end_layout
+
+\begin_layout Standard
+V(S
+\begin_inset Formula $_{1500}$
+\end_inset
+
+)=1500
+\begin_inset Formula $\frac{1^{2}}{12}=125$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(S_{1500})\approx11.18$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problema 9
+\end_layout
+
+\begin_layout Standard
+lo mismo pero 
+\end_layout
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{k}$
+\end_inset
+
+}
+\begin_inset Formula $_{k=1}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{k}:$
+\end_inset
+
+ contenido de solucion en el tambor k en litros
+\end_layout
+
+\begin_layout Standard
+no sabemos que distribución tiene
+\end_layout
+
+\begin_layout Standard
+Sólo se conoce E(
+\begin_inset Formula $X_{k}$
+\end_inset
+
+)=30.01 
+\begin_inset Formula $\forall k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(X_{k})=0.1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n=50
+\end_layout
+
+\begin_layout Standard
+P(S
+\begin_inset Formula $_{50}>1500$
+\end_inset
+
+)=1-P(S
+\begin_inset Formula $_{50}\leq1500$
+\end_inset
+
+)
+\begin_inset Formula $\begin{array}{cc}
+\approx & 1-\Phi(\frac{1500-1500.5}{0.707})\approx0.7602\\
+T.C.L.
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(S
+\begin_inset Formula $_{50}$
+\end_inset
+
+)= 50 (30.01)=1500.5
+\end_layout
+
+\begin_layout Standard
+V(S
+\begin_inset Formula $_{50}$
+\end_inset
+
+)=50 (0.01)=0.5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(S_{50})\approx0.707$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Paco recalca que no hay otra forma de hacerlo ya que no conozco la distribución.
+\end_layout
+
+\begin_layout Standard
+b) sabiendo que hay 2401, cual es la prob de que se llenen 80 tambores sin
+ que se vacie el tanque?
+\end_layout
+
+\begin_layout Standard
+(Sería que la suma no exceda 2401)
+\end_layout
+
+\begin_layout Standard
+P(S
+\begin_inset Formula $_{80}<2401$
+\end_inset
+
+)
+\begin_inset Formula $\approx\Phi(\frac{2401-80(30.01)}{0.1(\sqrt{80})})$
+\end_inset
+
+
+\begin_inset Formula $\approx0.588$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+en c) 
+\end_layout
+
+\begin_layout Standard
+0.9 = P(S
+\begin_inset Formula $_{100}<C$
+\end_inset
+
+)
+\begin_inset Formula $\approx\Phi(\frac{C-100(30.01)}{0.1\sqrt{100}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problema 10
+\end_layout
+
+\begin_layout Standard
+b) X
+\begin_inset Formula $_{k}:$
+\end_inset
+
+tiempo de atención del cliente k en minutos 
+\end_layout
+
+\begin_layout Standard
+E(X
+\begin_inset Formula $_{k})=1.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(X_{k})=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(S
+\begin_inset Formula $_{n}<120$
+\end_inset
+
+)=0.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+n grande
+\begin_inset Quotes erd
+\end_inset
+
+ ya que cuantas veces entra 1.5 en 120? como 80...
+\end_layout
+
+\begin_layout Standard
+E(S
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=n(1.5)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(S_{n})=\sqrt{n}(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi(\frac{120-1.5n}{\sqrt{n}})$
+\end_inset
+
+=0.1 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Phi^{-1}(0.1)\approx-1.282$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
