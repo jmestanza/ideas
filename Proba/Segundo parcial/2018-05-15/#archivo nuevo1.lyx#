@@ -1,0 +1,575 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\bar under
+Teorema Central del Límite (
+\series bold
+T.C.L.
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+Esto toma importancia a la hora de sumar muchas variables aleatorias
+\end_layout
+
+\begin_layout Standard
+Central = 
+\begin_inset Quotes eld
+\end_inset
+
+importante
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+límite = 
+\begin_inset Quotes eld
+\end_inset
+
+cuando cierto parámetro tiende a 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{k}$
+\end_inset
+
+}
+\begin_inset Formula $_{k=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+v.a.
+ 
+\series bold
+independientes
+\end_layout
+
+\begin_layout Standard
+sería un sistema al que le entran X
+\begin_inset Formula $_{1},X_{2},...,X_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(X
+\begin_inset Formula $_{k}$
+\end_inset
+
+)=
+\begin_inset Formula $\mu_{k}$
+\end_inset
+
+; 
+\begin_inset Formula $\sigma(X_{k})=\sigma_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\mu_{k}$
+\end_inset
+
+ y 
+\begin_inset Formula $\sigma_{k}$
+\end_inset
+
+ finitos)
+\end_layout
+
+\begin_layout Standard
+acá todas las variables pesan 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$S_{n}=
+\backslash
+sum_{k=1}^{n}X_{k}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$E(S_{n})=
+\backslash
+sum_{k=1}^{n}
+\backslash
+mu_{k}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+sigma(S_{n})=
+\backslash
+sqrt{
+\backslash
+sum_{k=1}^{n}
+\backslash
+sigma_{k}^{2}}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{n}=\frac{S_{n}-E(S_{n})}{\sigma(S_{n})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+F
+\begin_inset Formula $_{Z_{n}}(z)=P(Z_{n}\leq z)\begin{array}{cc}
+\rightarrow & \Phi(z)\\
+n\rightarrow\infty
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sin importar la distribución que sea tiende a la normal! wow
+\end_layout
+
+\begin_layout Standard
+F
+\begin_inset Formula $_{Z_{n}}(z)\approx\Phi(z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Acá las variables pesan distinto
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$S_{n}=
+\backslash
+sum_{k=1}^{n}a_{k}X_{k}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$E(S_{n})=
+\backslash
+sum_{k=1}^{n}a_{k}
+\backslash
+mu_{k}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+sigma(S_{n})=
+\backslash
+sqrt{
+\backslash
+sum_{k=1}^{n}a_{k}^{2}
+\backslash
+sigma_{k}^{2}}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{n}=\frac{S_{n}-E(S_{n})}{\sigma(S_{n})}$
+\end_inset
+
+; F
+\begin_inset Formula $_{Z_{n}}(z)\begin{array}{cc}
+\rightarrow\\
+n\rightarrow\infty
+\end{array}\Phi(z)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\mu_{k}=\mu$
+\end_inset
+
+ ; 
+\begin_inset Formula $\sigma_{k}=\sigma$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k:1,2,..$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+E(S
+\begin_inset Formula $_{n}$
+\end_inset
+
+)=n
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(S_{n})=\sqrt{n\sigma^{2}}$
+\end_inset
+
+=
+\begin_inset Formula $\sqrt{n}\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{n}=\frac{S_{n}-n\mu}{\sqrt{n}\sigma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Media muestral , Xprom = Xpromedio 
+\end_layout
+
+\begin_layout Standard
+XProm
+\begin_inset Formula $_{n}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{S_{n}}{n}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{1}{n}\sum_{k=1}^{n}X_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Xprom)=
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma(Xprom)=\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Si X
+\begin_inset Formula $_{k}\sim Bernoulli(p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aproximación normal de la binomial
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}\sim Binomial(n,p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con la condición de que la normal tenga el mismo valor esperado y la misma
+ dispersión que la binomial
+\end_layout
+
+\begin_layout Standard
+P(S
+\begin_inset Formula $_{n}=r$
+\end_inset
+
+)
+\begin_inset Formula $\approx\Phi(\frac{r+0.5-np}{\sqrt{np(1-\text{p})}})$
+\end_inset
+
+-
+\begin_inset Formula $\Phi$
+\end_inset
+
+(
+\begin_inset Formula $\frac{r-0.5-np}{\sqrt{np(1-p)}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+la aproximación viene de que con n tendiendo a infnito la binomial se comporta
+ como la normal y si tomamos un rectangulo de base 1 (por eso los 
+\begin_inset Formula $\pm0.5)$
+\end_inset
+
+en la distribucion de probabilidades de la normal entonces el area del rectangul
+o va a dar la probabilidad de la binomial en r 
+\end_layout
+
+\begin_layout Standard
+p(
+\begin_inset Formula $a\leq S_{n}\leq b$
+\end_inset
+
+)
+\begin_inset Formula $\approx\Phi(\frac{b+0.5-np}{\sqrt{np(1-p)}})-\Phi(\frac{a-0.5-np}{\sqrt{np(1-p)}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la aproximación se mejora si se hace esta mejora de corrección por continuidad
+ (porque la variable es discreta)
+\end_layout
+
+\begin_layout Standard
+La aproximación es razonable si:
+\end_layout
+
+\begin_layout Standard
+np>10
+\end_layout
+
+\begin_layout Standard
+n(1-p)>10
+\end_layout
+
+\begin_layout Itemize
+Si X
+\begin_inset Formula $_{k}\sim Poisson(\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{n}=\sum_{k=1}^{n}X_{k}\sim Poisson(n\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $\sim Poisson(\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X=
+\begin_inset Formula $\sum_{k=1}^{n}X_{k}$
+\end_inset
+
+ con X
+\begin_inset Formula $_{k}\sim Poisson(\frac{\lambda}{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda>10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $a\leq X\leq b$
+\end_inset
+
+)
+\begin_inset Formula $\approx\Phi(\frac{b+0.5-\lambda}{\sqrt{\lambda}})$
+\end_inset
+
+-
+\begin_inset Formula $\Phi(\frac{a-0.5-\lambda}{\sqrt{\lambda}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
