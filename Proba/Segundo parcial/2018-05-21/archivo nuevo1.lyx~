@@ -1,0 +1,467 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Comentarios sobre la presentación 
+\series bold
+Inferencia estadística:
+\end_layout
+
+\begin_layout Standard
+parametros poblacionales en general son desconocidos (:c)
+\end_layout
+
+\begin_layout Standard
+es deseable estimarlos(estimación de parámetros poblacionales) o bien hacer
+ hipótesis sobre ellos (pruebas de hipotesis sobre parametros poblacionales)
+\end_layout
+
+\begin_layout Standard
+En el caso particular de 
+\end_layout
+
+\begin_layout Standard
+Muestra aleatoria
+\end_layout
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{1},X_{2},...,X_{n}$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{i}$
+\end_inset
+
+ : i-ésima observación muestral
+\end_layout
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{i}$
+\end_inset
+
+}
+\begin_inset Formula $_{i=1}^{n}$
+\end_inset
+
+v.a.i.i.d.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f(A)=
+\backslash
+frac{1}{n}
+\backslash
+sum_{i=1}^{n}X_{i}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+f(A) es la frecuencia relativa de que pase A
+\end_layout
+
+\begin_layout Standard
+Algo que se quiere en general es que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$E(f(A))=
+\backslash
+frac{1}{n}
+\backslash
+sum_{i=1}^{n}E(X_{i})=p$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$E(Xi)=1.p + (0).(1-p)$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V(f(A))=
+\backslash
+frac{1}{n^{2}}
+\backslash
+sum_{i=1}^{n}V(X_{i})=
+\backslash
+frac{p(1-p)}{n}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$1^{2}.p+0^{2}(1-p)-p^{2}=p(1-p)$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si n tiende a infinito luego V(f(A)) 
+\begin_inset Formula $\longrightarrow$
+\end_inset
+
+ 0
+\end_layout
+
+\begin_layout Standard
+Paco dice que es 
+\series bold
+CLAVE 
+\series default
+saber que (en la presentación página 7)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+T (el estimador)es una VARIABLE ALEATORIA
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ya que en eso se basa todo lo que vamos a hacer 
+\end_layout
+
+\begin_layout Standard
+o sea que T tiene:
+\end_layout
+
+\begin_layout Standard
+* distribución de probabilidades
+\end_layout
+
+\begin_layout Standard
+*E(T)
+\end_layout
+
+\begin_layout Standard
+*V(T)
+\end_layout
+
+\begin_layout Standard
+R
+\begin_inset Formula $_{f(A)}=\{0,\frac{1}{n},\frac{2}{n},...,1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(f(A)=
+\begin_inset Formula $\frac{k}{n}$
+\end_inset
+
+)=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n
+\backslash
+choose k$$ p^{k}(1-p)^{n-k}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+——————————————————————————————————
+\end_layout
+
+\begin_layout Standard
+{X
+\begin_inset Formula $_{i}$
+\end_inset
+
+}
+\begin_inset Formula $_{i=1}^{n}$
+\end_inset
+
+v.a.c.i.i.d
+\end_layout
+
+\begin_layout Standard
+E(X
+\begin_inset Formula $_{i}$
+\end_inset
+
+)
+\begin_inset Formula $=\mu$
+\end_inset
+
+=E(X)
+\end_layout
+
+\begin_layout Standard
+V(X
+\begin_inset Formula $_{i}$
+\end_inset
+
+)=
+\begin_inset Formula $\sigma^{2}=V(X)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Media muestral
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+overline{X}=
+\backslash
+frac{1}{n}
+\backslash
+sum_{i=1}^{n}X_{i}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$E(
+\backslash
+overline{X})=
+\backslash
+frac{1}{n}
+\backslash
+sum_{i=1}^{n}E(X_{i})=E(X)=
+\backslash
+mu$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V(
+\backslash
+overline{X})=
+\backslash
+frac{1}{n^{2}}
+\backslash
+sum_{i=1}^{n}V(X_{i})=
+\backslash
+frac{
+\backslash
+sigma^{2}}{n}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+de nuevo, si n
+\begin_inset Formula $\longrightarrow\infty$
+\end_inset
+
+ entonces V(
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+)
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+ tiene:
+\end_layout
+
+\begin_layout Standard
+* ~N(
+\begin_inset Formula $\mu,\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+) si X~N(
+\begin_inset Formula $\mu,\sigma$
+\end_inset
+
+) ya que (X
+\begin_inset Formula $_{i}\sim N(\mu,\sigma)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+(independiente de n) 
+\end_layout
+
+\begin_layout Standard
+* aproximadamente N(
+\begin_inset Formula $\mu,\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+) si n es 
+\begin_inset Quotes eld
+\end_inset
+
+grande
+\begin_inset Quotes erd
+\end_inset
+
+(por Teorema Central del Límite)
+\end_layout
+
+\end_body
+\end_document
