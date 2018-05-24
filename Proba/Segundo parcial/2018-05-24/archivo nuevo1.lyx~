@@ -472,10 +472,14 @@ con un programa podría ver que tan bien aproxima la normal a la binomial
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Otra forma: 
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Desigualdad de Tchebycheff
 \end_layout
 
@@ -589,6 +593,558 @@ P(
 \end_inset
 
 0.98
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\frac{f_{D}-p}{\sqrt{\frac{p(1-p)}{n}}}|$
+\end_inset
+
+ Z~N(0,1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{0.01\sqrt{n}}{\sqrt{p(1-p)}}$
+\end_inset
+
+=
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{0.99}=a_{n}\approx2.326$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.01\sqrt{n}=2.326\sqrt{p(1-p)}\leq\frac{2.326}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.01\sqrt{n}\leq1.163$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n\leq(116.3)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Práctica 8 - Problema 5
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+X
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset Formula $\mu$
+\end_inset
+
+ ; V(X) = 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se construye un estimador
+\end_layout
+
+\begin_layout Standard
+Y= a 
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
++ b 
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+0<a<1 
+\end_layout
+
+\begin_layout Standard
+E(
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
+)=
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+E(
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+)=
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Y)= a
+\begin_inset Formula $\mu$
+\end_inset
+
++b
+\begin_inset Formula $\mu$
+\end_inset
+
+=(a+b) 
+\begin_inset Formula $\mu$
+\end_inset
+
+ (no coincide con 
+\begin_inset Formula $\mu$
+\end_inset
+
+ a menos que a+b=1)
+\end_layout
+
+\begin_layout Standard
+Si es insesgado 
+\end_layout
+
+\begin_layout Standard
+E(Y)=
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+a+b=1 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies b=1-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+como las muestras son independientes:
+\end_layout
+
+\begin_layout Standard
+la varianza de la suma es la suma de las varianzas
+\end_layout
+
+\begin_layout Standard
+V(Y)=V(a
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
+)+V(b
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+)=a
+\begin_inset Formula $^{2}$
+\end_inset
+
+V(
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
+)+b
+\begin_inset Formula $^{2}$
+\end_inset
+
+V(
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+)=a
+\begin_inset Formula $^{2}$
+\end_inset
+
+V(
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
+)+(1-a)
+\begin_inset Formula $^{2}$
+\end_inset
+
+V(
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+donde 
+\end_layout
+
+\begin_layout Standard
+V(
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{\sigma^{2}}{n_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+)=
+\begin_inset Formula $\frac{\sigma^{2}}{n_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+min 0<a<1
+\end_layout
+
+\begin_layout Standard
+n
+\begin_inset Formula $_{2}=2n_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(Y)=a
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset Formula $\frac{\sigma^{2}}{n_{1}}$
+\end_inset
+
++(1-a)
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset Formula $\frac{\sigma^{2}}{2n_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+busco
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{d}{da}$
+\end_inset
+
+(a
+\begin_inset Formula $^{2}+\frac{1}{2}$
+\end_inset
+
+(1-a)
+\begin_inset Formula $^{2}$
+\end_inset
+
+) =0
+\end_layout
+
+\begin_layout Standard
+se cumple para a=
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a
+\begin_inset Formula $^{2}+\frac{1}{2}$
+\end_inset
+
+(1-a)
+\begin_inset Formula $^{2}$
+\end_inset
+
+)|
+\begin_inset Formula $_{a=\frac{1}{3}}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V
+\begin_inset Formula $_{min}$
+\end_inset
+
+(Y)=
+\begin_inset Formula $\frac{\sigma^{2}}{3n_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+¿Qué pasa si n
+\begin_inset Formula $_{1}$
+\end_inset
+
+=n
+\begin_inset Formula $_{2}$
+\end_inset
+
+=n?
+\end_layout
+
+\begin_layout Standard
+V(Y)=a
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset Formula $\frac{\sigma^{2}}{n}$
+\end_inset
+
++(1-a)
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset Formula $\frac{\sigma^{2}}{n}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{\sigma^{2}}{n}[a^{2}+(1-a)^{2}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g(a)=a^{2}+(1-a)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+0<a<1
+\end_layout
+
+\begin_layout Standard
+es una parábola mínimo ocurre cuando a = 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ además siempre g(a)<1 
+\begin_inset Formula $\forall a\epsilon(0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(Y)<
+\begin_inset Formula $\frac{\sigma^{2}}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+dijo como 40 veces que la conclusión es: siempre conviene promediar
+\end_layout
+
+\begin_layout Standard
+Estimar el valor de una proporción p
+\end_layout
+
+\begin_layout Standard
+Se tienen los valores observados de dos proporciones muestrales 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p_{1}}$
+\end_inset
+
+y 
+\begin_inset Formula $\hat{p_{2}}$
+\end_inset
+
+ independientes de muestras de tamaños n y m
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p_{1}}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{r_{1}}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+r
+\begin_inset Formula $_{1}$
+\end_inset
+
+: # de 
+\begin_inset Quotes eld
+\end_inset
+
+éxitos
+\begin_inset Quotes erd
+\end_inset
+
+ en la muestra 1
+\end_layout
+
+\begin_layout Standard
+r
+\begin_inset Formula $_{1}\sim Bin(n,p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p_{2}}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{r_{2}}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+r
+\begin_inset Formula $_{2}$
+\end_inset
+
+: # de 
+\begin_inset Quotes eld
+\end_inset
+
+éxitos
+\begin_inset Quotes erd
+\end_inset
+
+ en la muestra 2
+\end_layout
+
+\begin_layout Standard
+r
+\begin_inset Formula $_{2}\sim Bin(n,p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se genera
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+=a
+\begin_inset Formula $\hat{p_{1}}$
+\end_inset
+
++b 
+\begin_inset Formula $\hat{p_{2}}$
+\end_inset
+
+ ; a
+\begin_inset Formula $\epsilon(0,1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+a) determinar a y b de manera tal que 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ sea estimador insesgado de p
+\end_layout
+
+\begin_layout Standard
+b) si m=n y a el valor que minimiza la varianza de 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ comparar dicha varianza con la de 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ESTO LO TOMO EN UN PARCIAL
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Hay algo que no entra en el examen parcial que sería:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Guía 8 :Problema 7,8,9,11,12,13,14
+\end_layout
+
+\begin_layout Standard
+La semana que viene vemos prueba de hipótesis.
 \end_layout
 
 \end_body

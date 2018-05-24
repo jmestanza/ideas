@@ -27,9 +27,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing onehalf
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -71,7 +76,9 @@
 \begin_body
 
 \begin_layout Standard
-17) Guía 6
+
+\series bold
+Guía 6, Problema 17
 \end_layout
 
 \begin_layout Standard
@@ -145,6 +152,9 @@ a)=P(X
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
 comentario de c -> a la p es 0
 \end_layout
 
@@ -201,6 +211,8 @@ b) Conteste la pregunta anterior si 0.07, la probabilidad de tener un artículo
 \end_layout
 
 \begin_layout Standard
+
+\series bold
 Resolución:
 \end_layout
 
@@ -385,10 +397,337 @@ P(
 
 \begin_layout Standard
 P(
-\begin_inset Formula $|\frac{X_{n}-0.07}{n\sqrt{0.0651}}|<\frac{0.01\sqrt{n}}{\sqrt{0.0651}}$
+\begin_inset Formula $\frac{-0.01}{\sqrt{0.0651}}<X_{n}-0.07n$
+\end_inset
+
+<
+\begin_inset Formula $\frac{0.01}{\sqrt{0.0651}}$
 \end_inset
 
 )
+\begin_inset Formula $\geq$
+\end_inset
+
+0.98
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\frac{-0.01}{\sqrt{0.0651}}+0.07n<X_{n}$
+\end_inset
+
+<
+\begin_inset Formula $\frac{0.01}{\sqrt{0.0651}}$
+\end_inset
+
++
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.07n
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\begin_inset Formula $\geq$
+\end_inset
+
+0.98
+\end_layout
+
+\begin_layout Standard
+P(i
+\begin_inset Formula $_{n}<X_{n}<d_{n}$
+\end_inset
+
+)=p
+\begin_inset Formula $_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+para cada n tengo una probabilidad 
+\end_layout
+
+\begin_layout Standard
+con un programa podría ver que tan bien aproxima la normal a la binomial
+\end_layout
+
+\begin_layout Standard
+Otra forma: 
+\end_layout
+
+\begin_layout Standard
+Desigualdad de Tchebycheff
+\end_layout
+
+\begin_layout Standard
+P(|X-E(X)|>t
+\begin_inset Formula $\sigma(x)$
+\end_inset
+
+)
+\begin_inset Formula $\leq\frac{1}{t^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(|f
+\begin_inset Formula $_{D}$
+\end_inset
+
+-0.07|>
+\begin_inset Formula $\epsilon$
+\end_inset
+
+)
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\begin_inset Formula $\frac{\sigma^{2}(f_{D})}{\epsilon^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(|f
+\begin_inset Formula $_{D}$
+\end_inset
+
+-0.07|
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\begin_inset Formula $\epsilon$
+\end_inset
+
+)
+\begin_inset Formula $\geq$
+\end_inset
+
+1- 
+\begin_inset Formula $\frac{\sigma^{2}(f_{D})}{\epsilon^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+=0.01 y 
+\begin_inset Formula $\frac{\sigma^{2}(f_{D})}{\epsilon^{2}}$
+\end_inset
+
+=0.02
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma^{2}(f_{D})$
+\end_inset
+
+=2.10
+\begin_inset Formula $^{-6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{0.0651}{n}=2.10^{-6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n
+\begin_inset Formula $\geq32550$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+parte b)
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $|\frac{f_{D}-p}{\sqrt{\frac{p(1-p)}{n}}}|<\frac{0.01\sqrt{n}}{\sqrt{p(1-p)}}$
+\end_inset
+
+)
+\begin_inset Formula $\geq$
+\end_inset
+
+0.98
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\frac{f_{D}-p}{\sqrt{\frac{p(1-p)}{n}}}|$
+\end_inset
+
+ Z~N(0,1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{0.01\sqrt{n}}{\sqrt{p(1-p)}}$
+\end_inset
+
+=
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{0.99}=a_{n}\approx2.326$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.01\sqrt{n}=2.326\sqrt{p(1-p)}\leq\frac{2.326}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.01\sqrt{n}\leq1.163$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n\leq(116.3)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Práctica 8 - Problema 5
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+X
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset Formula $\mu$
+\end_inset
+
+ ; V(X) = 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se construye un estimador
+\end_layout
+
+\begin_layout Standard
+Y= a 
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
++ b 
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+0<a<1 
+\end_layout
+
+\begin_layout Standard
+E(
+\begin_inset Formula $\overline{X_{1}}$
+\end_inset
+
+)=
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+E(
+\begin_inset Formula $\overline{X_{2}}$
+\end_inset
+
+)=
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E(Y)= a
+\begin_inset Formula $\mu$
+\end_inset
+
++b
+\begin_inset Formula $\mu$
+\end_inset
+
+=(a+b) 
+\begin_inset Formula $\mu$
+\end_inset
+
+ (no coincide con 
+\begin_inset Formula $\mu$
+\end_inset
+
+ a menos que a+b=1)
+\end_layout
+
+\begin_layout Standard
+Si es
 \end_layout
 
 \end_body
