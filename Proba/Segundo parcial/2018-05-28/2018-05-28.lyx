@@ -311,6 +311,10 @@ la campaña no tuvo éxito
 \end_layout
 
 \begin_layout Standard
+(prueba de cola derecha)
+\end_layout
+
+\begin_layout Standard
 
 \size large
 H
@@ -608,6 +612,296 @@ si no es así: H
 	filename Bell_Curve.jpg
 	scale 60
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha$
+\end_inset
+
+ también se llama error de significación
+\end_layout
+
+\begin_layout Standard
+p
+\begin_inset Formula $_{0}$
+\end_inset
+
+=0.11
+\end_layout
+
+\begin_layout Standard
+como la prueba es sobre p
+\end_layout
+
+\begin_layout Standard
+entonces en la muestra se evaluará 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+(la proporción muestral)
+\end_layout
+
+\begin_layout Standard
+Recuerdo : E(
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+)=
+\begin_inset Formula $\text{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+) = 
+\begin_inset Formula $\frac{p(1-p)}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z = 
+\begin_inset Formula $\frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}}\approx N(0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+aprox normal de la binomial
+\end_layout
+
+\begin_layout Standard
+Si H
+\begin_inset Formula $_{0}$
+\end_inset
+
+ es verdadera (p=p
+\begin_inset Formula $_{0}$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+Z = 
+\begin_inset Formula $\frac{\hat{p}-p_{0}}{\sqrt{\frac{p_{0}(1-p_{0})}{n}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Bell_Curve2.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La zona de rechazo para esta prueba es :
+\end_layout
+
+\begin_layout Standard
+R={
+\begin_inset Formula $\hat{p}/\hat{p}>\hat{p_{C}}$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\hat{p}>\hat{p_{C}}/p=p_{0}$
+\end_inset
+
+) =
+\begin_inset Formula $\alpha$
+\end_inset
+
+ = P(Z>Z
+\begin_inset Formula $_{C}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{C}$
+\end_inset
+
+=Z
+\begin_inset Formula $_{1-\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(Z
+\begin_inset Formula $\leq Z_{C}$
+\end_inset
+
+)=1-
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p_{C}}=p_{0}+Z_{1-\alpha}\sqrt{\frac{p_{0}(1-p_{0})}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p_{C}}:$
+\end_inset
+
+ p crítico
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Bell_Curve3.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\hat{p}<\hat{p_{C}}/p=p_{1}>p_{0}$
+\end_inset
+
+)=
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{p}<\hat{p_{C}}$
+\end_inset
+
+ : no rechazar H
+\begin_inset Formula $_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=p_{1}>p_{0}$
+\end_inset
+
+: H
+\begin_inset Formula $_{0}$
+\end_inset
+
+es falsa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Z=\frac{\hat{p}-p_{1}}{\sqrt{\frac{p_{1}(1-p_{1})}{n}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(
+\begin_inset Formula $\hat{p}<\hat{p_{C}}/p=p_{1}$
+\end_inset
+
+)=P(Z<Z
+\begin_inset Formula $_{1}$
+\end_inset
+
+)=
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+ esto es Z
+\begin_inset Formula $_{1}$
+\end_inset
+
+=Z
+\begin_inset Formula $_{\beta_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{\beta_{1}}$
+\end_inset
+
+= 
+\begin_inset Formula $\frac{\hat{p_{C}}-p_{1}}{\sqrt{\frac{p_{1}(1-p_{1})}{n}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+p
+\begin_inset Formula $_{1}+Z_{\beta_{1}}\sqrt{\frac{p_{1}(1-p_{1})}{n}}$
+\end_inset
+
+=p
+\begin_inset Formula $_{0}+Z_{1-\alpha}\sqrt{\frac{p_{0}(1-p_{0})}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n=
+\begin_inset Formula $(\frac{Z_{1-\alpha}\sqrt{p_{0}(1-p_{0})}+Z_{1-\beta_{1}}\sqrt{p_{1}(1-p_{1})}}{p_{1}-p_{0}})^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Regla de decisión:
+\end_layout
+
+\begin_layout Standard
+Extraer una muestra de tamaño n y si 
+\begin_inset Formula $\hat{p}_{muestra}\epsilon\mathbb{R}$
+\end_inset
+
+ entonces se rechaza H
+\begin_inset Formula $_{0}$
+\end_inset
+
+y se concluye que la campaña tuvo éxito .
+\end_layout
+
+\begin_layout Standard
+La evidencia muestral apoya el rechazo de H
+\begin_inset Formula $_{0}.$
 \end_inset
 
 
