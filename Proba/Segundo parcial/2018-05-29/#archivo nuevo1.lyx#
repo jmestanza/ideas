@@ -366,7 +366,6 @@ H
 \begin_layout Standard
 \begin_inset Graphics
 	filename 1.jpg
-	scale 60
 
 \end_inset
 
@@ -453,11 +452,7 @@ Z
 \end_layout
 
 \begin_layout Standard
-b)
-\begin_inset Formula $\beta(21)=$
-\end_inset
-
- P(
+P(
 \begin_inset Formula $\overline{X}<20.75$
 \end_inset
 
@@ -473,79 +468,7 @@ b)
 \begin_inset Formula $\approx$
 \end_inset
 
-0.2643
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $\overline{X}<20.75$
-\end_inset
-
- es no se rechaza H
-\begin_inset Formula $_{0}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\mu$
-\end_inset
-
-=21 es H
-\begin_inset Formula $_{0}$
-\end_inset
-
-es falsa
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename 3.jpg
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Z
-\begin_inset Formula $_{0.1}=\frac{20.75-21}{2.4}\sqrt{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
--1.2816 = 
-\begin_inset Formula $\frac{-0.25}{2.4}\sqrt{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-n=152
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename 4.jpg
-
-\end_inset
-
-
+0.2
 \end_layout
 
 \end_body

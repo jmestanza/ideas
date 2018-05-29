@@ -27,9 +27,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -252,7 +257,290 @@ fijado el nivel de significación
 \begin_layout Standard
 \begin_inset Graphics
 	filename DSC_0643.JPG
-	scale 60
+	scale 23
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ejemplo:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ejercicio 7 - Guía 9
+\end_layout
+
+\begin_layout Standard
+X: tiempo de secado en min
+\end_layout
+
+\begin_layout Standard
+E(X)=
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma$
+\end_inset
+
+(X)=0.24
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu\leq$
+\end_inset
+
+20 (lo que dice el fabricante)
+\end_layout
+
+\begin_layout Standard
+H
+\begin_inset Formula $_{0}:$
+\end_inset
+
+ 
+\begin_inset Formula $\mu\leq20$
+\end_inset
+
+ 
+\begin_inset Formula $(\mu_{0}=20)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+H
+\begin_inset Formula $_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $\mu$
+\end_inset
+
+>20
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Z=\frac{\overline{X}-20}{\frac{24}{\sqrt{50}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\{Z/Z>Z_{0.95}\approx1.645\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{X}_{muestra}=21$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Z_{muestra}=\frac{21-20}{24}\sqrt{50}\approx2.94$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 1.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el ejercicio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{x}_{c}$
+\end_inset
+
+=20.75
+\end_layout
+
+\begin_layout Standard
+P(Z>2.94)
+\begin_inset Formula $\approx0.0016$
+\end_inset
+
+ (valor p)
+\end_layout
+
+\begin_layout Standard
+se rechaza lo que dice el fabricante a pesar de que no está mintiendo
+\end_layout
+
+\begin_layout Standard
+20.75 = 20 + Z
+\begin_inset Formula $_{C}$
+\end_inset
+
+(0.4)
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{C}$
+\end_inset
+
+=Z
+\begin_inset Formula $_{1-\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{1-\alpha}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{0.75}{0.4}$
+\end_inset
+
+=1.875
+\end_layout
+
+\begin_layout Standard
+1-
+\begin_inset Formula $\alpha\approx$
+\end_inset
+
+0.97
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha=0.03$
+\end_inset
+
+ (3%)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 2.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b)
+\begin_inset Formula $\beta(21)=$
+\end_inset
+
+ P(
+\begin_inset Formula $\overline{X}<20.75$
+\end_inset
+
+/
+\begin_inset Formula $\mu$
+\end_inset
+
+=21) = 
+\begin_inset Formula $\Phi(\frac{20.75-21}{0.4})$
+\end_inset
+
+
+\begin_inset Formula $\approx$
+\end_inset
+
+0.2643
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\overline{X}<20.75$
+\end_inset
+
+ es no se rechaza H
+\begin_inset Formula $_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu$
+\end_inset
+
+=21 es H
+\begin_inset Formula $_{0}$
+\end_inset
+
+es falsa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{0.1}=\frac{20.75-21}{2.4}\sqrt{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+-1.2816 = 
+\begin_inset Formula $\frac{-0.25}{2.4}\sqrt{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n=152
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 4.jpg
 
 \end_inset
 
