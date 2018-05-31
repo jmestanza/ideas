@@ -1,0 +1,1721 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Joaquín Mestanza, Álgebra Lineal
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Autovalores:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+En general:
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ un 
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+-espacio vectorial 
+\end_layout
+
+\begin_layout Standard
+Sea T :
+\begin_inset Formula $\mathbb{V}\rightarrow\mathbb{V}$
+\end_inset
+
+ una Transformación Lineal
+\end_layout
+
+\begin_layout Standard
+Si T(v)= 
+\begin_inset Formula $\lambda$
+\end_inset
+
+v , 
+\begin_inset Formula $\lambda\epsilon\mathbb{K}$
+\end_inset
+
+ y v
+\begin_inset Formula $\epsilon\mathbb{V}$
+\end_inset
+
+ con 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Decimos que 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es 
+\series bold
+autovalor(ava)
+\series default
+ de T y v es su 
+\series bold
+autovector(ave)
+\series default
+ asociado
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+En particular(Todo lo que se desarrolle a continuación se basa en esto):
+\end_layout
+
+\begin_layout Standard
+Si
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T:
+\begin_inset Formula $\mathbb{K}^{n}$
+\end_inset
+
+
+\begin_inset Formula $\rightarrow\mathbb{K}^{n}$
+\end_inset
+
+ , T(v)=A.v con A 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+
+\begin_inset Formula $^{nxn}$
+\end_inset
+
+ y v
+\begin_inset Formula $\epsilon\mathbb{V}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y además
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T(v)=A.v=
+\begin_inset Formula $\lambda$
+\end_inset
+
+v con 
+\begin_inset Formula $\lambda\epsilon\mathbb{K}$
+\end_inset
+
+ con 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+ (
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es 
+\series bold
+ava
+\series default
+ de A y v su 
+\series bold
+ave
+\series default
+ correspondiente)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+bajo esta condición
+\end_layout
+
+\begin_layout Standard
+A.v - 
+\begin_inset Formula $\lambda$
+\end_inset
+
+v =
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(A-
+\begin_inset Formula $\lambda$
+\end_inset
+
+I)v=
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es un sistema lineal homogéneo con n ecuaciones y n incógnitas con 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Queremos obtener las soluciones no triviales por ende pedimos que det(A-
+\begin_inset Formula $\lambda$
+\end_inset
+
+I) = 0
+\end_layout
+
+\begin_layout Standard
+en otras palabras quiero infinitas soluciones
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Polinomio característico
+\end_layout
+
+\begin_layout Standard
+Se define polinomio característico a p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)=det(A-
+\begin_inset Formula $\lambda$
+\end_inset
+
+I)
+\end_layout
+
+\begin_layout Standard
+Si p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)=0 
+\begin_inset Formula $\implies$
+\end_inset
+
+
+\begin_inset Formula $\lambda$
+\end_inset
+
+es raíz de p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+) y será un 
+\series bold
+ava de A
+\end_layout
+
+\begin_layout Standard
+gr(p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+))=n 
+\end_layout
+
+\begin_layout Standard
+donde gr es el grado del polinomio.
+\end_layout
+
+\begin_layout Standard
+el coeficiente principal será 1 si n es par y -1 si n es impar.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\mathbb{K=C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)=(-1)
+\begin_inset Formula $^{n}$
+\end_inset
+
+(
+\begin_inset Formula $\lambda-\lambda_{1}$
+\end_inset
+
+)....(
+\begin_inset Formula $\lambda-\lambda_{n}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ es raíz de p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+) 1
+\begin_inset Formula $\leq i\leq n$
+\end_inset
+
+ (n raíces complejas)
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\mathbb{K=R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+tendré a la suma de n raíces reales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedad:
+\end_layout
+
+\begin_layout Standard
+Sea A 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+
+\begin_inset Formula $^{nxn}$
+\end_inset
+
+ y A.v=
+\begin_inset Formula $\lambda$
+\end_inset
+
+v con 
+\begin_inset Formula $\lambda\epsilon\mathbb{K}$
+\end_inset
+
+ con 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+ (
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es 
+\series bold
+ava
+\series default
+ de A y v su 
+\series bold
+ave
+\series default
+ correspondiente)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{\lambda}=\{v\epsilon\mathbb{K}^{n}/A.v=\lambda v\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+[Notar que en esta definición no se excluyó al v
+\begin_inset Formula $=$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+, ya que, de lo contrario no sería un subespacio]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{\lambda}$
+\end_inset
+
+ es un subespacio de 
+\begin_inset Formula $\mathbb{K}^{n}$
+\end_inset
+
+ (también llamado 
+\series bold
+autoespacio
+\series default
+ correspondiente al 
+\series bold
+ava
+\series default
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{K}^{n}=\mathbb{R}^{n}$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbb{K}^{n}=\mathbb{C}^{n}$
+\end_inset
+
+ (como 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+-esp vectorial (escalares complejos))
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Definición:
+\end_layout
+
+\begin_layout Standard
+Multiplicidad algebraica
+\series bold
+ (ma):
+\end_layout
+
+\begin_layout Standard
+Es el número que representa las veces que figura el 
+\series bold
+ava
+\series default
+ como raíz de p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Multiplicidad geométrica
+\series bold
+ (mg):
+\end_layout
+
+\begin_layout Standard
+Es el número que representa la dimensión del subespacio correspondiente
+ al 
+\series bold
+ava
+\series default
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema:
+\end_layout
+
+\begin_layout Standard
+para cada 
+\series bold
+ava 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\begin_inset Formula $\leq$
+\end_inset
+
+mg
+\series default
+(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)
+\begin_inset Formula $\leq$
+\end_inset
+
+
+\series bold
+ma(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedades:
+\end_layout
+
+\begin_layout Standard
+1) 
+\begin_inset Formula $(\alpha A).v=(\alpha\lambda)v$
+\end_inset
+
+ con
+\begin_inset Formula $\alpha\epsilon\mathbb{K}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha\lambda$
+\end_inset
+
+ es ava de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+A y v es su ave
+\end_layout
+
+\begin_layout Standard
+2) 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+v=
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\begin_inset Formula $^{k}$
+\end_inset
+
+v ; 
+\begin_inset Formula $k\epsilon\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda^{k}$
+\end_inset
+
+es ava de A
+\begin_inset Formula $^{k}$
+\end_inset
+
+y v es su ave
+\end_layout
+
+\begin_layout Standard
+3) A no es inversible 
+\begin_inset Formula $\iff\lambda=0$
+\end_inset
+
+ es su ava
+\end_layout
+
+\begin_layout Standard
+4) Si A es inversible 
+\begin_inset Formula $\implies$
+\end_inset
+
+ A
+\begin_inset Formula $^{-1}$
+\end_inset
+
+v=
+\begin_inset Formula $\frac{1}{\lambda}$
+\end_inset
+
+v
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{\lambda}$
+\end_inset
+
+ es ava de A
+\begin_inset Formula $^{-1}$
+\end_inset
+
+y v es su ave
+\end_layout
+
+\begin_layout Standard
+5)Si A
+\begin_inset Formula $\epsilon\mathbb{R}^{nxn}$
+\end_inset
+
+ , 
+\begin_inset Formula $\lambda\epsilon\mathbb{C}$
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ A.
+\begin_inset Formula $\overline{v}=\overline{\lambda}$
+\end_inset
+
+
+\begin_inset Formula $\overline{v}$
+\end_inset
+
+ , 
+\begin_inset Formula $v\epsilon\mathbb{C}^{n}/$
+\end_inset
+
+ 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(conjugo ambos miembros y obtengo que si tenia un autovalor , conozco otro
+ autovalor que va a ser su conjugado y además el autovector asociado a este
+ último es el conjugado del autovector que ya conocía)
+\end_layout
+
+\begin_layout Standard
+6) Si A es una matriz triangular inferior o superior 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda_{i}=[A]_{ii}$
+\end_inset
+
+ ;1
+\begin_inset Formula $\leq i\leq n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+7) Si 
+\begin_inset Formula $\lambda_{1},\lambda_{2},...,\lambda_{r}$
+\end_inset
+
+ son avas distintos de la matriz A con 
+\begin_inset Formula $r\leq n$
+\end_inset
+
+ y v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,...,v
+\begin_inset Formula $_{r}$
+\end_inset
+
+ son sus ave correspondientes 
+\begin_inset Formula $\implies$
+\end_inset
+
+ {v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,...,v
+\begin_inset Formula $_{r}$
+\end_inset
+
+} es L.I.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matrices semejantes:
+\end_layout
+
+\begin_layout Standard
+Sean A, B 
+\begin_inset Formula $\epsilon\mathbb{K}^{nxn}$
+\end_inset
+
+ se dice que B es semejante a A si existe una matriz P
+\begin_inset Formula $\epsilon\mathbb{K}^{nxn}$
+\end_inset
+
+ inversible / B = P
+\begin_inset Formula $^{-1}$
+\end_inset
+
+.A .P
+\end_layout
+
+\begin_layout Standard
+Si multiplico por izquierda por P ambos miembros:
+\end_layout
+
+\begin_layout Standard
+P.B=(P.P
+\begin_inset Formula $^{-1}$
+\end_inset
+
+)A.P = I .
+ A .P = A.P
+\end_layout
+
+\begin_layout Standard
+y ahora por derecha por P
+\begin_inset Formula $^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+PBP
+\begin_inset Formula $^{-1}$
+\end_inset
+
+=A(P.P
+\begin_inset Formula $^{-1}$
+\end_inset
+
+)=A.I = A
+\end_layout
+
+\begin_layout Standard
+A es semejante a B.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedades:
+\end_layout
+
+\begin_layout Standard
+1) A es semejante a A
+\end_layout
+
+\begin_layout Standard
+2) A es semejante a B 
+\begin_inset Formula $\implies$
+\end_inset
+
+ B es semejante a A
+\end_layout
+
+\begin_layout Standard
+3) Si A es semejante a B y B es semejante a C 
+\begin_inset Formula $\implies$
+\end_inset
+
+ A es semejante a C
+\end_layout
+
+\begin_layout Standard
+4) Si A es semejante a B 
+\begin_inset Formula $\implies$
+\end_inset
+
+A y B tienen los mismos avas (se demuestra aplicando determinante a ambos
+ miembros)
+\end_layout
+
+\begin_layout Standard
+5) si A y B semejantes 
+\begin_inset Formula $\implies$
+\end_inset
+
+ det(A)=det(B)
+\end_layout
+
+\begin_layout Standard
+6) si A y B semejantes 
+\begin_inset Formula $\implies$
+\end_inset
+
+ tr(A)=tr(B)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Matrices Diagonalizables:
+\end_layout
+
+\begin_layout Standard
+Sea A 
+\begin_inset Formula $\epsilon\mathbb{K}^{nxn}$
+\end_inset
+
+ se dice que A es diagonalizable si es semejante a una matriz diagonal.
+\end_layout
+
+\begin_layout Standard
+A = P D P
+\begin_inset Formula $^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde D= 
+\begin_inset Formula $\left(\begin{array}{cccc}
+\alpha_{1} & 0 & ... & 0\\
+0 & \alpha_{2} & ... & 0\\
+... & ... & ... & ...\\
+0 & 0 & ... & \alpha_{n}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Teorema:
+\end_layout
+
+\begin_layout Standard
+Sea A 
+\begin_inset Formula $\epsilon\mathbb{K}^{nxn}$
+\end_inset
+
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ A es diagonalizable
+\end_layout
+
+\begin_layout Standard
+si existe una base B de 
+\series bold
+aves 
+\series default
+de A en 
+\begin_inset Formula $\mathbb{K}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si B = {v
+\begin_inset Formula $_{1}$
+\end_inset
+
+,v
+\begin_inset Formula $_{2}$
+\end_inset
+
+,...,v
+\begin_inset Formula $_{n}$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Standard
+y A.v
+\begin_inset Formula $_{i}$
+\end_inset
+
+=
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+v
+\begin_inset Formula $_{i}$
+\end_inset
+
+ ; 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+C
+\begin_inset Formula $_{BE}=$
+\end_inset
+
+
+\begin_inset Formula $\left(\begin{array}{ccc}
+[v_{1}]_{E} & [v_{2}]_{E} & [v_{3}]_{E}\end{array}\right)$
+\end_inset
+
+=
+\begin_inset Formula $\left(\begin{array}{ccc}
+v_{1} & v_{2} & v_{3}\end{array}\right)$
+\end_inset
+
+ con E la base canónica de 
+\begin_inset Formula $\mathbb{K}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+D=
+\begin_inset Formula $\left(\begin{array}{cccc}
+\lambda_{1} & 0 & ... & 0\\
+0 & \lambda_{2} & ... & 0\\
+... & ... & ... & ...\\
+0 & 0 & ... & \lambda_{n}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A= C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+D C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedades:
+\end_layout
+
+\begin_layout Standard
+si tengo n autovalores 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+tr(A)=
+\begin_inset Formula $\sum_{i=1}^{n}\lambda_{i}$
+\end_inset
+
+ = 
+\begin_inset Formula $\lambda_{1}+\lambda_{2}+....+\lambda_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+det(A)=
+\begin_inset Formula $\prod_{i=1}^{n}\lambda_{i}$
+\end_inset
+
+= 
+\begin_inset Formula $(\lambda_{1})(\lambda_{2})...(\lambda_{n}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1) Una matriz A 
+\begin_inset Formula $\epsilon\mathbb{K}^{nxn}$
+\end_inset
+
+ es diagonalizable 
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\lambda_{i}$
+\end_inset
+
+ : ma(
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+)=mg(
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+2) si A 
+\begin_inset Formula $\epsilon\mathbb{K}^{nxn}$
+\end_inset
+
+ y tiene n avas distintos 
+\begin_inset Formula $\implies$
+\end_inset
+
+A es diagonalizable
+\end_layout
+
+\begin_layout Standard
+3) Si A es diagonalizable 
+\begin_inset Formula $\implies$
+\end_inset
+
+A
+\begin_inset Formula $^{k}$
+\end_inset
+
+ es diagonalizable
+\end_layout
+
+\begin_layout Standard
+4) Si A= C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+D C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+A
+\begin_inset Formula $^{k}$
+\end_inset
+
+= C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+D
+\begin_inset Formula $^{k}$
+\end_inset
+
+ C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+ ; 
+\begin_inset Formula $k\epsilon\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D=
+\begin_inset Formula $\left(\begin{array}{cccc}
+\lambda_{1} & 0 & ... & 0\\
+0 & \lambda_{2} & ... & 0\\
+... & ... & ... & ...\\
+0 & 0 & ... & \lambda_{n}
+\end{array}\right)$
+\end_inset
+
+ y D
+\begin_inset Formula $^{k}$
+\end_inset
+
+=
+\begin_inset Formula $\left(\begin{array}{cccc}
+\lambda_{1}^{k} & 0 & ... & 0\\
+0 & \lambda_{2}^{k} & ... & 0\\
+... & ... & ... & ...\\
+0 & 0 & ... & \lambda_{n}^{k}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5) Si A es diagonalizable 
+\begin_inset Formula $\implies$
+\end_inset
+
+A
+\begin_inset Formula $^{-1}$
+\end_inset
+
+ es diagonalizable (si tiene inversa)
+\end_layout
+
+\begin_layout Standard
+A= C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+D C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A
+\begin_inset Formula $^{-1}$
+\end_inset
+
+= (C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+D C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+ )
+\begin_inset Formula $^{-1}$
+\end_inset
+
+= ( C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+)
+\begin_inset Formula $^{-1}$
+\end_inset
+
+(D)
+\begin_inset Formula $^{-1}$
+\end_inset
+
+ (C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+ )
+\begin_inset Formula $^{-1}$
+\end_inset
+
+= C
+\begin_inset Formula $_{BE}$
+\end_inset
+
+D 
+\begin_inset Formula $^{-1}$
+\end_inset
+
+C
+\begin_inset Formula $_{EB}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+D
+\begin_inset Formula $^{-1}$
+\end_inset
+
+=
+\begin_inset Formula $\left(\begin{array}{cccc}
+\frac{1}{\lambda_{1}} & 0 & ... & 0\\
+0 & \frac{1}{\lambda_{2}} & ... & 0\\
+... & ... & ... & ...\\
+0 & 0 & ... & \frac{1}{\lambda_{n}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Autovalores y autovectores de una Transformación Lineal:
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ un 
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+-espacio vectorial 
+\end_layout
+
+\begin_layout Standard
+Sea T :
+\begin_inset Formula $\mathbb{V}\rightarrow\mathbb{V}$
+\end_inset
+
+ una Transformación Lineal
+\end_layout
+
+\begin_layout Standard
+Si T(v) = 
+\begin_inset Formula $\lambda$
+\end_inset
+
+v ; 
+\begin_inset Formula $\lambda\epsilon\mathbb{K}$
+\end_inset
+
+ y v
+\begin_inset Formula $\epsilon\mathbb{V}$
+\end_inset
+
+ con 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+decimos que 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ es un ava de T y v su ave correspondiente
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ es un espacio de 
+\bar under
+dimensión finita
+\bar default
+ y B es una base de 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y [T]
+\begin_inset Formula $_{BB}$
+\end_inset
+
+= [T]
+\begin_inset Formula $_{B}$
+\end_inset
+
+ (matriz de la T.L.
+ relativa a la base B)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Siempre se define sobre la misma base de entrada y de salida sino no sirve
+ para calcular los avas de T
+\end_layout
+
+\begin_layout Standard
+[T(v)]
+\begin_inset Formula $_{B}$
+\end_inset
+
+=[
+\begin_inset Formula $\lambda v$
+\end_inset
+
+]
+\begin_inset Formula $_{B}$
+\end_inset
+
+=
+\begin_inset Formula $\lambda$
+\end_inset
+
+[v]
+\begin_inset Formula $_{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pero [T]
+\begin_inset Formula $_{B}[v]_{B}$
+\end_inset
+
+=[T(v)]
+\begin_inset Formula $_{B}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+luego [T]
+\begin_inset Formula $_{B}[v]_{B}$
+\end_inset
+
+=
+\begin_inset Formula $\lambda$
+\end_inset
+
+[v]
+\begin_inset Formula $_{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+([T]
+\begin_inset Formula $_{B}[v]_{B}$
+\end_inset
+
+-
+\begin_inset Formula $\lambda$
+\end_inset
+
+[v]
+\begin_inset Formula $_{B}$
+\end_inset
+
+) = 
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+([T]
+\begin_inset Formula $_{B}$
+\end_inset
+
+-
+\begin_inset Formula $\lambda$
+\end_inset
+
+I)[v]
+\begin_inset Formula $_{B}$
+\end_inset
+
+ = 
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si 
+\begin_inset Formula $v\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+[v]
+\begin_inset Formula $_{B}$
+\end_inset
+
+
+\begin_inset Formula $\neq$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies$
+\end_inset
+
+pido [T]
+\begin_inset Formula $_{B}-\lambda$
+\end_inset
+
+I no inversible 
+\begin_inset Formula $\implies det([T]_{B}-\lambda I)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+polinomio característico de T
+\end_layout
+
+\begin_layout Standard
+p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)=
+\begin_inset Formula $det([T]_{B}-\lambda I)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+El ava de T será raíz de p(
+\begin_inset Formula $\lambda$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Si hubiese tomado otra base por ejemplo B' / 
+\end_layout
+
+\begin_layout Standard
+[T]
+\begin_inset Formula $_{B\text{'}}=$
+\end_inset
+
+C
+\begin_inset Formula $_{BB'}$
+\end_inset
+
+[T]
+\begin_inset Formula $_{B}$
+\end_inset
+
+C
+\begin_inset Formula $_{B'B}$
+\end_inset
+
+ con C
+\begin_inset Formula $_{BB'}$
+\end_inset
+
+=(C
+\begin_inset Formula $_{B'B}$
+\end_inset
+
+)
+\begin_inset Formula $^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies[T]_{B}$
+\end_inset
+
+ y [T]
+\begin_inset Formula $_{B'}$
+\end_inset
+
+son semejantes 
+\begin_inset Formula $\implies$
+\end_inset
+
+tienen los mismos 
+\series bold
+autovalores
+\end_layout
+
+\begin_layout Standard
+conclusión: los avas de T son los mismos no importa que base tomemos (y
+ los aves también).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedades:
+\end_layout
+
+\begin_layout Standard
+1) para avas distintos los ave son LI
+\end_layout
+
+\begin_layout Standard
+2) T es un isomorfismo 
+\begin_inset Formula $\iff\lambda\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3) 
+\begin_inset Formula $\lambda^{k}$
+\end_inset
+
+ es ava de T
+\begin_inset Formula $^{k}$
+\end_inset
+
+ y v su ave correspondiente
+\end_layout
+
+\begin_layout Standard
+4) T
+\begin_inset Formula $^{-1}$
+\end_inset
+
+(v)= 
+\begin_inset Formula $\frac{1}{\lambda}$
+\end_inset
+
+ v
+\end_layout
+
+\end_body
+\end_document
