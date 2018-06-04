@@ -1,0 +1,949 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+Estimación y prueba de hipótesis de la media poblacional 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\series default
+ (se usa estimador 
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+de una 
+\bar under
+población normal
+\bar default
+(X~N(
+\begin_inset Formula $\mu,\sigma$
+\end_inset
+
+)) (Z=
+\begin_inset Formula $\frac{\overline{X}-\mu}{\frac{\sigma}{\sqrt{n}}}\sim N(0,1)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+a partir de una muestra aleatoria (
+\begin_inset Quotes eld
+\end_inset
+
+pequeñas muestras
+\begin_inset Quotes erd
+\end_inset
+
+, n<30)
+\end_layout
+
+\begin_layout Standard
+[para que sea independiente]
+\end_layout
+
+\begin_layout Standard
+y 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ es conocido
+\end_layout
+
+\begin_layout Standard
+entonces se estima con
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s=\sqrt{\frac{1}{n-1}\sum}\frac{}{}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$s=
+\backslash
+sqrt{
+\backslash
+frac{1}{n-1}
+\backslash
+sum_{i=1}^{n}(x_{i}-
+\backslash
+overline{x})^{2}}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+t de student:
+\end_layout
+
+\begin_layout Standard
+T= 
+\begin_inset Formula $\frac{\overline{X}-\mu}{\frac{s}{\sqrt{n}}}\sim t_{n-1}$
+\end_inset
+
+ (t de student)
+\end_layout
+
+\begin_layout Standard
+tiene n-1 grados de libertad
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+sum_{i=1}^{n}(x_{i}-
+\backslash
+overline{x})^{2}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+si conozco n-1 numeros de esta suma puedo conocer el que me falta
+\end_layout
+
+\begin_layout Standard
+por eso n-1 grados de libertad
+\end_layout
+
+\begin_layout Standard
+ya que
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+sum_{i=1}^{n}(x_{i}-
+\backslash
+overline{x})=0$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nu$
+\end_inset
+
+ de student es el n-1 de grados de libertad (no confundir con el tamaño
+ de la muestra)
+\end_layout
+
+\begin_layout Standard
+E(T)=0
+\end_layout
+
+\begin_layout Standard
+V(T)=
+\begin_inset Formula $\frac{\nu}{\nu-2}$
+\end_inset
+
+ con 
+\begin_inset Formula $\nu>2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V(T)
+\begin_inset Formula $\begin{array}{cc}
+\rightarrow\\
+n\rightarrow\infty
+\end{array}$
+\end_inset
+
+1
+\end_layout
+
+\begin_layout Standard
+F
+\begin_inset Formula $_{T}$
+\end_inset
+
+(t)
+\begin_inset Formula $\begin{array}{cc}
+\rightarrow & \Phi(t)\\
+n\rightarrow\infty
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Bell_Curve.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\begin_inset Formula $_{\omega}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu$
+\end_inset
+
+=10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu$
+\end_inset
+
+=50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2816
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.372
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.300
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6449
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.813
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.676
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.975
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.965
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0086
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+t
+\begin_inset Formula $_{\nu,\omega}>Z_{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cómo se usaría esto para estimar y realizar prueba de hipótesis:
+\end_layout
+
+\begin_layout Standard
+Intervalo de confianza para 
+\begin_inset Formula $\mu$
+\end_inset
+
+al nivel 100(1-
+\begin_inset Formula $\alpha$
+\end_inset
+
+)% (población normal)
+\end_layout
+
+\begin_layout Standard
+si:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma$
+\end_inset
+
+ es conocido:
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\overline{x}-Z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+ , 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
++
+\begin_inset Formula $Z_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma$
+\end_inset
+
+ desconocido:
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\overline{x}-t_{n-1,1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}$
+\end_inset
+
+ , 
+\begin_inset Formula $\overline{x}$
+\end_inset
+
++
+\begin_inset Formula $t_{n-1,1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-
+\begin_inset Formula $\frac{\alpha}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\begin_inset Formula $_{1-\frac{\alpha}{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n-1=9 ; t
+\begin_inset Formula $_{n-1,1-\frac{\alpha}{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.6449
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8331
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.975
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.9660
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2622
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prueba de hipótesis sobre 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename DSC_0645.JPG
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Problema 11 - Guía 9:
+\end_layout
+
+\begin_layout Standard
+11) X: tiempo de una operación
+\end_layout
+
+\begin_layout Standard
+X~N(
+\begin_inset Formula $\mu$
+\end_inset
+
+,
+\begin_inset Formula $\sigma$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+n=15
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{X}=\frac{1}{15}\sum_{i=1}^{15}X_{i}=\frac{76.9}{15}\approx5.13$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1-
+\begin_inset Formula $\alpha$
+\end_inset
+
+=0.95
+\end_layout
+
+\begin_layout Standard
+E = t
+\begin_inset Formula $_{14,0.975}\frac{s}{\sqrt{15}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muestra una recta con 
+\end_layout
+
+\begin_layout Standard
+5.13 en el medio y 5.13-E y 5.13 + E
+\end_layout
+
+\begin_layout Standard
+a veces da la suma de los xi y la suma de (xi^2) en los examenes
+\end_layout
+
+\begin_layout Standard
+s
+\begin_inset Formula $^{2}$
+\end_inset
+
+=
+\begin_inset Formula $\frac{1}{14}\sum_{i=1}^{15}(X_{i}-5.13)^{2}=\frac{1}{14}(\sum_{i=1}^{15}X_{i}^{2}-2.513\sum_{i=1}^{15}X_{i}+15.513^{2})$
+\end_inset
+
+=
+\begin_inset Formula $\frac{1}{14}(\sum_{i=1}^{15}X_{i}^{2}-15.513^{2})$
+\end_inset
+
+= (*)
+\end_layout
+
+\begin_layout Standard
+Se da por conocida la suma
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{15}X_{i}$
+\end_inset
+
+ =15.513
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{15}X_{i}^{2}$
+\end_inset
+
+ =415.55
+\end_layout
+
+\begin_layout Standard
+(*) =1.485 
+\begin_inset Formula $\implies$
+\end_inset
+
+s=1.219
+\end_layout
+
+\begin_layout Standard
+Entonces 
+\end_layout
+
+\begin_layout Standard
+E = t
+\begin_inset Formula $_{14,0.975}\frac{1.219}{\sqrt{15}}$
+\end_inset
+
+=2.1415
+\begin_inset Formula $\frac{1.219}{\sqrt{15}}$
+\end_inset
+
+=0.675
+\end_layout
+
+\begin_layout Standard
+14 grados de libertad la que deja 0.975 a la izquierda
+\end_layout
+
+\begin_layout Standard
+Resultados muestrales:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\overline{X}=5.13$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S=1.22
+\end_layout
+
+\begin_layout Standard
+sospecha que mu es mayor a 5 minutos
+\end_layout
+
+\begin_layout Standard
+por ende vamos por la prueba de cola derecha
+\end_layout
+
+\begin_layout Standard
+H
+\begin_inset Formula $_{0}$
+\end_inset
+
+: 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\begin_inset Formula $\leq$
+\end_inset
+
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $\mu>5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha$
+\end_inset
+
+=0.05
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t_{c}$
+\end_inset
+
+= t
+\begin_inset Formula $_{14,0.95}\approx1.76$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+t
+\begin_inset Formula $_{obs}=\frac{5.13-5}{\frac{1.219}{\text{\sqrt{15}}}}=0.413la$
+\end_inset
+
+evidencia muestral no apoua la sospecha del gerente
+\end_layout
+
+\end_body
+\end_document
