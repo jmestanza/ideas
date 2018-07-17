@@ -76,14 +76,10 @@
 \begin_body
 
 \begin_layout Standard
-
-\size large
 Prueba de hipótesis estadísticas
 \end_layout
 
 \begin_layout Standard
-
-\size large
 (para la 
 \series bold
 \bar under
@@ -109,13 +105,10 @@ proporción poblacional
 \begin_layout Standard
 
 \series bold
-\size large
 grande porque en algún momento invocamos el TCL
 \end_layout
 
 \begin_layout Standard
-
-\size large
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -123,54 +116,40 @@ parámetros poblacionales
 \end_layout
 
 \begin_layout Standard
-
-\size large
 p (en general son desconocidos :( ) 
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Se estudian mediante:
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-\size large
 \bar under
 Estimación de parámetros:
 \end_layout
 
 \begin_layout Standard
-
-\size large
 * puntual:
 \end_layout
 
 \begin_layout Standard
-
-\size large
 *por intervalo de confianza
 \end_layout
 
 \begin_layout Standard
-
-\size large
 ó
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-\size large
 \bar under
 Prueba de hipótesis:
 \end_layout
 
 \begin_layout Standard
-
-\size large
 *Planteo de 
 \series bold
 hipótesis
@@ -197,8 +176,6 @@ toma de decisiones
 \end_layout
 
 \begin_layout Standard
-
-\size large
 ¡Con la 
 \series bold
 toma de decisiones
@@ -211,8 +188,6 @@ riesgo
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Los 
 \series bold
 riesgos
@@ -223,8 +198,6 @@ probabilidad
 \end_layout
 
 \begin_layout Standard
-
-\size large
 palabra clave: 
 \series bold
 \bar under
@@ -232,14 +205,10 @@ significativo
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Las pruebas de hipótesis tienen un determinado formato:
 \end_layout
 
 \begin_layout Standard
-
-\size large
 H
 \begin_inset Formula $_{0}$
 \end_inset
@@ -250,8 +219,6 @@ H
 \end_layout
 
 \begin_layout Standard
-
-\size large
 H
 \begin_inset Formula $_{1}$
 \end_inset
@@ -262,16 +229,12 @@ H
 \end_layout
 
 \begin_layout Standard
-
-\size large
 Pone como ejemplo el 
 \series bold
 ejercicio 15 de la guía 9
 \end_layout
 
 \begin_layout Standard
-
-\size large
 habitualmente en el H
 \begin_inset Formula $_{0}$
 \end_inset
@@ -288,8 +251,6 @@ enfoque pesimista
 \end_layout
 
 \begin_layout Standard
-
-\size large
 H
 \begin_inset Formula $_{0}$
 \end_inset
@@ -315,8 +276,6 @@ la campaña no tuvo éxito
 \end_layout
 
 \begin_layout Standard
-
-\size large
 H
 \begin_inset Formula $_{1}:$
 \end_inset
@@ -349,18 +308,7 @@ la campaña tuvo éxito
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\downarrow$
-\end_inset
 
-En la población (
-\begin_inset Quotes eld
-\end_inset
-
-incierto
-\begin_inset Quotes erd
-\end_inset
-
-)
 \end_layout
 
 \end_inset
@@ -703,7 +651,7 @@ Z =
 \begin_layout Standard
 \begin_inset Graphics
 	filename Bell_Curve2.jpg
-	scale 70
+	scale 60
 
 \end_inset
 
@@ -846,6 +794,62 @@ P(
 
 =Z
 \begin_inset Formula $_{\beta_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z
+\begin_inset Formula $_{\beta_{1}}$
+\end_inset
+
+= 
+\begin_inset Formula $\frac{\hat{p_{C}}-p_{1}}{\sqrt{\frac{p_{1}(1-p_{1})}{n}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+p
+\begin_inset Formula $_{1}+Z_{\beta_{1}}\sqrt{\frac{p_{1}(1-p_{1})}{n}}$
+\end_inset
+
+=p
+\begin_inset Formula $_{0}+Z_{1-\alpha}\sqrt{\frac{p_{0}(1-p_{0})}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n=
+\begin_inset Formula $(\frac{Z_{1-\alpha}\sqrt{p_{0}(1-p_{0})}+Z_{1-\beta_{1}}\sqrt{p_{1}(1-p_{1})}}{p_{1}-p_{0}})^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Regla de decisión:
+\end_layout
+
+\begin_layout Standard
+Extraer una muestra de tamaño n y si 
+\begin_inset Formula $\hat{p}_{muestra}\epsilon\mathbb{R}$
+\end_inset
+
+ entonces se rechaza H
+\begin_inset Formula $_{0}$
+\end_inset
+
+y se concluye que la campaña tuvo éxito .
+\end_layout
+
+\begin_layout Standard
+La evidencia muestral apoya el rechazo de H
+\begin_inset Formula $_{0}.$
 \end_inset
 
 
