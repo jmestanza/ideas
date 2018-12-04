@@ -1,0 +1,3 @@
+C:/Users/joa-m/IncisoD/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/IncisoD/cmake-build-debug/CMakeFiles/IncisoD.dir
+C:/Users/joa-m/IncisoD/cmake-build-debug/CMakeFiles/rebuild_cache.dir

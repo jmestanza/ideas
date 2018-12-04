@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/joa-m/tst/EDA/incisob.cpp
+iostream
+-
+
+C:/Users/joa-m/tst/EDA/incisoc.cpp
+iostream
+-
+
+C:/Users/joa-m/tst/EDA/main.cpp
+iostream
+-
+
