@@ -1,0 +1,752 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Notas de las notas de mate 5:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Funciones de singularidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u(t)=\begin{cases}
+0 & t<0\\
+1 & t\geq0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rampa unitaria: 
+\begin_inset Formula $r(t)=\begin{cases}
+0 & t\leq0\\
+t & t>0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+notar: 
+\begin_inset Formula $r(t)=\int_{-\infty}^{t}u(s)ds$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Parábola unitaria: 
+\begin_inset Formula $p(t)=\begin{cases}
+0 & t\leq0\\
+\frac{t^{2}}{2} & t>0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p(t)=\int_{-\infty}^{t}r(s)ds$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+notar: 
+\end_layout
+
+\begin_layout Standard
+Pulso unitario: 
+\begin_inset Formula $\Pi(t)=\begin{cases}
+1 & \text{|t|}\leq\frac{1}{2}\\
+0 & |t|>\frac{1}{2}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Triangular unitaria: 
+\begin_inset Formula $\varLambda(t)=\begin{cases}
+1-|t| & |t|<1\\
+0 & |t|\geq1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Son funciones de singularidad porque en algún punto del dominio no existen
+ las derivadas de algún orden.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Energía y potencia
+\end_layout
+
+\begin_layout Standard
+Señales de energía:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ex=\begin{array}{cc}
+lím\\
+t\rightarrow+\infty
+\end{array}\int_{-T}^{T}|x(t)|^{2}dt$
+\end_inset
+
+ donde 
+\begin_inset Formula $0<Ex<\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Señales de potencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Px=\begin{array}{cc}
+lím\\
+t\rightarrow+\infty
+\end{array}\frac{1}{2T}\int_{-T}^{T}|x(t)|^{2}dt$
+\end_inset
+
+ donde 
+\begin_inset Formula $0<Px<\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Propiedades de señales de energía y potencia:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Desplazamiento:
+\end_layout
+
+\begin_layout Standard
+sea 
+\begin_inset Formula $y(t)=x(t+t_{0})$
+\end_inset
+
+ con 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ señal de energía se puede probar entonces que 
+\begin_inset Formula $E_{y}=E_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sea 
+\begin_inset Formula $y(t)=x(t+t_{0})$
+\end_inset
+
+ con 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ señal de potencia se puede probar entonces que 
+\begin_inset Formula $P_{y}=P_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Efecto de escalamiento por un 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+supongamos x una señal de energía con energía Ex se puede probar que
+\end_layout
+
+\begin_layout Standard
+si 
+\begin_inset Formula $y(t)=x(\alpha t)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $Ey=\frac{Ex}{|\alpha|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+supongamos x una señal de potencia con potencia Px se puede probar
+\end_layout
+
+\begin_layout Standard
+si 
+\begin_inset Formula $y(t)=x(\alpha t)$
+\end_inset
+
+ entonces
+\begin_inset Formula $Py=Px$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funciones generalizadas empieza en la nota 1 página 16 hasta el final de
+ la nota lo dejo para leer después pero dejo un ejemplo útil:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ejemplo18part1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ejemplo18part2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Nota 2:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Serie exponencial de Fourier:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x(t)\sim\begin{array}{cc}
+\sum\\
+k\epsilon\mathbb{Z}
+\end{array}X_{k}e^{ik\omega_{0}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{k}=\frac{1}{T}\int_{t_{0}}^{t_{0}+T}x(t)e^{-ik\omega_{0}t}dt$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k\epsilon\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Igualdad de parserval para la exponencial de fourier:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cc}
+\sum\\
+k\epsilon\mathbb{Z}
+\end{array}|X_{k}|^{2}=\frac{1}{T}\int_{t_{0}}^{t_{0}+T}|x(t)|^{2}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Serie trigonométrica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{0}=\int_{t_{0}}^{t_{0}+T}x(t)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}x(t)cos(n\omega_{0}t)dt$
+\end_inset
+
+ 
+\begin_inset Formula $n\epsilon\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{n}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}x(t)sen(n\omega_{0}t)dt$
+\end_inset
+
+ 
+\begin_inset Formula $n\epsilon\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En cuanto a la igualdad de parserval:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|a_{0}|$
+\end_inset
+
+
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\begin_inset Formula $+\begin{array}{cc}
+\sum\\
+n\epsilon\mathbb{N}
+\end{array}|a_{n}|^{2}+|b_{n}|^{2}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}|x(t)|^{2}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Coeficientes de las series exponencial:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Desplazamiento 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Sea x(t) periódica de período T y supongamos que {
+\begin_inset Formula $X_{n},n\epsilon\mathbb{Z}$
+\end_inset
+
+} coef de la s.
+ exponencial y sea y(t)=x(t+
+\begin_inset Formula $\mathcal{\tau}$
+\end_inset
+
+) entonces:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y_{n}=X_{n}e^{in\omega_{0}\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Relaciones y valor medio de la señal:
+\end_layout
+
+\begin_layout Standard
+x(t) periódica de período T, {
+\begin_inset Formula $X_{n},n\epsilon\mathbb{Z}$
+\end_inset
+
+}{
+\begin_inset Formula $a_{0},a_{n},b_{n},n\epsilon\mathbb{\mathbb{N}}$
+\end_inset
+
+} sus coef.
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{0}=\frac{1}{T}\int_{t_{0}}^{t_{0}+T}x(t)dt=a_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{0}$
+\end_inset
+
+ se denomina el valor medio de la señal x(t)
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{n}=\frac{1}{2}(a_{n}-ib_{n})$
+\end_inset
+
+ y X
+\begin_inset Formula $_{-n}=\frac{1}{2}(a_{n}+ib_{n})$
+\end_inset
+
+ 
+\begin_inset Formula $n\epsilon\mathbb{\mathbb{N}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si x(t) es una señal real:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{-n}=X_{n}^{*}\forall n\epsilon\mathbb{\mathbb{N}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si x(t) es una señal par entonces b
+\begin_inset Formula $_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{n}=X_{-n}=\frac{a_{n}}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\epsilon\mathbb{\mathbb{N}}$
+\end_inset
+
+ (no hace falta que sea real) 
+\end_layout
+
+\begin_layout Standard
+Si x(t) es una señal impar entonces 
+\begin_inset Formula $a_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{n}=-X_{-n}=-i\frac{b_{n}}{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\epsilon\mathbb{\mathbb{N}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+FALTA ESPECTRO UNILATERAL Y BILATERAL DE FUNCIONES REALES
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Convergencia de las series de Fourier:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier2.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muy importante para este teorema que 
+\begin_inset Formula $\exists x\text{'(}\tau^{\text{+}})$
+\end_inset
+
+ ,
+\begin_inset Formula $\exists x\text{'(}\tau^{\text{-}})$
+\end_inset
+
+ y 
+\begin_inset Formula $x\text{'(}\tau^{\text{+}})=x\text{'(}\tau^{\text{-}})$
+\end_inset
+
+!!!!!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier3.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier4.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename convfourier5.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nota 3:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota5.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota6.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Después de esto es básicamente fijarse en la tabla 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Transformada de una periódica con tren de deltas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3nota8.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Falta densidad espectral de energía, de potencia y edos.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Por ahora no considero importante la primera y edos es relativamente sencillo.
+\end_layout
+
+\begin_layout Standard
+Nota 4:
+\end_layout
+
+\end_body
+\end_document
