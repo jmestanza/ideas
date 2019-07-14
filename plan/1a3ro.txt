@@ -1,0 +1,41 @@
+Año 1 - Cuatrimestre 1
+Materia	Créditos	Créditos requeridos	Correlativas
+22.06 - Introducción a la Computación	6	0	
+31.08 - Sistemas de Representación	3	0	
+93.16 - Matemática Discreta	3	0	
+93.17 - Matemática I	6	0	
+93.18 - Álgebra Lineal	6	0	
+Año 1 - Cuatrimestre 2
+Materia	Créditos	Créditos requeridos	Correlativas
+22.07 - Programación I	6	0	22.06  
+93.02 - Matemática II	6	0	93.18  93.17  
+93.03 - Matemática III	6	0	93.18  93.17  
+93.41 - Física I	6	0	93.17  
+94.21 - Formación General I	3	0	
+Año 2 - Cuatrimestre 1
+Materia	Créditos	Créditos requeridos	Correlativas
+22.08 - Algoritmos y Estructura de Datos	6	0	93.16  22.07  
+93.42 - Física II	6	0	93.02  
+93.43 - Física III	6	0	93.03  93.41  
+93.65 - Matemática IV	6	0	93.02  93.03  
+Año 2 - Cuatrimestre 2
+Materia	Créditos	Créditos requeridos	Correlativas
+22.02 - Electrotecnia I	6	0	93.43  
+93.24 - Probabilidad y Estadística	6	0	93.02  
+93.44 - Física IV	6	0	93.03  93.42  93.43  
+93.57 - Matemática V	6	0	93.65  
+94.24 - Metodología del Aprendizaje	3	0	
+Año 3 - Cuatrimestre 1
+Materia	Créditos	Créditos requeridos	Correlativas
+22.01 - Teoría de Circuitos	6	0	22.02  93.57  
+22.13 - Electrónica III	6	0	22.02  93.16  
+22.42 - Laboratorio de Electrónica	6	0	22.02  
+22.59 - Electrónica I	6	0	22.02  93.44  
+Año 3 - Cuatrimestre 2
+Materia	Créditos	Créditos requeridos	Correlativas
+12.01 - Química I	6	0	
+22.05 - Análisis de Señales y Sistemas Digitales	6	0	22.01  
+22.12 - Electrónica II	6	0	22.01  22.59  
+22.67 - Señales Aleatorias	6	0	93.57  93.24  
+93.54 - Métodos Numéricos	3	0	93.03  22.08  
+94.51 - Inglés I
