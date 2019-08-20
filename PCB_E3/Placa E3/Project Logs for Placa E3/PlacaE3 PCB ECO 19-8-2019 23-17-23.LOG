@@ -1,0 +1,145 @@
+Added Component: Designator=C1(CAP200)
+Added Component: Designator=C2(CAP200)
+Added Component: Designator=C3(CAP200)
+Added Component: Designator=D1(DO41)
+Added Component: Designator=D2(DO41)
+Added Component: Designator=D3(DO41)
+Added Component: Designator=D4(DO41)
+Added Component: Designator=J1(MOLEX2)
+Added Component: Designator=P1(HDR1X12)
+Added Component: Designator=P2(HDR1X12)
+Added Component: Designator=R2(RES400)
+Added Component: Designator=R3(RES400)
+Added Component: Designator=R4(RES400)
+Added Component: Designator=R5(POTENCIOMETRO)
+Added Component: Designator=R6(RES400)
+Added Component: Designator=R7(RES400)
+Added Component: Designator=R8(RES400)
+Added Component: Designator=R9(RES400)
+Added Component: Designator=R10(RES400)
+Added Component: Designator=R11(RES400)
+Added Component: Designator=R12(POTENCIOMETRO)
+Added Component: Designator=R13(RES400)
+Added Component: Designator=R14(RES400)
+Added Component: Designator=R15(RES400)
+Added Component: Designator=R?(PRESET V)
+Added Component: Designator=U1(J014)
+Added Component: Designator=U2(TO-220 V)
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=3.3V Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=GND Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=GND Pin=D4-1
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=NetC2_1 Pin=J1-2
+Added Pin To Net: NetName=P13 Pin=P1-1
+Added Pin To Net: NetName=P14 Pin=P1-2
+Added Pin To Net: NetName=P15 Pin=P1-3
+Added Pin To Net: NetName=P16 Pin=P1-4
+Added Pin To Net: NetName=P17 Pin=P1-5
+Added Pin To Net: NetName=P18 Pin=P1-6
+Added Pin To Net: NetName=P19 Pin=P1-7
+Added Pin To Net: NetName=P20 Pin=P1-8
+Added Pin To Net: NetName=P21 Pin=P1-9
+Added Pin To Net: NetName=3.3V Pin=P1-10
+Added Pin To Net: NetName=GND Pin=P1-11
+Added Pin To Net: NetName=RAW Pin=P1-12
+Added Pin To Net: NetName=P1 Pin=P2-1
+Added Pin To Net: NetName=P2 Pin=P2-2
+Added Pin To Net: NetName=P3 Pin=P2-3
+Added Pin To Net: NetName=P4 Pin=P2-4
+Added Pin To Net: NetName=P5 Pin=P2-5
+Added Pin To Net: NetName=P6 Pin=P2-6
+Added Pin To Net: NetName=P7 Pin=P2-7
+Added Pin To Net: NetName=P8 Pin=P2-8
+Added Pin To Net: NetName=P9 Pin=P2-9
+Added Pin To Net: NetName=P10 Pin=P2-10
+Added Pin To Net: NetName=P11 Pin=P2-11
+Added Pin To Net: NetName=GND Pin=P2-12
+Added Pin To Net: NetName=3.3V Pin=R2-1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetD1_2 Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=NetR2_2 Pin=R4-2
+Added Pin To Net: NetName=3.3V Pin=R5-1
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R5-3
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=NetD2_2 Pin=R6-2
+Added Pin To Net: NetName=3.3V Pin=R7-1
+Added Pin To Net: NetName=NetR7_2 Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=NetR7_2 Pin=R8-2
+Added Pin To Net: NetName=3.3V Pin=R9-1
+Added Pin To Net: NetName=NetR9_2 Pin=R9-2
+Added Pin To Net: NetName=NetR10_1 Pin=R10-1
+Added Pin To Net: NetName=NetD3_2 Pin=R10-2
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=NetR9_2 Pin=R11-2
+Added Pin To Net: NetName=3.3V Pin=R12-1
+Added Pin To Net: NetName=NetR12_2 Pin=R12-2
+Added Pin To Net: NetName=GND Pin=R12-3
+Added Pin To Net: NetName=NetR13_1 Pin=R13-1
+Added Pin To Net: NetName=NetD4_2 Pin=R13-2
+Added Pin To Net: NetName=3.3V Pin=R14-1
+Added Pin To Net: NetName=NetR14_2 Pin=R14-2
+Added Pin To Net: NetName=GND Pin=R15-1
+Added Pin To Net: NetName=NetR14_2 Pin=R15-2
+Added Pin To Net: NetName=NetC2_1 Pin=R?-1
+Added Pin To Net: NetName=NetC1_1 Pin=R?-2
+Added Pin To Net: NetName=GND Pin=R?-3
+Added Pin To Net: NetName=NetR3_1 Pin=U1-1
+Added Pin To Net: NetName=NetR2_2 Pin=U1-2
+Added Pin To Net: NetName=NetR5_2 Pin=U1-3
+Added Pin To Net: NetName=NetC1_1 Pin=U1-4
+Added Pin To Net: NetName=NetR7_2 Pin=U1-5
+Added Pin To Net: NetName=NetR5_2 Pin=U1-6
+Added Pin To Net: NetName=NetR6_1 Pin=U1-7
+Added Pin To Net: NetName=NetR10_1 Pin=U1-8
+Added Pin To Net: NetName=NetR9_2 Pin=U1-9
+Added Pin To Net: NetName=NetR12_2 Pin=U1-10
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=NetR14_2 Pin=U1-12
+Added Pin To Net: NetName=NetR12_2 Pin=U1-13
+Added Pin To Net: NetName=NetR13_1 Pin=U1-14
+Added Pin To Net: NetName=NetC2_1 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=3.3V Pin=U2-3
+Added Member To Class: ClassName=PlacaE3 Member=Component C1 CAP
+Added Member To Class: ClassName=PlacaE3 Member=Component C2 CAP
+Added Member To Class: ClassName=PlacaE3 Member=Component C3 CAP
+Added Member To Class: ClassName=PlacaE3 Member=Component D1 DIODO
+Added Member To Class: ClassName=PlacaE3 Member=Component D2 DIODO
+Added Member To Class: ClassName=PlacaE3 Member=Component D3 DIODO
+Added Member To Class: ClassName=PlacaE3 Member=Component D4 DIODO
+Added Member To Class: ClassName=PlacaE3 Member=Component J1 MOLEX2
+Added Member To Class: ClassName=PlacaE3 Member=Component P1 Header 12
+Added Member To Class: ClassName=PlacaE3 Member=Component P2 Header 12
+Added Member To Class: ClassName=PlacaE3 Member=Component R2 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R3 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R4 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R5 POTENCIOMETRO
+Added Member To Class: ClassName=PlacaE3 Member=Component R6 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R7 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R8 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R9 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R10 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R11 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R12 POTENCIOMETRO
+Added Member To Class: ClassName=PlacaE3 Member=Component R13 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R14 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R15 RES
+Added Member To Class: ClassName=PlacaE3 Member=Component R? PRESET
+Added Member To Class: ClassName=PlacaE3 Member=Component U1 TL084J
+Added Member To Class: ClassName=PlacaE3 Member=Component U2 78XX
+Added Room: Name=PlacaE3
