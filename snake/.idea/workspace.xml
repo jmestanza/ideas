@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4f3b40e-5d8f-428b-9da0-adca0e143a77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="061365b8-1562-4fdc-b7f7-ba7ecda3f4f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../car/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/.idea/snake.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../car/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/descarga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car/snake.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,32 +18,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+            <state relative-caret-position="207">
+              <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>black</find>
-      <find>red</find>
-      <find>draw.rect</find>
-      <find>button</find>
-      <find>display</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -51,20 +49,30 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
-    <option name="width" value="1890" />
-    <option name="height" value="960" />
+    <option name="x" value="2161" />
+    <option name="y" value="52" />
+    <option name="width" value="1296" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/Guia2Electro" />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="snake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,32 +119,31 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d4f3b40e-5d8f-428b-9da0-adca0e143a77" name="Default Changelist" comment="" />
-      <created>1557343043041</created>
+      <changelist id="061365b8-1562-4fdc-b7f7-ba7ecda3f4f2" name="Default Changelist" comment="" />
+      <created>1570769304514</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557343043041</updated>
+      <updated>1570769304514</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24960254" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -145,8 +152,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/snake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+        <state relative-caret-position="207">
+          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
