@@ -1,0 +1,3 @@
+C:/Users/joa-m/LABO_DE_MICROS/Xandra/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/joa-m/LABO_DE_MICROS/Xandra/cmake-build-debug/CMakeFiles/Xandra.dir
+C:/Users/joa-m/LABO_DE_MICROS/Xandra/cmake-build-debug/CMakeFiles/edit_cache.dir
