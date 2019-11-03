@@ -29,15 +29,14 @@ PB_0 = P0 * 0.25 * 3 * Y_0
 PC_0 = 0
 PD_0 = 0
 P.append(P0)
-ra_prima.append(kA_T * ((PA_0 ** 2) * PB_0 - PC_0 * PD_0 / kP_T))
+ra_prima_0 = kA_T * ((PA_0 ** 2) * PB_0 - PC_0 * PD_0 / kP_T)
+ra_prima.append(ra_prima_0)
 W.append(0)
 
 for i in range(0,len(x)-1):
     W.append(0)
     P.append(0)
-    print(len(ra_prima))
-    print(len(W))
-    W[i+1] = FA0+W[i]/(x[i+1]-x[i])*(-ra_prima[i]) # actualizacion
+    W[i+1] = W[i] + (FA0/(ra_prima[i]))*(x[i+1]-x[i]) # actualizacion
     P[i+1] = P[i]-0.00045*(1-0.125*x[i])*(P0**2)*(W[i+1]-W[i])/(2*P[i])
     y = P[i]/P0
     PA = P0*0.25*(1-x[i])*y/(1-0.125*x[i])
@@ -45,5 +44,7 @@ for i in range(0,len(x)-1):
     PC = P0*0.125*x[i]*y/(1-0.125*x[i])
     PD = PC
     ra_prima.append(kA_T * ((PA ** 2) * PB - PC * PD / kP_T))
+    print(P[i])
 
 plt.plot(W)
+plt.show()
