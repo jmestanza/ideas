@@ -1,0 +1,3 @@
+C:/Users/joa-m/CLionProjects/fireworks/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/joa-m/CLionProjects/fireworks/cmake-build-debug/CMakeFiles/fireworks.dir
+C:/Users/joa-m/CLionProjects/fireworks/cmake-build-debug/CMakeFiles/edit_cache.dir

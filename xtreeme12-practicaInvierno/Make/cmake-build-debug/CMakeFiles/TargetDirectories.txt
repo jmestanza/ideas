@@ -1,0 +1,3 @@
+C:/Users/joa-m/CLionProjects/Make/cmake-build-debug/CMakeFiles/Make.dir
+C:/Users/joa-m/CLionProjects/Make/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/CLionProjects/Make/cmake-build-debug/CMakeFiles/rebuild_cache.dir

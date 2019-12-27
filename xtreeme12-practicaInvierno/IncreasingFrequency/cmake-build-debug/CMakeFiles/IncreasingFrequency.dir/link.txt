@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2018.1.6\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\IncreasingFrequency.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\IncreasingFrequency.dir/objects.a @CMakeFiles\IncreasingFrequency.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\IncreasingFrequency.dir/objects.a -Wl,--no-whole-archive  -o IncreasingFrequency.exe -Wl,--out-implib,libIncreasingFrequency.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\IncreasingFrequency.dir\linklibs.rsp

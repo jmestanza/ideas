@@ -1,0 +1,20 @@
+ if (first_pair.first  == second_pair.first) { // 1 con 1
+        IsContraej = false;
+    }
+    if (first_pair.second  == second_pair.second){ // 2 con 2
+        IsContraej = false;
+    }
+    if (first_pair.first  == second_pair.second){ // 1 con 2
+        IsContraej = false;
+    }
+    if (first_pair.second == second_pair.first){ // 2 con 1
+        IsContraej = false;
+    }
+
+    if(first_pair.first == first_pair.second){
+        IsContraej = false;
+    }
+
+    if(second_pair.first == second_pair.second){
+        IsContraej = false;
+    }

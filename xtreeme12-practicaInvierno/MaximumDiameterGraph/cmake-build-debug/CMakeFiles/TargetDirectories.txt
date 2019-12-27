@@ -1,0 +1,3 @@
+C:/Users/joa-m/CLionProjects/MaximumDiameterGraph/cmake-build-debug/CMakeFiles/MaximumDiameterGraph.dir
+C:/Users/joa-m/CLionProjects/MaximumDiameterGraph/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/CLionProjects/MaximumDiameterGraph/cmake-build-debug/CMakeFiles/rebuild_cache.dir

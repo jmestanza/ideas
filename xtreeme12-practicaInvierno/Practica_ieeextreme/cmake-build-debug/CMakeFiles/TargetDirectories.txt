@@ -1,0 +1,3 @@
+C:/Users/joa-m/CLionProjects/Practica_ieeextreme/cmake-build-debug/CMakeFiles/Practica_ieeextreme.dir
+C:/Users/joa-m/CLionProjects/Practica_ieeextreme/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/CLionProjects/Practica_ieeextreme/cmake-build-debug/CMakeFiles/rebuild_cache.dir

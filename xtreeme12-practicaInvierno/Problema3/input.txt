@@ -1,0 +1,4 @@
+7,3
+ADE-BCG
+AG-BE
+AC-DG
