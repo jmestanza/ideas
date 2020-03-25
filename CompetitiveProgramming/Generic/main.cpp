@@ -1,0 +1,197 @@
+#include <bits/stdc++.h>
+double EPS = 1e-9;
+double PI = acos(-1);
+int INF = 1000000005;
+long long INFF = 1000000000000000005LL;
+#define EXTRA 10
+using namespace std;
+
+// ACA ARRIBA NO SE TOCA NUNCA
+//--------------------------------------------------------
+
+
+//**********************
+// COMPILATION SWITCHES
+//**********************
+
+#define READY_TO_UPLOAD
+//#define USE_MATRIX
+//#define USE_ARR
+
+#ifndef USE_MATRIX
+    #define MAX_M 10
+    #define MAX_N 10
+    int harc_mat[MAX_M+EXTRA][MAX_N+EXTRA];
+    template<class T>
+    void print_mat(T mat[MAX_M+EXTRA][MAX_N+EXTRA],  int row,  int col){
+        for(int i = 0 ; i< row ; i++) {
+            for(int j = 0 ; j< col ; j++){
+                cout <<  mat[i][j]  << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+#endif
+
+#ifndef USE_ARR
+    #define ARR_LEN 5
+    int harc_arr[ARR_LEN+EXTRA];
+    template <typename T>
+    void print_arr(T arr[ARR_LEN+EXTRA], unsigned int len){
+    cout << "[";
+    for(int i = 0 ; i< len ; i++) {
+        cout <<  arr[i] ;
+        if(i != ARR_LEN-1) cout << ", ";
+    }
+    cout << " ]";
+    cout << endl;
+}
+#endif
+
+
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+typedef vector<string> vs;
+typedef long long LL;
+typedef pair<int, int> pii;
+typedef pair<LL, LL> pll;
+typedef pair<string, string> pss;
+typedef vector<pii> vii;
+typedef vector<LL> vl;
+typedef vector<vl> vvl;
+
+
+#define F first;
+#define S second;
+#define PB push_back;
+#define MP make_pair;
+
+//v.PB(MP(y1, x1));
+//v.PB(MP(y2, x2));
+//int d = v[i].F+v[i].S;
+int dirx[8] = { -1, 0, 0, 1, -1, -1, 1, 1 };
+int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
+
+#define FOR(a, b, c) for (int(a) = (b); (a) < (c); ++(a))
+#define FORN(a, b, c) for (int(a) = (b); (a) <= (c); ++(a))
+#define FORD(a, b, c) for (int(a) = (b); (a) >= (c); --(a))
+#define FORSQ(a, b, c) for (int(a) = (b); (a) * (a) <= (c); ++(a))
+#define FORC(a, b, c) for (char(a) = (b); (a) <= (c); ++(a))
+#define FOREACH(a, b) for (auto&(a) : (b))
+#define REP(i, n) FOR(i, 0, n)
+#define REPN(i, n) FORN(i, 1, n)
+#define RESET(a, b) memset(a, b, sizeof(a))
+#define fi first
+#define se second
+#define mp make_pair
+#define pb push_back
+#define ALL(v) v.begin(), v.end()
+#define ALLA(arr, sz) arr, arr + sz
+#define SIZE(v) (int)v.size()
+#define SORT(v) sort(ALL(v))
+#define REVERSE(v) reverse(ALL(v))
+#define SORTA(arr, sz) sort(ALLA(arr, sz))
+#define REVERSEA(arr, sz) reverse(ALLA(arr, sz))
+#define PERMUTE next_permutation
+#define TC(t) while (t--)
+static inline string IntToString(LL a)
+{
+    char x[100];
+    sprintf(x, "%lld", a);
+    string s = x;
+    return s;
+}
+static inline LL StringToInt(string a)
+{
+    char x[100];
+    LL res;
+    strcpy(x, a.c_str());
+    sscanf(x, "%lld", &res);
+    return res;
+}
+static inline string GetString(void)
+{
+    char x[1000005];
+    scanf("%s", x);
+    string s = x;
+    return s;
+}
+static inline string uppercase(string s)
+{
+    int n = SIZE(s);
+    REP(i, n)
+        if (s[i] >= 'a' && s[i] <= 'z')
+            s[i] = s[i] - 'a' + 'A';
+    return s;
+}
+static inline string lowercase(string s)
+{
+    int n = SIZE(s);
+    REP(i, n)
+        if (s[i] >= 'A' && s[i] <= 'Z')
+            s[i] = s[i] - 'A' + 'a';
+    return s;
+}
+static inline void OPEN(string s)
+{
+#ifndef READY_TO_UPLOAD
+    freopen((s + ".txt").c_str(), "r", stdin);
+    freopen((s + ".out").c_str(), "w", stdout);
+#endif
+}
+
+template <class myType>
+void print_ans(myType& ans) {
+    for(int i = 0 ; i<ans.size() ; i++) {
+        cout << "Case #" << i + 1 << ": " << ans[i] << endl;
+    }
+}
+template <typename T>
+ostream& operator<<(ostream& os, const vector<T>& v)
+{
+    os << "[";
+    for (int i = 0; i < v.size(); ++i) {
+        os << v[i];
+        if (i != v.size() - 1)
+            os << ", ";
+    }
+    os << "]";
+    return os;
+}
+
+// RECORDAR:
+// print de vectores y vector de vectores esta hecho (cout<<)
+// print de array y matriz tambien (print_arr<int>(arr,len), print_mat<int>(mat,m,n))
+
+//******************
+// GLOBAL VARIABLES
+//******************
+vi ans;
+
+int main() {
+    OPEN("C:\\Users\\joa-m\\ideas\\Generic\\problem");
+    int t, n , b , total_weight, aux;
+    vi prices;
+    cin >> t; // t hasta 100
+    TC(t){
+        cin>> n >> b;
+        FOR(j,0,n){
+            cin >> aux;
+            prices.pb(aux);
+        }
+        aux = 0; // contador de casas
+        total_weight=0;
+        SORT(prices);
+        FOR(j,0,prices.size()){
+            if(total_weight+prices[j]<=b){
+                total_weight += prices[j];
+                aux++;
+            }else break;
+        }
+        prices.clear();
+        ans.pb(aux);
+    }
+    print_ans(ans);
+    return 0;
+}

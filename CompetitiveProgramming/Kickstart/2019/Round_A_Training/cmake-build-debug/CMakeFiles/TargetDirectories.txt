@@ -1,0 +1,3 @@
+C:/Users/joa-m/ideas/round_A_training_2019/cmake-build-debug/CMakeFiles/round_A_training_2019.dir
+C:/Users/joa-m/ideas/round_A_training_2019/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/ideas/round_A_training_2019/cmake-build-debug/CMakeFiles/rebuild_cache.dir

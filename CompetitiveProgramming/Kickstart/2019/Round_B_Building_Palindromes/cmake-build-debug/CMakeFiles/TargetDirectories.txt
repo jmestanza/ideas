@@ -1,0 +1,3 @@
+C:/Users/joa-m/ideas/Round_B_Building_Palindromes/cmake-build-debug/CMakeFiles/Round_B_Building_Palindromes.dir
+C:/Users/joa-m/ideas/Round_B_Building_Palindromes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/ideas/Round_B_Building_Palindromes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

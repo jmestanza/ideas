@@ -1,0 +1,3 @@
+C:/Users/joa-m/ideas/Round_A_2020_Allocation/cmake-build-debug/CMakeFiles/roundA_2020_Allocation.dir
+C:/Users/joa-m/ideas/Round_A_2020_Allocation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/ideas/Round_A_2020_Allocation/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+C:/Users/joa-m/ideas/Round_A_2020_Plates/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/ideas/Round_A_2020_Plates/cmake-build-debug/CMakeFiles/Round_A_2020_Plates.dir
+C:/Users/joa-m/ideas/Round_A_2020_Plates/cmake-build-debug/CMakeFiles/rebuild_cache.dir

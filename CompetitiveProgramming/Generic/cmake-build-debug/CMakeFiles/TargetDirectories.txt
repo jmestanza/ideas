@@ -1,0 +1,3 @@
+C:/Users/joa-m/ideas/Generic/cmake-build-debug/CMakeFiles/Generic.dir
+C:/Users/joa-m/ideas/Generic/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joa-m/ideas/Generic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
