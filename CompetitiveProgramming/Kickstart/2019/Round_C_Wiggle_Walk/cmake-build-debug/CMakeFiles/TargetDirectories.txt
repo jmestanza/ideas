@@ -1,0 +1,3 @@
+C:/ideas/CompetitiveProgramming/Kickstart/2019/Round_C_Wiggle_Walk/cmake-build-debug/CMakeFiles/Round_C_Wiggle_Walk.dir
+C:/ideas/CompetitiveProgramming/Kickstart/2019/Round_C_Wiggle_Walk/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/ideas/CompetitiveProgramming/Kickstart/2019/Round_C_Wiggle_Walk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
