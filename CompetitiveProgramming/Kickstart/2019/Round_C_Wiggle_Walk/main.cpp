@@ -67,6 +67,66 @@ string ExePath() {
 #endif
 
 
+template <class T>
+class point {
+public:
+    T first, second;
+    point(T first_ = 0,T second_ = 0){
+        this->first= first_;
+        this->second = second_;
+    }
+    point make_pair(T first_ = 0,T second_ = 0){
+        return point(first_,second_);
+    }
+    T operator [] (int i){
+        if(i == 0){
+            return this->first;
+        }else if(i==1){
+            return this->second;
+        }
+    }
+    void operator = (const point& v){
+        this->first = v.first;
+        this->second = v.second;
+    }
+    point operator + (point &c1)
+    {
+        return point(this->first + c1.first,this->second + c1.second);
+    }
+    point& operator+=(const point& obj){
+        this->first += obj.first;
+        this->second += obj.second;
+        return *this;
+    }
+    point operator - ( point const &obj)
+    {
+        point res;
+        res.first -= obj.first;
+        res.second -= obj.second;
+        return res;
+    }
+    point operator*(point obj)
+    {
+        point res;
+        res.first = this->first * obj.first;
+        res.second = this->second * obj.second;
+        return res;
+    }
+    point operator*(T obj) {
+        point res;
+        res.first = this->first * obj;
+        res.second = this->second * obj;
+        return res;
+    }
+    friend ostream & operator << (ostream &out, const point &c)
+    {
+        out << c.first << " " << c.second;
+        return out;
+    }
+};
+
+
+
 typedef vector<int> vi;
 typedef vector<vi> vvi;
 typedef vector<string> vs;
@@ -77,12 +137,14 @@ typedef pair<string, string> pss;
 typedef vector<pii> vii;
 typedef vector<LL> vl;
 typedef vector<vl> vvl;
+typedef vector<unordered_map<LL,LL>> vmap;
+typedef point<LL> p_ll;
+typedef vector<p_ll> vp_ll;
+typedef vector<vp_ll> vvp_ll;
 
 
-#define F first;
-#define S second;
-#define PB push_back;
-#define MP make_pair;
+#define fi first
+#define se second
 
 //v.PB(MP(y1, x1));
 //v.PB(MP(y2, x2));
@@ -100,8 +162,6 @@ int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
 #define REP(i, n) FOR(i, 0, n)
 #define REPN(i, n) FORN(i, 1, n)
 #define RESET(a, b) memset(a, b, sizeof(a))
-#define fi first
-#define se second
 #define mp make_pair
 #define pb push_back
 #define ALL(v) v.begin(), v.end()
@@ -159,6 +219,9 @@ static inline void OPEN(string s)
 #endif
 }
 
+
+
+
 template <class myType>
 void print_ans(myType& ans) {
     for(int i = 0 ; i<ans.size() ; i++) {
@@ -194,6 +257,10 @@ pii operator+( pii& a,  pii& b)
 {
     return mp(a.first+b.first,a.second+b.second);
 }
+pii operator-( pii& a,  pii& b)
+{
+    return mp(a.first-b.first,a.second-b.second);
+}
 void operator+=( pii& a,  pii& b)
 {
     a.first += a.first + b.first;
@@ -209,81 +276,47 @@ void operator+=( pii& a,  pii& b)
 // GLOBAL VARIABLES
 //******************
 
-//vvi ans;
-
-pii N_ = mp(-1,0);
-pii W_ = mp(0,-1);
-pii E_ = mp(0,1);
-pii S_ = mp(1,0);
-
-
-bool find(vector<pii>& harc_mat,pii &aux){
-    bool found = false;
-    FOR(i,0,harc_mat.size()){
-        if(harc_mat[i]==aux){
-            found = true;
-            break;
-        }
-    }
-    return found;
-}
-LL hash_fun(LL k1, LL k2){
-    LL sum1 = k1+k2;
-    LL sum2 = sum1+1;
-    LL mult = sum1*sum2;
-    LL div = mult/2;
-    LL res = div + k2;
-    return  res;
-}
-void advance(unordered_map<LL,LL>& memory, pii& direct, pii &pos){
-    pii aux = pos + direct;
-    if(memory.find(hash_fun(aux.first,aux.second)) == memory.end()){
-        pos = mp(aux.first,aux.second);
-    }else{
-        while(!(memory.find(hash_fun(aux.first,aux.second)) == memory.end())){
-            aux =  aux + direct;
-        }
-        pos = mp(aux.first,aux.second);
-    }
-    memory[hash_fun(pos.first,pos.second)] = 1;
-}
 int main() {
 #ifndef READY_TO_UPLOAD
     OPEN(ExePath()+"\\problem");
 #endif
-    int t, N, R, C , SR, SC;
+    int t, N, R, C , r, c;
+    map< pair<int,int>, bool > visited;
     vvi ans;
     vi aux;
-    string str;
+    string s;
     cin >> t; // t hasta 100
-    pii pos;
-    unordered_map<LL,LL> memory;
-//    vvi harc_mat = vector<vi>(5*10000+EXTRA,vi(5*10000+EXTRA,0));
-//  es demasiado para una matriz!
-    TC(t){
-        cin>> N >> R >> C >> SR >> SC;
-        cin >> str;
-        pos.first = SR;
-        pos.second = SC;
-        memory[hash_fun(pos.first,pos.second)] = 1;
-        FORN(j,1,N){
-            if(str[j-1] == 'N') {
-                advance(memory,N_,pos);
-            }else if(str[j-1] == 'W'){
-                advance(memory,W_,pos);
-            }else if(str[j-1] == 'E'){
-                advance(memory,E_,pos);
-            }else if(str[j-1] == 'S'){
-                advance(memory,S_,pos);
-            }
-        }
-        aux.pb(pos.first);
-        aux.pb(pos.second);
-        ans.pb(aux);
-        aux.clear();
-        memory.clear();
-    }
 
+//    vvi harc_mat = vector<vi>(5*10000+EXTRA,vi(5*10000+EXTRA,0));//  es demasiado para una matriz!
+
+    TC(t){
+        cin>> N >> R >> C >> r >> c;
+        cin >> s;
+
+        visited[make_pair(r, c)] = true;
+
+        for (int i = 0; i < N; i++) {
+            if (s[i] == 'N')
+                while (visited[make_pair(r, c)])
+                    r--;
+            if (s[i] == 'E')
+                while (visited[make_pair(r, c)])
+                    c++;
+            if (s[i] == 'S')
+                while (visited[make_pair(r, c)])
+                    r++;
+            if (s[i] == 'W')
+                while (visited[make_pair(r, c)])
+                    c--;
+
+            visited[make_pair(r, c)] = true;
+        }
+        aux.push_back(r);
+        aux.push_back(c);
+        ans.push_back(aux);
+        aux.clear();
+        visited.clear();
+    }
     for(int t = 0 ; t<ans.size(); t++){
         cout << "Case #" << t + 1 << ": " << ans[t] << endl;
     }
