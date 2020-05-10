@@ -14,7 +14,7 @@ using namespace std;
 // COMPILATION SWITCHES
 //**********************
 
-#define READY_TO_UPLOAD
+//#define READY_TO_UPLOAD
 //#define USE_MATRIX
 //#define USE_ARR
 
@@ -241,6 +241,13 @@ ostream& operator<<(ostream& os, const vector<T>& v)
     return os;
 }
 
+ostream& operator<<(ostream& os, const pii& v)
+{
+    os << v.first << " " << v.second;
+    return os;
+}
+
+
 ostream& operator<<(ostream& os, const vector<pii>& v)
 {
     for (int i = 0; i < v.size(); ++i) {
@@ -281,8 +288,8 @@ int main() {
     OPEN(ExePath()+"\\problem");
 #endif
     int t, N, R, C , r, c;
-    map< pair<int,int>, bool > visited;
-    vvi ans;
+    map< pii, bool > visited;
+    vector <pii> ans;
     vi aux;
     string s;
     cin >> t; // t hasta 100
@@ -293,28 +300,25 @@ int main() {
         cin>> N >> R >> C >> r >> c;
         cin >> s;
 
-        visited[make_pair(r, c)] = true;
+        visited[mp(r, c)] = true;
 
         for (int i = 0; i < N; i++) {
             if (s[i] == 'N')
-                while (visited[make_pair(r, c)])
+                while (visited[mp(r, c)])
                     r--;
             if (s[i] == 'E')
-                while (visited[make_pair(r, c)])
+                while (visited[mp(r, c)])
                     c++;
             if (s[i] == 'S')
-                while (visited[make_pair(r, c)])
+                while (visited[mp(r, c)])
                     r++;
             if (s[i] == 'W')
-                while (visited[make_pair(r, c)])
+                while (visited[mp(r, c)])
                     c--;
 
-            visited[make_pair(r, c)] = true;
+            visited[mp(r, c)] = true;
         }
-        aux.push_back(r);
-        aux.push_back(c);
-        ans.push_back(aux);
-        aux.clear();
+        ans.push_back(mp(r,c));
         visited.clear();
     }
     for(int t = 0 ; t<ans.size(); t++){

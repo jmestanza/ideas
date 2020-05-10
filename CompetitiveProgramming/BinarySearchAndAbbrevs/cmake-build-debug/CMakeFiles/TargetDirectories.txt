@@ -1,3 +1,0 @@
-C:/Users/joa-m/CLionProjects/Practice/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/joa-m/CLionProjects/Practice/cmake-build-debug/CMakeFiles/Practice.dir
-C:/Users/joa-m/CLionProjects/Practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

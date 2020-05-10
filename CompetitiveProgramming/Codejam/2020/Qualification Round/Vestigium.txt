@@ -1,0 +1,34 @@
+def get_cnt_reps(aux):
+    nonrep = set(aux)
+    cnt_reps = len(aux) - len(nonrep)
+    return cnt_reps
+
+t = int(input())
+ans = []
+for z in range(1, t + 1):
+    n = int(input())
+    mat = []
+    rep_rows = 0
+    rep_cols = 0
+    for i in range(n):
+        row = list(input().split(" "))
+        row = list(map(int, row))
+        mat.append(row)
+        if get_cnt_reps(row)>0:
+            rep_rows = rep_rows + 1
+
+
+    for j in range(n):
+        col = []
+        for i in range(n):
+            col.append(mat[i][j])
+        if get_cnt_reps(col) > 0:
+            rep_cols = rep_cols + 1
+
+    suma = 0
+    for i in range(n):
+        suma += mat[i][i]
+
+    ans.append([z,suma,rep_cols,rep_rows])
+for x,k,r,c in ans:
+    print("Case #{}: {} {} {}".format(x,k,c,r))

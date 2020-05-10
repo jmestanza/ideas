@@ -1,0 +1,54 @@
+t = int(input())
+ans_tot = []
+
+def IsOverlapping(actx,acty):
+    end = actx[1]
+    start = acty[0]
+    return False if end <= start else True
+
+for z in range(1, t + 1):
+
+    N = int(input())
+    act = []
+    for k in range(N):
+        x = input().split(" ")
+        x = [int(x[0]),int(x[1]), k]
+        act.append(x)
+
+    act = sorted(act, key=lambda x: x[0])
+    last = True
+    s = []
+    names = ["J", "C"]
+    busy = {"J": 0, "C": 0}
+    cant = False
+    #print(act)
+    for i in range(len(act)-1):
+        # la nueva tarea a hacer es la iesima, si jorge y carla estan ocupados al mismo tiempo en el instante que empieza
+        # la tarea i esima, cortamos
+        if busy["J"] > act[i][0] and busy["C"] > act[i][0]:
+            cant = True
+            break
+        else:
+            if IsOverlapping(act[i],act[i+1]): # se pisa con el que viene
+                s.append([names[last],act[i][2]]) # esto va con el indice apropiado
+                busy[names[last]] = act[i][1]
+                last = not last # yo si puedo, el que viene no
+            else:
+                s.append([names[last], act[i][2]])  # esto va con el indice apropiado
+                busy[names[last]] = act[i][1]
+
+    if busy["J"] > act[len(act)-1][0] and busy["C"] > act[len(act)-1][0]:
+        cant = True
+
+    if cant:
+        s = list("IMPOSSIBLE")
+    else:
+        s.append([names[last],act[len(act)-1][2]])
+        #print(s)
+        s = sorted(s, key=lambda x: x[1])
+        s = [s[l][0] for l in range(len(s))]
+    s = "".join(s)
+    ans_tot.append(s)
+
+for i in range(len(ans_tot)):
+    print("Case #{}: {}".format(i+1,ans_tot[i]))

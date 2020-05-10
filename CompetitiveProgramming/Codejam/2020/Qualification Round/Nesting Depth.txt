@@ -1,0 +1,56 @@
+t = int(input())
+ans_tot = []
+for z in range(1, t + 1):
+    word = input()
+    s = [word[i] for i in range(len(word))]
+    # primero tengo que procesar los que estan iguales (pegados porque son lo mismo)
+    ans = ""
+    curr_p = 0  # este es siempre el primer caracter del string
+    last_add = 0 # este es siempre 0
+    prev = 0
+    flag = False
+    if len(s)==1:
+        ans += int(s[0]) * "(" + s[0] + int(s[0]) * ")"
+    else:
+        for i in range(len(s)):
+            curr = int(s[i])
+            next = 0 if i == (len(s)-1) else int(s[i + 1])
+            if(0):
+                ans+=s[i] #no hago nada
+            else:
+                # ---------------------------
+                # Logica de "("
+                if curr_p == 0: # si no quedan parentesis antes,        ✓
+                    curr_p = curr # pongo el numero como el que empieza ✓
+                    ans += curr_p * "("
+                # elif prev != curr and not flag:
+                #     pass
+                #     #ans += curr_p * "("  # funciona si el primero es 0 ✓
+                #  # si lo que sigue es igual a mi no agrego "(" por ej en vez de 11 => (11)✓
+
+
+                    # deberia mantenerse el curr_p de todas formas! (ojo)
+                #-------------------------------
+                ans += s[i]  # agrego mi caract ✓
+                # -------------------------
+                if curr != 0: # si estoy en 0, ya flushee el ")" del anterior se supone
+                    last_add = curr - next
+                    if(last_add>=0):
+                        curr_p -= last_add  # resto la cantidad de ")" que agrego
+                        ans += last_add * ")"
+                        flag = 0
+                    else:
+                        #if flag == 0:
+                        curr_p -= last_add  # resto la cantidad de ")" que agrego  (ojo, que pasa si es neg??)
+
+                        ans += abs(last_add) * "("
+                        # si curr_p = curr significa que
+                        flag = 1
+                else:
+                    curr_p = 0 # como es 0, solo agrego s[i] y flusheo pcurr
+                    flag = 0
+            prev = curr # ✓
+
+    ans_tot.append(ans)
+for i in range(len(ans_tot)):
+    print("Case #{}: {}".format(i+1,ans_tot[i]))
