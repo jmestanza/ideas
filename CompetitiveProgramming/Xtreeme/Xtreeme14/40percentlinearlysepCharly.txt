@@ -1,0 +1,410 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+#define XMAX        100
+#define INIT_GROUP  { XMAX, -XMAX, XMAX, -XMAX }
+
+
+
+
+typedef struct
+{
+    float x1;
+    float x2;
+    int label;
+    float angle;
+} Sample;
+
+typedef struct
+{
+    float x1Min;
+    float x1Max;
+    float x2Min;
+    float x2Max;
+} Group;
+
+bool nonOverlap(Group, Group);
+bool overlap1D(float xmin, float xmax, float ymin, float ymax);
+float angle(float x1, float y1, float x2, float y2);
+bool compareByAngle(Sample& s1, Sample& s2);
+int areIntersecting(float v1x1, float v1y1, float v1x2, float v1y2, float v2x1, float v2y1, float v2x2, float v2y2);
+float ccw(const Sample& a, const Sample& b, const Sample& c);
+vector<Sample> quickHull(const vector<Sample>& v);
+bool isLeftOf(const Sample& a, const Sample& b);
+
+float len(const Sample& a, const Sample& b)
+ {
+	return sqrt((b.x1 - a.x1) * (b.x1 - a.x1) + (b.x2 - a.x2) * (b.x2 - a.x2));
+}
+float dist(const Sample& a, const Sample& b, const Sample& p) 
+{
+	return fabs((b.x1 - a.x1) * (a.x2 - p.x2) - (b.x2 - a.x2) * (a.x1 - p.x1)) / len(a, b);
+}
+size_t getFarthest(const Sample& a, const Sample& b, const vector<Sample>& v) {
+	size_t idxMax = 0;
+	float distMax = dist(a, b, v[idxMax]);
+
+	for (size_t i = 1; i < v.size(); ++i) {
+		float distCurr = dist(a, b, v[i]);
+		if (distCurr > distMax) {
+			idxMax = i;
+			distMax = distCurr;
+		}
+	}
+
+	return idxMax;
+}
+void quickHull(const vector<Sample>& v, const Sample& a, const Sample& b, 
+			   vector<Sample>& hull) 
+               {
+	if (v.empty()) {
+		return;
+	}
+
+	Sample f = v[getFarthest(a, b, v)];
+
+	// Collect points to the left of segment (a, f)
+	vector<Sample> left;
+	for (auto p : v) {
+		if (ccw(a, f, p) > 0) {
+			left.push_back(p);
+		}
+	}
+	quickHull(left, a, f, hull);
+	
+	// Add f to the hull
+	hull.push_back(f);
+
+	// Collect points to the left of segment (f, b)
+	vector<Sample> right;
+	for (auto p : v) {
+		if (ccw(f, b, p) > 0) {
+			right.push_back(p);
+		}
+	}
+	quickHull(right, f, b, hull);
+}
+
+
+
+int main() 
+{
+    int t, n, y;
+    float x1, x2, posavgx1 = 0, posavgx2 = 0, negavgx1 = 0, negavgx2 = 0;
+    float curravgx1, curravgx2;
+    vector<Sample> samples;
+    vector<Sample> posSamples, negSamples;
+    Group posGroup = INIT_GROUP, negGroup = INIT_GROUP;
+    Group* currGroup;
+    cin >> t;
+    for (unsigned int i = 0; i < t; i++)
+    {
+        cin >> n;
+        for (unsigned int j = 0; j < n; j++)
+        {
+            cin >> x1 >> x2 >> y;
+            samples.push_back(Sample({ x1, x2, y }));
+            if (y == 1)
+            {
+                posavgx1 += x1;
+                posavgx2 += x2;
+            }
+            else
+            {
+                negavgx1 += x1;
+                negavgx2 += x2;
+            }
+        }
+        posavgx1 /= n;
+        posavgx2 /= n;
+        negavgx1 /= n;
+        negavgx2 /= n;
+        for (unsigned int j = 0; j < n; j++)
+        {
+            currGroup = (samples[j].label == 1) ? &posGroup : &negGroup;
+            if (samples[j].x1 < currGroup->x1Min)
+            {
+                currGroup->x1Min = samples[j].x1;
+            }
+            if (samples[j].x1 > currGroup->x1Max)
+            {
+                currGroup->x1Max = samples[j].x1;
+            }
+            if (samples[j].x2 < currGroup->x2Min)
+            {
+                currGroup->x2Min = samples[j].x2;
+            }
+            if (samples[j].x2 > currGroup->x2Max)
+            {
+                currGroup->x2Max = samples[j].x2;
+            }
+        }
+        // Check boundary rectangle
+        if (nonOverlap(posGroup, negGroup))
+        {
+            float   xmin = min(posGroup.x1Min, negGroup.x1Min), 
+                    xmax = max(posGroup.x1Max, negGroup.x1Max), 
+                    ymin = min(posGroup.x2Min, negGroup.x2Min),
+                    ymax = max(posGroup.x2Max, negGroup.x2Max);
+            if ((xmin * xmax <= 0) && (ymin * ymax <= 0))
+            {
+                cout << "YES" << endl;
+            }
+            else 
+            {
+                cout << "NO" << endl;
+            }
+        }
+        // Check whole polygon
+        else
+        {
+            // Ordenar por angulo (no exclui puntos interiores)
+            for (unsigned int j = 0; j < n; j++)
+            {
+                curravgx1 = samples[j].label == 1 ? posavgx1 : negavgx1;
+                curravgx2 = samples[j].label == 1 ? posavgx2 : negavgx2;
+                samples[j].angle = angle(curravgx1, curravgx2, samples[j].x1, samples[j].x2);
+            }
+            sort(samples.begin(), samples.end(), compareByAngle);
+            for (unsigned int j = 0; j < n; j++)
+            {
+                if (samples[j].label == 1)
+                {
+                    posSamples.push_back(samples[j]);
+                }
+                else
+                {
+                    negSamples.push_back(samples[j]);
+                }
+            }
+            vector<Sample> posPolygon = quickHull(posSamples);
+            vector<Sample> negPolygon = quickHull(negSamples);
+            
+            
+            
+            
+
+            
+
+            // Test for each negative point if it is inside positive polygon
+            int intersect = false;
+            size_t posSize = posPolygon.size(), negSize = negPolygon.size();
+            for (unsigned int j = 0; (j < posSize) && !intersect ; j++)
+            {
+                for (unsigned int k = 0; (k < negSize) && !intersect; k++)
+                {
+                    float   v1x1 = posPolygon[j].x1, v1y1 = posPolygon[j].x2,
+                            v1x2 = posPolygon[(j+1) % posSize].x1, v1y2 = posPolygon[(j + 1) % posSize].x2,
+                            v2x1 = negPolygon[k].x1, v2y1 = negPolygon[k].x2, 
+                            v2x2 = negPolygon[(k+1) % negSize].x1, v2y2 = negPolygon[(k + 1) % negSize].x2;
+                    intersect = areIntersecting(v1x1, v1y1, v1x2, v1y2, v2x1, v2y1, v2x2, v2y2);
+                }
+            }
+
+            if (!intersect)
+            {
+                int error = 0;
+               
+                for(auto i : posPolygon)
+                {
+                    int m = i.x2/i.x1;
+                     if(posavgx2>posavgx1*m)
+                     {
+                        for(auto j : posPolygon)
+                        {
+                            if( j.x2 > j.x1*m)
+                            {
+                                error = 1;
+                                break;
+                            }
+                        }
+                        for(auto j : negPolygon)
+                        {
+                            if( j.x2 < j.x1*m)
+                            {
+                                error = 1;
+                                break;
+                            }
+                        }
+                       
+                     }
+                     else
+                     {
+                         for(auto j : posPolygon)
+                        {
+                            if( j.x2 < j.x1*m)
+                            {
+                                error = 1;
+                                break;
+                            }
+                        }
+                        for(auto j : negPolygon)
+                        {
+                            if( j.x2 > j.x1*m)
+                            {
+                                error = 1;
+                                break;
+                            }
+                        }
+                     }
+                     
+                     
+                } 
+                if(error)
+                { 
+                    cout << "NO" << endl;
+                }
+                else
+                { 
+                    cout << "YES" << endl;
+                }
+                // // Check if it can go through (0,0)
+                // float   xmin = min(posGroup.x1Min, negGroup.x1Min),
+                //     xmax = max(posGroup.x1Max, negGroup.x1Max),
+                //     ymin = min(posGroup.x2Min, negGroup.x2Min),
+                //     ymax = max(posGroup.x2Max, negGroup.x2Max);
+                // if ((xmin * xmax < 0) && (ymin * ymax < 0))
+                // {
+                    
+                // }
+                // else
+                // {
+                //     cout << "NO" << endl;
+                // }
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+        }
+
+        posGroup = INIT_GROUP;
+        negGroup = INIT_GROUP;
+        posavgx1 = 0;
+        posavgx2 = 0;
+        negavgx1 = 0;
+        negavgx2 = 0;
+        samples.resize(0);
+        posSamples.resize(0);
+        negSamples.resize(0);
+    }
+
+    return 0;
+}
+
+
+bool nonOverlap(Group g1, Group g2)
+{
+    bool ret = true;
+    if (overlap1D(g1.x1Min, g1.x1Max, g2.x1Min, g2.x1Max) && overlap1D(g1.x2Min, g1.x2Max, g2.x2Min, g2.x2Max))
+    {
+        ret = false;
+    }
+    return ret;
+}
+
+// returns true if y is overlaps with x
+bool overlap1D(float xmin, float xmax, float ymin, float ymax)
+{
+    bool ret = false;
+    if ((ymax > xmin) && (ymin < xmax))
+    {
+        ret = true;
+    }
+    else if ((ymin < xmax) && (ymax > xmin))
+    {
+        ret = true;
+    }
+    return ret;
+}
+
+// in radians 
+float angle(float x1, float y1, float x2, float y2)
+{
+    return atan2(y2 - y1, x2 - x1);
+}
+
+bool compareByAngle(Sample &s1, Sample &s2)
+{
+    return s1.angle < s2.angle;
+}
+
+#define NO 0
+#define YES 1
+#define COLLINEAR 2
+
+int areIntersecting(
+    float v1x1, float v1y1, float v1x2, float v1y2,
+    float v2x1, float v2y1, float v2x2, float v2y2
+) {
+    float d1, d2;
+    float a1, a2, b1, b2, c1, c2;
+
+    a1 = v1y2 - v1y1;
+    b1 = v1x1 - v1x2;
+    c1 = (v1x2 * v1y1) - (v1x1 * v1y2);
+
+    d1 = (a1 * v2x1) + (b1 * v2y1) + c1;
+    d2 = (a1 * v2x2) + (b1 * v2y2) + c1;
+
+    if (d1 > 0 && d2 > 0) return NO;
+    if (d1 < 0 && d2 < 0) return NO;
+
+    a2 = v2y2 - v2y1;
+    b2 = v2x1 - v2x2;
+    c2 = (v2x2 * v2y1) - (v2x1 * v2y2);
+
+    d1 = (a2 * v1x1) + (b2 * v1y1) + c2;
+    d2 = (a2 * v1x2) + (b2 * v1y2) + c2;
+
+    if (d1 > 0 && d2 > 0) return NO;
+    if (d1 < 0 && d2 < 0) return NO;
+
+    // If we get here, only two possibilities are left. Either the two
+    // vectors intersect in exactly one point or they are collinear, which
+    // means they intersect in any number of points from zero to infinite.
+    if ((a1 * b2) - (a2 * b1) == 0.0f) return COLLINEAR;
+
+    // If they are not collinear, they must intersect in exactly one point.
+    return YES;
+}
+float ccw(const Sample& a, const Sample& b, const Sample& c) {
+	return (b.x1 - a.x1) * (c.x2 - a.x2) - (b.x2 - a.x2) * (c.x1 - a.x1);
+}
+bool isLeftOf(const Sample& a, const Sample& b) 
+{
+	return (a.x1 < b.x1 || (a.x1 == b.x1 && a.x2 < b.x2));
+}
+vector<Sample> quickHull(const vector<Sample>& v) 
+{
+	vector<Sample> hull;
+	
+	// Start with the leftmost and rightmost points.
+	Sample a = *min_element(v.begin(), v.end(), isLeftOf);
+	Sample b = *max_element(v.begin(), v.end(), isLeftOf);
+
+	// Split the points on either side of segment (a, b)
+	vector<Sample> left, right;
+	for (auto p : v) {
+		ccw(a, b, p) > 0 ? left.push_back(p) : right.push_back(p);
+	}
+	
+	// Be careful to add points to the hull
+	// in the correct order. Add our leftmost point.
+	hull.push_back(a);
+
+	// Add hull points from the left (top)
+	quickHull(left, a, b, hull);
+
+	// Add our rightmost point
+	hull.push_back(b);
+
+	// Add hull points from the right (bottom)
+	quickHull(right, b, a, hull);
+
+	return hull;
+}
