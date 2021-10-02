@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\the_grid_search.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\the_grid_search.dir/objects.a @CMakeFiles\the_grid_search.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\the_grid_search.dir/objects.a -Wl,--no-whole-archive -o the_grid_search.exe -Wl,--out-implib,libthe_grid_search.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\the_grid_search.dir\linklibs.rsp

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\extra_long_factorials.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\extra_long_factorials.dir/objects.a @CMakeFiles\extra_long_factorials.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\extra_long_factorials.dir/objects.a -Wl,--no-whole-archive -o extra_long_factorials.exe -Wl,--out-implib,libextra_long_factorials.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\extra_long_factorials.dir\linklibs.rsp
