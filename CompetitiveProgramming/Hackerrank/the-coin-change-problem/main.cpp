@@ -2,6 +2,7 @@
 // sum to a given value
 #include <bits/stdc++.h>
 using namespace std;
+//  https://www.geeksforgeeks.org/combinational-sum/
 
 // Print all members of ar[] that have given
 void findNumbers(vector<int>& ar, int sum,
