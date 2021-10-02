@@ -49,11 +49,7 @@ vector<pair<int, int>> find_candidates( vector<string> &G,  vector<string> &P){
 }
 
 string gridSearch(vector<string> G, vector<string> P) {
-    bool found = false;
-    size_t col = 0;
-
     string ans;
-
     vector<pair<int,int>> candidates = find_candidates(G, P);
 
     if ( std::any_of(candidates.begin(), candidates.end(), [&G, &P](pair<int,int> candidate){
@@ -65,7 +61,6 @@ string gridSearch(vector<string> G, vector<string> P) {
     } else {
         ans = "NO";
     }
-//    cout << ans << endl;
     return ans;
 }
 
