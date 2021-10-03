@@ -22,16 +22,13 @@ typedef struct {
 }result;
 
 map<int, result> memo;
+vector<long> c;
 
-result getCombinations(int n, vector<long> c){
-    if(!(memo.find(n) == memo.end())){
-//        cout << "found overlapping subproblem! at "  << n << endl;
-        return memo[n];
-    }
+result getCombinations(int n){
+    if(!(memo.find(n) == memo.end())) return memo[n];
     if(n == 0){
         result ans;
-        vector<int> a;
-        ans.arr.push_back(a);
+        ans.arr.emplace_back();
         ans.possible = true;
         return ans;
     }
@@ -45,12 +42,11 @@ result getCombinations(int n, vector<long> c){
 
     for (long currNum: c) {
         int currSum = n - currNum;
-        result res = getCombinations(currSum, c);
+        result res = getCombinations(currSum);
         if(res.possible){
-            for (const vector<int>& r: res.arr) {
-                vector<int> aux = r;
-                aux.push_back(currNum);
-                combinations.arr.push_back(aux);
+            for (vector<int> r: res.arr) {
+                r.push_back(currNum);
+                combinations.arr.push_back(r);
                 combinations.possible = true;
             }
         }
@@ -60,24 +56,27 @@ result getCombinations(int n, vector<long> c){
     return combinations;
 }
 
-void delete_duplicate_combination(vector<vector<int>> &v){
+long delete_duplicate_combination(vector<vector<int>> &v){
+    long count = 0;
     for(long long i = static_cast<long long>(v.size())-1; i >= 0; --i)
     {
         for(std::size_t j = 0; j < static_cast<std::size_t>(i); ++j)
         {
             if(std::is_permutation(v[static_cast<std::size_t>(i)].begin(), v[static_cast<std::size_t>(i)].end(), v[j].begin(), v[j].end()))
             {
-                v.erase(v.begin()+i);
+                count++;
+//                v.erase(v.begin()+i);
                 break;
             }
         }
     }
+    return count;
 }
 
-long getWays(int n, vector<long> c) {
-    result res = getCombinations(n, c);
-    delete_duplicate_combination(res.arr);
-    return res.arr.size();
+long getWays(int n) {
+    result res = getCombinations(n);
+    long permutations = delete_duplicate_combination(res.arr);
+    return res.arr.size()-permutations;
 }
 
 int main()
@@ -98,7 +97,7 @@ int main()
 
     vector<string> c_temp = split(rtrim(c_temp_temp));
 
-    vector<long> c(m);
+    c = vector<long> (m,0);
 
     for (int i = 0; i < m; i++) {
         long c_item = stol(c_temp[i]);
@@ -108,7 +107,7 @@ int main()
 
     // Print the number of ways of making change for 'n' units using coins having the values given by 'c'
 
-    long ways = getWays(n, c);
+    long ways = getWays(n);
 
     fout << ways << "\n";
 
