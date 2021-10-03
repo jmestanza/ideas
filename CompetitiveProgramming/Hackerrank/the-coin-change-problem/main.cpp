@@ -25,6 +25,7 @@ map<int, result> memo;
 
 result getCombinations(int n, vector<long> c){
     if(!(memo.find(n) == memo.end())){
+//        cout << "found overlapping subproblem! at "  << n << endl;
         return memo[n];
     }
     if(n == 0){
