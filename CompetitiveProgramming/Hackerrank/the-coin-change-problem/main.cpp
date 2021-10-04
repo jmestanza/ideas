@@ -15,68 +15,16 @@ vector<string> split(const string &);
  *  2. LONG_INTEGER_ARRAY c
  */
 
-typedef struct {
-    long num;
-    vector<vector<int>> arr;
-    bool possible;
-}result;
-
-map<int, result> memo;
-vector<long> c;
-
-result getCombinations(int n){
-    if(!(memo.find(n) == memo.end())) return memo[n];
-    if(n == 0){
-        result ans;
-        ans.arr.emplace_back();
-        ans.possible = true;
-        return ans;
-    }
-    if(n<0){
-        result ans;
-        ans.possible = false;
-        return ans;
-    }
-
-    result combinations;
-
-    for (long currNum: c) {
-        int currSum = n - currNum;
-        result res = getCombinations(currSum);
-        if(res.possible){
-            for (vector<int> r: res.arr) {
-                r.push_back(currNum);
-                combinations.arr.push_back(r);
-                combinations.possible = true;
-            }
+long getWays(int n, vector<long> c) {
+    // let's make it constructive
+    vector<long> ways(n+1, 0);
+    ways[0] = 1;
+    for(long coin: c){
+        for(long i = coin; i < ways.size(); i++){
+            ways[i] += ways[i-coin];
         }
     }
-    memo[n] = combinations;
-
-    return combinations;
-}
-
-long delete_duplicate_combination(vector<vector<int>> &v){
-    long count = 0;
-    for(long long i = static_cast<long long>(v.size())-1; i >= 0; --i)
-    {
-        for(std::size_t j = 0; j < static_cast<std::size_t>(i); ++j)
-        {
-            if(std::is_permutation(v[static_cast<std::size_t>(i)].begin(), v[static_cast<std::size_t>(i)].end(), v[j].begin(), v[j].end()))
-            {
-                count++;
-//                v.erase(v.begin()+i);
-                break;
-            }
-        }
-    }
-    return count;
-}
-
-long getWays(int n) {
-    result res = getCombinations(n);
-    long permutations = delete_duplicate_combination(res.arr);
-    return res.arr.size()-permutations;
+    return ways[n];
 }
 
 int main()
@@ -97,7 +45,7 @@ int main()
 
     vector<string> c_temp = split(rtrim(c_temp_temp));
 
-    c = vector<long> (m,0);
+    vector<long> c(m, 0);
 
     for (int i = 0; i < m; i++) {
         long c_item = stol(c_temp[i]);
@@ -107,7 +55,7 @@ int main()
 
     // Print the number of ways of making change for 'n' units using coins having the values given by 'c'
 
-    long ways = getWays(n);
+    long ways = getWays(n, c);
 
     fout << ways << "\n";
 
