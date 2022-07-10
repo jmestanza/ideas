@@ -1,0 +1,3 @@
+C:/Github_Repos/ideas/CompetitiveProgramming/Xtreeme/Xtreeme15/explotaition/cmake-build-debug/CMakeFiles/explotaition.dir
+C:/Github_Repos/ideas/CompetitiveProgramming/Xtreeme/Xtreeme15/explotaition/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Github_Repos/ideas/CompetitiveProgramming/Xtreeme/Xtreeme15/explotaition/cmake-build-debug/CMakeFiles/rebuild_cache.dir

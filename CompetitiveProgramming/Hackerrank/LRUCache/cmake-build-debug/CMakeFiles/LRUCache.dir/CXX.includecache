@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Github_Repos/ideas/CompetitiveProgramming/Hackerrank/LRUCache/main.cpp
+iostream
+-
+vector
+-
+map
+-
+string
+-
+algorithm
+-
+set
+-
+cassert
+-
+

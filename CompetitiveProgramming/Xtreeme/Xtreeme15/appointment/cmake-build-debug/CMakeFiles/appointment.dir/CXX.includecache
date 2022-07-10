@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Github_Repos/ideas/CompetitiveProgramming/Xtreeme/Xtreeme15/appointment/main.cpp
+bits/stdc++.h
+-
+

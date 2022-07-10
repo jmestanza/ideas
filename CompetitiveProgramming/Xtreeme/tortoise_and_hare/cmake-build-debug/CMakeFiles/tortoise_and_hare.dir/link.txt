@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\tortoise_and_hare.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\tortoise_and_hare.dir/objects.a @CMakeFiles\tortoise_and_hare.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\tortoise_and_hare.dir/objects.a -Wl,--no-whole-archive -o tortoise_and_hare.exe -Wl,--out-implib,libtortoise_and_hare.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tortoise_and_hare.dir\linklibs.rsp
